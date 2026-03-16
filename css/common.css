@@ -1,0 +1,43 @@
+html{
+    font-family: 'Pretendard', sans-serif;
+    font-size: var(--basic-font-pc);
+    font-weight: var(--fw-re);
+}
+h1{
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-bold);
+}
+h2{
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+}
+h3{
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+}
+h4{
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-bold);
+}
+p{
+    line-height: 140%;
+}
+.bd2{
+    font-size: var(--fs-bd2);
+}
+.det{
+    font-size: var(--fs-det);
+}
+.fwr{
+    font-weight: var(--fw-reg);
+}
+.fwm{
+    font-weight: var(--fw-med);
+}
+.fwb{
+    font-weight: var(--fw-bold);
+}
+.common-frame{
+    width: 1440px;
+    margin: 0 auto;
+}
