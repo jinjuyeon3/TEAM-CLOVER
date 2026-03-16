@@ -1,0 +1,46 @@
+header{
+    background-color: #fff;
+    border: 1px solid red;
+}
+header .common-frame>div{
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+.lnb{
+    display: flex;
+    gap: var(--space-large);
+    font-size: var(--fs-det);
+    align-items: center;
+}
+.lnb a{
+    height: 100px;
+    /* box-sizing: border-box; */
+    display: flex;
+    align-items: center;
+}
+.lnb img{
+    cursor: pointer;
+    /* box-sizing: border-box; */
+    display: flex;
+    width: 21.6px;
+}
+.gnb{
+    border: 1px solid orange;
+    height: 80px;
+    display: flex;
+    gap: var(--space-x-large);
+    justify-content: center;
+    align-items: center;
+}
+.gnb>li>a{
+    font-weight: var(--fw-bold);
+}

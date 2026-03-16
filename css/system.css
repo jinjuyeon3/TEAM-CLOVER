@@ -1,0 +1,40 @@
+:root{
+    /* 화면에 따른 기본 글씨 크기 */
+    --basic-font-pc:20px;
+    --basic-font-tab:18px;
+    --basic-font-mo:14px;
+    /* 글씨 크기 */
+    --fs-h1:1.601rem;
+    --fs-h2:1.423rem;
+    --fs-h3:1.265rem;
+    --fs-h4:1.125rem;
+    --fs-bd1:1rem;
+    --fs-bd2:0.875rem;
+    --fs-det:0.765rem;
+    /* 글씨 굵기 */
+    --fw-reg:400;
+    --fw-med:500;
+    --fw-bold:700;
+    /* 색상(clinique-blue) */
+    --cb-color-0:#F5F8FF;
+    --cb-color-100:#C5D4FD;
+    --cb-color-200:#98B1F9;
+    --cb-color-300:#7093F2;
+    --cb-color-400:#5079E9;
+    --cb-color-500:#3864DD;
+    --cb-color-600:#2753CD;
+    --cb-color-700:#1B45B8;
+    --cb-color-800:#1338A0;
+    --cb-color-900:#0E2E87;
+    /* 메인컬러 -> 800 */
+    --main-color:#1338A0;
+    /* 여백 */
+    --space-2x-small:0.125rem;
+    --space-x-small:0.25rem;
+    --space-small:0.5rem;
+    --space-normal:1rem;
+    --space-large:2rem;
+    --space-x-large:3rem;
+    --space-2x-large:4rem;
+    --space-3x-large:6rem;
+}
