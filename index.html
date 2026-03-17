@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
     
+    <script src="./js/header.js"></script>
 </head>
 <body>
     <!-- pc용 헤더 영역 -->
     <header>
         <div class="common-frame">
-            <div>
+            <div class="sub-menu">
                 <div class="logo">
                     <a href="#">
                         <img src="./img/icon/H-logo.svg" alt="크리니크 로고">
@@ -25,7 +26,77 @@
                     <li><a href="#">로그인/회원가입</a></li>
                     <li><a href="#">마이페이지</a></li>
                     <li><a href="#">장바구니</a></li>
-                    <li><img src="./img/icon/search.svg" alt="검색 버튼"></li>
+                    <!-- 검색 영역 -->
+                    <li>
+                        <div class="search-btn">
+                            <span class="search-in"><img src="./img/icon/search.svg" alt="검색"></span>
+                            <span class="search-close"><img src="./img/icon/search-close.svg" alt="검색 닫기"></span>
+                        </div>
+                        <div class="search-container">
+                            <form action="#" class="search-box">
+                                <span><img src="./img/icon/search-box-in.svg" alt="검색"></span>
+                                <label for="search-keyword">검색어 입력</label>
+                                <input type="text" placeholder="검색어를 입력하세요." id="search-keyword" class="bd2">
+                            </form>
+                            <div class="search-content">
+                                <div class="search-top bd2">
+                                    <p>인기검색어</p>
+                                    <ul class="search-top-list">
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-top-list1.jpg" alt="치크팝">
+                                                치크팝
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-top-list2.jpg" alt="클라리파잉 로션">
+                                                클라리파잉 로션
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-top-list3.jpg" alt="드라마티컬리 디퍼런트모이스춰라이징 로션">
+                                                드라마티컬리 디퍼런트<br>모이스춰라이징 로션
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-top-list4.jpg" alt="테이크 더 데이 오프 클렌징 밤">
+                                                테이크 더 데이 오프<br> 클렌징 밤
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-top-list5.jpg" alt="이븐베러 리프레쉬">
+                                                이븐베러 리프레쉬
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="search-last bd2">
+                                    <div>
+                                        <p>최근 본 제품</p>
+                                        <p>삭제하기</p>
+                                    </div>
+                                    <ul class="search-last-list">
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-last-list1.jpg" alt="이븐 베러 리프레쉬">
+                                                이븐 베러 리프레쉬
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-last-list2.jpg" alt="7데이 스크럽 크림">
+                                                7데이 스크럽 크림
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <nav class="gnb">
