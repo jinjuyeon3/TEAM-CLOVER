@@ -99,11 +99,12 @@ header .sub-menu{
 }
 .search-container{
     background-color: #fff;
-    width: 100%;
+    width: 100vw;
     max-height: 0px;
     overflow: hidden; 
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     top: 100px;
     transition: all .6s ease 0s;
 }
