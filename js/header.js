@@ -4,6 +4,14 @@ document.addEventListener("DOMContentLoaded",()=>{
     const searchContainer = document.querySelector(".search-container")
 
     searchIn.addEventListener("click",()=>{
-        searchContainer.classList.toggle("on")
+        searchContainer.classList.add("on")
+        searchIn.style.display = "none"
+        searchClose.style.display = "block"
+    })
+
+    searchClose.addEventListener("click",()=>{
+        searchContainer.classList.remove("on")
+        searchIn.style.display = "block"
+        searchClose.style.display = "none"
     })
 })

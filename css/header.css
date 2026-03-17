@@ -29,15 +29,15 @@ header .sub-menu{
 }
 .lnb>li>a{
     height: 100px;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     display: flex;
     align-items: center;
 }
-.lnb .search-icon{
+.lnb>li:hover>a{
+    color: var(--main-color);
+}
+.lnb .search-btn{
     cursor: pointer;
-    /* box-sizing: border-box; */
-    display: flex;
-    width: 21.6px;
 }
 .gnb-menu{
     display: flex;
@@ -51,6 +51,11 @@ header .sub-menu{
     height: 83px;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
+}
+.menu-item>a:hover{
+    border-bottom: 1px solid var(--main-color);
+    color: var(--main-color);
 }
 .mega-menu{
     background-color: #fff;
@@ -89,23 +94,30 @@ header .sub-menu{
     margin-bottom: var(--space-normal);
     font-size: var(--fs-bd2);
 }
+.menu-column ul li:hover a{
+    border-bottom: 1px solid var(--main-color);
+}
 .search-container{
     background-color: #fff;
     width: 100%;
-    height: 1009px;
+    max-height: 0px;
+    overflow: hidden; 
     position: absolute;
     left: 0;
     top: 100px;
-    opacity: 0;
-    pointer-events: none;
-    transition: all .4s ease 0s;
+    transition: all .6s ease 0s;
 }
 .search-container.on{
-    opacity: 1;
-    pointer-events: auto;
+    max-height: calc(100vh - 100px);
 }
 .search-btn{
     cursor: pointer;
+}
+.search-btn svg{
+    height: 1.08rem;
+}
+.search-btn svg:hover path{
+    fill: var(--main-color);
 }
 .search-close{
     display: none;
@@ -113,7 +125,6 @@ header .sub-menu{
 .search-close.on{
     display: block;
 }
-
 .search-box{
     width: 648px;
     border-bottom: 1px solid #000;
@@ -154,11 +165,13 @@ header .sub-menu{
     align-items: center;
     text-align: center;
 }
-.search-last>div{
+.search-title{
     display: flex;
     justify-content: space-between;
 }
-
+.search-title p:last-of-type{
+    cursor: pointer;
+}
 .search-last-list{
     display: flex;
     gap: var(--space-large);
