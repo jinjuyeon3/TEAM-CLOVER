@@ -349,6 +349,124 @@
                 </ul>
             </div>
         </div>
+
+        <!-- 비디오 영역 -->
+        <div class="sub-banner1">
+            <div class="commom-frame">
+                 <video src=""></video>
+            </div>
+        </div>
+
+        <!-- 베스트 메뉴 영역 -->
+        <div class="best-item">
+            <div class="common-frame">
+                <h1>best</h1>
+                <div class="swiper best-item-swiper">
+                    <ul class="best-item-list swiper-wrapper">
+                       <li class="swiper-slide">
+                            <figure>
+                                <img src="./img/product/드라마티컬리 디퍼런트 모이스춰라이징 로션+-누끼.png" alt="드라마티컬리 디퍼런트 모이스춰라이징 로션+">
+                            </figure>
+                               <div class="item-info">
+                               <p class="fwb">드라마티컬리 디퍼런트 모이스춰라이징 로션+</p>
+                               <p>하루 종일 수분을 채워 부드럽고 빛나는 피부로 가꿔주는 산뜻한 모이스춰라이저</p>
+                               <div class="item-info-price">
+                                    <p class="fwb">58,000원</p>
+                                    <div class="item-pinfo-icon">
+                                        <img src="./img/icon/heart.jpg" alt="관심상품 추가 버튼">
+                                        <img src="./img/icon/cart.jpg" alt="장바구니 추가 버튼">
+                                    </div>
+                                </div>
+                            </div>
+                       </li>
+                       <li class="swiper-slide">
+                        <figure>
+                            <img src="./img/product/클래리파잉 로션 트와이스 어 데이 엑스폴리에이터 2.png" alt="클래리파잉 로션 트와이스 어 데이 엑스폴리에이터 2">
+                        </figure>
+                        <div class="item-info">
+                            <p class="fwb">클래리파잉 로션 트와이스 어 데이 엑스폴리에이터2</p>
+                            <p>묵은 각질과 노폐물을 정돈해 맑고 매끄러운 피부로 가꿔주는 각질 케어 토너</p>
+                            <div class="item-info-price">
+                                <p class="fwb">62,000원</p>
+                                <div class="item-pinfo-icon">
+                                    <img src="./img/icon/heart.jpg" alt="관심상품 추가 버튼">
+                                    <img src="./img/icon/cart.jpg" alt="장바구니 추가 버튼">
+                                </div>
+                            </div>
+                        </div>
+                       </li>
+                       <li class="swiper-slide">
+                        <figure>
+                            <img src="./img/product/이븐 베터 크리니컬 다크 스팟 클리어링 세럼.png" alt="이븐 베터 크리니컬 다크 스팟 클리어링 세럼">
+                        </figure>
+                        <div class="item-info">
+                            <p class="fwb">이븐 베터 크리니컬 다크 스팟 클리어링 세럼</p>
+                            <p>잡티와 피부 톤을 케어해 맑고 균일한 피부로 가꿔주는 브라이트닝 세럼</p>
+                            <div class="item-info-price">
+                                <p class="fwb">105,000원</p>
+                                <div class="item-pinfo-icon">
+                                    <img src="./img/icon/heart.jpg" alt="관심상품 추가 버튼">
+                                    <img src="./img/icon/cart.jpg" alt="장바구니 추가 버튼">
+                                </div>
+                            </div>
+                        </div>
+                       </li>
+                       <li class="swiper-slide">
+                        <figure>
+                            <img src="./img/product/데이 스크럽 크림 린스-오프 포뮬러.png" alt="데이 스크럽 크림 린스-오프 포뮬러">
+                        </figure>
+                        <div class="item-info">
+                            <p class="fwb">데이 스크럽 크림 린스-오프 포뮬러</p>
+                            <p>부드러운 스크럽으로 묵은 각질을 제거해 매끈하고 환한 피부로 가꿔주는 페이셜 스크럽</p>
+                            <div class="item-info-price">
+                                <p class="fwb">58,000원</p>
+                                <div class="item-pinfo-icon">
+                                    <img src="./img/icon/heart.jpg" alt="관심상품 추가 버튼">
+                                    <img src="./img/icon/cart.jpg" alt="장바구니 추가 버튼">
+                                </div>
+                            </div>
+                        </div>
+                       </li>
+                       <li class="swiper-slide">
+                        <figure>
+                            <img src="./img/product/치크 팝-누끼.png" alt="치크 팝">
+                        </figure>
+                        <div class="item-info">
+                            <p class="fwb">치크 팝</p>
+                            <p>맑고 생기 있는 컬러로 자연스러운 혈색을 더해주는 파우더 블러셔</p>
+                            <div class="item-info-price">
+                                <p class="fwb">36,000원</p>
+                                <div class="item-pinfo-icon">
+                                    <img src="./img/icon/heart.jpg" alt="관심상품 추가 버튼">
+                                    <img src="./img/icon/cart.jpg" alt="장바구니 추가 버튼">
+                                </div>
+                            </div>
+                        </div>
+                       </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <script>
+                    const bestItemSwiper = new Swiper('.best-item-swiper',{
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                            renderBullet: function (index, className) {
+                            return `
+                            <span class="${className}">
+                            <em class="num">${index + 1}</em>
+                            <span class="line"></span>
+                            </span>
+                            `;
+                           },
+                        },
+                    })
+                </script>
+            </div>
+            
+        </div>
     </main>
     
     <!-- 푸터 영역 -->

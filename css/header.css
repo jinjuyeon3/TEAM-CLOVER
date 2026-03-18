@@ -58,7 +58,7 @@ header .sub-menu{
     color: var(--main-color);
 }
 /* 언더라인 기본 상태 */
-.menu-item>a::after {
+.menu-item>a::after{
     content: "";
     position: absolute;
     left: 0;
@@ -69,7 +69,7 @@ header .sub-menu{
     transition: all 0.4s ease;
 }
 /* hover 시 0 → 100% */
-.menu-item>a:hover::after {
+.menu-item>a:hover::after{
     width: 100%;
 }
 .mega-menu{
@@ -143,6 +143,7 @@ header .sub-menu{
     transform: translateX(-50%);
     top: 100px;
     transition: all .6s ease 0s;
+    z-index: 3000;
 }
 .search-container.on{
     max-height: 1000px;
