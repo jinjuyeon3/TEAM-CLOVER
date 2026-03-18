@@ -52,29 +52,65 @@ header .sub-menu{
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    position: relative;
 }
 .menu-item>a:hover{
-    border-bottom: 1px solid var(--main-color);
     color: var(--main-color);
+}
+/* 언더라인 기본 상태 */
+.menu-item>a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: all 0.4s ease;
+}
+/* hover 시 0 → 100% */
+.menu-item>a:hover::after {
+    width: 100%;
 }
 .mega-menu{
     background-color: #fff;
     display: flex;
     justify-content: center;
-    gap: 8rem;
+    flex-direction: column;
+    gap: var(--space-x-large);
     position: absolute;
     left: 0;
     top: 100%;
     width: 100%;
-    height: 648px;
-    padding-top: var(--space-x-large);
-    /* display: none; */
+    max-height: 700px;
     opacity: 0;
     pointer-events: none;
     transition: all .6s ease 0s;
 }
+.mega-menu-content{
+    padding: var(--space-x-large);
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+.btn-menu-all{
+    text-align: center;
+    padding-bottom: var(--space-x-large);
+}
+.btn-menu-all a{
+    padding: var(--space-x-small) var(--space-small);
+    border-bottom: 1px solid #000;
+    display: inline-flex;
+    gap: var(--space-small);
+}
+.btn-menu-all a:hover{
+    border-bottom: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+.btn-menu-all a:hover svg path{
+    stroke: var(--main-color);
+}
 .menu-item:hover .mega-menu{
-    /* display: flex; */
     opacity: 1;
     pointer-events: auto;
 }
@@ -109,7 +145,7 @@ header .sub-menu{
     transition: all .6s ease 0s;
 }
 .search-container.on{
-    max-height: calc(100vh - 100px);
+    max-height: 1000px;
 }
 .search-btn{
     cursor: pointer;
@@ -132,7 +168,7 @@ header .sub-menu{
     display: flex;
     gap: .6rem;
     justify-self: center;
-    margin-top: var(--space-x-large);
+    margin-top: var(--space-3x-large);
 }
 .search-box label{
     display: none;
@@ -143,7 +179,7 @@ header .sub-menu{
 }
 .search-content{
     width: 1020px;
-    margin-top: var(--space-x-large);
+    margin: var(--space-x-large) 0;
     display: flex;
     flex-direction: column;
     justify-self: center;
