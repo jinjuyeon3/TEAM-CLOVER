@@ -171,9 +171,6 @@ header .sub-menu{
     justify-self: center;
     margin-top: var(--space-3x-large);
 }
-.search-box label{
-    display: none;
-}
 .search-box input::placeholder{
     font-weight: var(--fw-med);
     color: rgba(0, 0, 0, 0.5);

@@ -85,8 +85,7 @@ main .hero-banner.swiper .swiper-pagination{
     min-height: 600px;
 }
 .best-item{
-    margin-top: var(--space-3x-large);
-    margin-bottom: var(--space-large);
+    margin: var(--space-3x-large) 0;
 }
 .best-item .common-frame>h1{
     text-transform: uppercase;
@@ -119,7 +118,7 @@ main .hero-banner.swiper .swiper-pagination{
 }
 .best-item figure{
     background-color: var(--cb-color-0);
-    width: 400px;
+    width: 400x;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -149,40 +148,17 @@ main .hero-banner.swiper .swiper-pagination{
 .item-pinfo-icon img{
     height: 1.2rem;
 }
-
-
-
-
-
-
-
-
-.swiper-pagination-bullet {
-  background: none;
-  opacity: 1;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.sub-banner2{
+    height: 970px;
+}
+.sub-banner2 img{
+    width: 100%;
+    height: 100%;
 }
 
-.swiper-pagination-bullet .num {
-  font-size: 14px;
-  color: #999;
-}
 
-.swiper-pagination-bullet .line {
-  width: 0;
-  height: 1px;
-  background: #000;
-  transition: width 0.3s;
-}
 
-/* 활성화 상태 */
-.swiper-pagination-bullet-active .num {
-  color: #000;
-  font-weight: 600;
-}
 
-.swiper-pagination-bullet-active .line {
-  width: 20px; /* ← 여기서 선 길이 조절 */
-}
+
+
+
