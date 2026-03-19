@@ -68,7 +68,7 @@ input[id="u-agree"]{
 }
 input[id="u-agree"]:checked:after{
     content: '';
-    background-color: var(--cb-color-400);
+    background: linear-gradient(180deg,var(--cb-color-400),var(--cb-color-800));
     border-radius: 50%;
     width: 80%;
     height: 80%;
