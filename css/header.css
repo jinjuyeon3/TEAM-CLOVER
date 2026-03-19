@@ -21,6 +21,9 @@ header .sub-menu{
     top: 0;
     transform: translateX(-50%);
 }
+.logo img{
+    height: 100px;
+}
 .lnb{
     display: flex;
     gap: var(--space-large);
@@ -171,7 +174,7 @@ header .sub-menu{
     justify-self: center;
     margin-top: var(--space-3x-large);
 }
-.search-box input::placeholder{
+input[id="search-keyword"]::placeholder{
     font-weight: var(--fw-med);
     color: rgba(0, 0, 0, 0.5);
 }

@@ -50,10 +50,18 @@ p{
 .pc{
     display: block;
 }
-label{
-    display: none;
+label.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
 }
 button{
     all: unset; /* 모든 기본 스타일 초기화 */
     cursor: pointer; /* 마우스 올렸을 때 손가락 모양 유지 */
+}
+.sns img{
+    height: 1.2rem;
 }
