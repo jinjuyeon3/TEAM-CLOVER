@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/system.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/index.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
@@ -32,18 +33,18 @@
                     <li><a href="#">장바구니</a></li>
                     <!-- 검색 영역 -->
                     <li>
-                        <div class="search-btn">
+                        <button class="search-btn">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-in">
                             <path d="M17.6399 18.9L11.97 13.23C11.52 13.59 11.0025 13.875 10.4175 14.085C9.83245 14.295 9.20995 14.4 8.54995 14.4C6.91495 14.4 5.53135 13.8336 4.39915 12.7008C3.26695 11.568 2.70055 10.1844 2.69995 8.55001C2.69935 6.91561 3.26575 5.53201 4.39915 4.39921C5.53255 3.26641 6.91615 2.70001 8.54995 2.70001C10.1838 2.70001 11.5677 3.26641 12.7017 4.39921C13.8357 5.53201 14.4018 6.91561 14.4 8.55001C14.4 9.21001 14.295 9.83251 14.085 10.4175C13.875 11.0025 13.59 11.52 13.23 11.97L18.9 17.64L17.6399 18.9ZM8.54995 12.6C9.67495 12.6 10.6314 12.2064 11.4192 11.4192C12.207 10.632 12.6006 9.67561 12.6 8.55001C12.5994 7.42441 12.2058 6.46831 11.4192 5.68171C10.6326 4.89511 9.67615 4.50121 8.54995 4.50001C7.42375 4.49881 6.46765 4.89271 5.68165 5.68171C4.89565 6.47071 4.50175 7.42681 4.49995 8.55001C4.49815 9.67321 4.89205 10.6296 5.68165 11.4192C6.47125 12.2088 7.42735 12.6024 8.54995 12.6Z" fill="black"/>
                             </svg>
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-close">
                             <path d="M6.17963 4.63716C5.75776 4.21529 5.07263 4.21529 4.65076 4.63716C4.22888 5.05904 4.22888 5.74416 4.65076 6.16604L9.28801 10.7999L4.65413 15.4372C4.23226 15.859 4.23226 16.5442 4.65413 16.966C5.07601 17.3879 5.76113 17.3879 6.18301 16.966L10.8169 12.3288L15.4541 16.9627C15.876 17.3845 16.5611 17.3845 16.983 16.9627C17.4049 16.5408 17.4049 15.8557 16.983 15.4338L12.3458 10.7999L16.9796 6.16266C17.4015 5.74079 17.4015 5.05566 16.9796 4.63379C16.5578 4.21191 15.8726 4.21191 15.4508 4.63379L10.8169 9.27104L6.17963 4.63716Z" fill="black"/>
                             </svg>
-                        </div>
+                        </button>
                         <div class="search-container">
                             <form action="#" class="search-box">
-                                <span><img src="./img/icon/search-box-in.svg" alt="검색"></span>
-                                <label for="search-keyword">검색어 입력</label>
+                                <button><img src="./img/icon/search-box-in.svg" alt="검색"></button>
+                                <label for="search-keyword" class="visually-hidden">검색어 입력</label>
                                 <input type="text" placeholder="검색어를 입력하세요." id="search-keyword" class="bd2">
                             </form>
                             <div class="search-content">
@@ -349,9 +350,204 @@
                 </ul>
             </div>
         </div>
+
+        <!-- 비디오 영역 -->
+        <div class="sub-banner1">
+            <div class="commom-frame">
+                 <video src=""></video>
+            </div>
+        </div>
+
+        <!-- 베스트 메뉴 영역 -->
+        <div class="best-item">
+            <div class="common-frame">
+                <h1>best</h1>
+                <div class="swiper best-item-swiper">
+                    <ul class="best-item-list swiper-wrapper">
+                       <li class="swiper-slide">
+                            <figure>
+                                <img src="./img/product/드라마티컬리 디퍼런트 모이스춰라이징 로션+-누끼.png" alt="드라마티컬리 디퍼런트 모이스춰라이징 로션+">
+                            </figure>
+                               <div class="item-info">
+                               <p class="fwb">드라마티컬리 디퍼런트 모이스춰라이징 로션+</p>
+                               <p>하루 종일 수분을 채워 부드럽고 빛나는 피부로 가꿔주는 산뜻한 모이스춰라이저</p>
+                               <div class="item-info-price">
+                                    <p class="fwb">58,000원</p>
+                                    <div class="item-pinfo-icon">
+                                        <img src="./img/icon/heart.svg" alt="관심상품 추가 버튼">
+                                        <img src="./img/icon/cart.svg" alt="장바구니 추가 버튼">
+                                    </div>
+                                </div>
+                            </div>
+                       </li>
+                       <li class="swiper-slide">
+                        <figure>
+                            <img src="./img/product/클래리파잉 로션 트와이스 어 데이 엑스폴리에이터 2.png" alt="클래리파잉 로션 트와이스 어 데이 엑스폴리에이터 2">
+                        </figure>
+                        <div class="item-info">
+                            <p class="fwb">클래리파잉 로션 트와이스 어 데이 엑스폴리에이터2</p>
+                            <p>묵은 각질과 노폐물을 정돈해 맑고 매끄러운 피부로 가꿔주는 각질 케어 토너</p>
+                            <div class="item-info-price">
+                                <p class="fwb">62,000원</p>
+                                <div class="item-pinfo-icon">
+                                    <img src="./img/icon/heart.svg" alt="관심상품 추가 버튼">
+                                    <img src="./img/icon/cart.svg" alt="장바구니 추가 버튼">
+                                </div>
+                            </div>
+                        </div>
+                       </li>
+                       <li class="swiper-slide">
+                        <figure>
+                            <img src="./img/product/이븐 베터 크리니컬 다크 스팟 클리어링 세럼.png" alt="이븐 베터 크리니컬 다크 스팟 클리어링 세럼">
+                        </figure>
+                        <div class="item-info">
+                            <p class="fwb">이븐 베터 크리니컬 다크 스팟 클리어링 세럼</p>
+                            <p>잡티와 피부 톤을 케어해 맑고 균일한 피부로 가꿔주는 브라이트닝 세럼</p>
+                            <div class="item-info-price">
+                                <p class="fwb">105,000원</p>
+                                <div class="item-pinfo-icon">
+                                    <img src="./img/icon/heart.svg" alt="관심상품 추가 버튼">
+                                    <img src="./img/icon/cart.svg" alt="장바구니 추가 버튼">
+                                </div>
+                            </div>
+                        </div>
+                       </li>
+                       <li class="swiper-slide">
+                        <figure>
+                            <img src="./img/product/데이 스크럽 크림 린스-오프 포뮬러.png" alt="데이 스크럽 크림 린스-오프 포뮬러">
+                        </figure>
+                        <div class="item-info">
+                            <p class="fwb">데이 스크럽 크림 린스-오프 포뮬러</p>
+                            <p>부드러운 스크럽으로 묵은 각질을 제거해 매끈하고 환한 피부로 가꿔주는 페이셜 스크럽</p>
+                            <div class="item-info-price">
+                                <p class="fwb">58,000원</p>
+                                <div class="item-pinfo-icon">
+                                    <img src="./img/icon/heart.svg" alt="관심상품 추가 버튼">
+                                    <img src="./img/icon/cart.svg" alt="장바구니 추가 버튼">
+                                </div>
+                            </div>
+                        </div>
+                       </li>
+                       <li class="swiper-slide">
+                        <figure>
+                            <img src="./img/product/치크 팝-누끼.png" alt="치크 팝">
+                        </figure>
+                        <div class="item-info">
+                            <p class="fwb">치크 팝</p>
+                            <p>맑고 생기 있는 컬러로 자연스러운 혈색을 더해주는 파우더 블러셔</p>
+                            <div class="item-info-price">
+                                <p class="fwb">36,000원</p>
+                                <div class="item-pinfo-icon">
+                                    <img src="./img/icon/heart.svg" alt="관심상품 추가 버튼">
+                                    <img src="./img/icon/cart.svg" alt="장바구니 추가 버튼">
+                                </div>
+                            </div>
+                        </div>
+                       </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <script>
+                    const bestItemSwiper = new Swiper('.best-item-swiper',{
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                            renderBullet: function (index, className) {
+                            return `
+                            <span class="${className}">
+                            <em class="num">${index + 1}</em>
+                            <span class="line"></span>
+                            </span>
+                            `;
+                           },
+                        },
+                    })
+                </script>
+            </div>
+            
+        </div>
+
+        <!-- 서브 배너 영역 -->
+        <div class="sub-banner2">
+            <a href="#">
+                <img src="./img/banner/mpsub-banner-pc.jpg" alt="clinique skin clinic">
+            </a>
+        </div>
     </main>
     
     <!-- 푸터 영역 -->
-    <footer></footer>
+    <footer>
+        <div class="common-frame">
+            <div class="f-content1">
+                <div class="f-nav">
+                    <a href="#" class="f-logo">
+                        <img src="./img/icon/F-logo.svg" alt="크리니크 하단 로고">
+                    </a>
+                    <ul class="fnb bd2 fwb">
+                        <li><a href="#">브랜드소개</a></li>
+                        <li><a href="#">채용정보</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <form action="#" class="news-letter">
+                    <label for="u-email" class="visually-hidden">이메일 입력</label>
+                    <input type="text" placeholder="Email address" id="u-email" class="det">
+                    <button>send</button>
+                    <div class="u-agree-box">
+                        <label for="u-agree" class="visually-hidden">동의여부체크</label>
+                        <input type="checkbox" id="u-agree">
+                        <p class="det">뉴스레터 및 마케팅 정보를 이메일로 받아보는 것에 동의합니다.</p>
+                    </div>
+                </form>
+            </div>
+            <div class="f-content2">
+                <dl class="co-info bd2">
+                    <dt>이엘씨에이한국(유) 대표</dt>
+                    <dd>Jean-Alexandre Havard</dd>
+                    <dt>이엘씨에이한국(유) 주소</dt>
+                    <dd>서울시 강남구 강남대로 382 메리츠타워 06232</dd>
+                    <dt>사업자등록번호</dt>
+                    <dd>211-81-71889</dd>
+                    <dt>통신판매업신고번호</dt>
+                    <dd>강남-15737호</dd>
+                    <dt>호스팅서비스 사업자</dt>
+                    <dd>(주)엘지유플러스</dd>
+                </dl>
+                <div class="sub-co-info">
+                    <h1>1644-3847</h1>
+                    <p class="det fwm">Allergy tested.<br>
+                    100% fragrance free.</p>
+                    <ul class="sns">
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon/F-instagram.svg" alt="인스타그램">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon/F-facebook.svg" alt="페이스북">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon/F-youtube.svg" alt="유튜브">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon/F-kakaotalk.svg" alt="카카오톡">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy det">
+                © Clinique Laboratories, 취업용도의 포트폴리오 웹사이트입니다.
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
