@@ -95,12 +95,15 @@ main .hero-banner.swiper .swiper-pagination{
 .best-item-list{
     font-size: var(--fs-bd1);
     display: flex;
+    /* justify-content: center; */
     gap: var(--space-normal);
-    position: relative;
 }
 .best-item-list>li{
     flex: 1;
     padding: var(--space-normal);
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 .best-item-list>li::after{
     content: "";
@@ -109,7 +112,7 @@ main .hero-banner.swiper .swiper-pagination{
     top: 0;
     width: 0;
     height: 0;
-    border: 0px solid var(--main-color);
+    box-sizing: border-box;
 }
 .best-item-list>li:hover::after{
     width: 440px;
@@ -198,7 +201,26 @@ main .hero-banner.swiper .swiper-pagination{
     height: 100%;
 }
 
-
+.wrap{
+    position: relative;
+}
+.aside-menu{
+    position: fixed;
+    text-align: center;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 99999;
+}
+.team-clover{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-small);
+}
+.team-clover img{
+    height: 44px;
+    border-radius: 50%;
+}
 
 
 

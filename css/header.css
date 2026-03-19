@@ -4,9 +4,7 @@ header{
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 1000;
-}
-header .common-frame{
+    z-index: 100000;
 }
 header .sub-menu{
     height: 100px;

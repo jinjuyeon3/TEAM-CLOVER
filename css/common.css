@@ -65,21 +65,5 @@ button{
 .sns img{
     height: 1.2rem;
 }
-.aside-menu{
-    position: fixed;
-    text-align: center;
-    right: 20px;
-    bottom: 20px;
-    cursor: pointer;
-    z-index: 99999;
-}
-.team-clover{
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-small);
-}
-.team-clover img{
-    height: 44px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-}
+
+
