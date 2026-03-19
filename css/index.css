@@ -148,6 +148,48 @@ main .hero-banner.swiper .swiper-pagination{
 .item-pinfo-icon img{
     height: 1.2rem;
 }
+
+/* 페이지네이션 커스텀 */
+.best-pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+}
+.best-pagination .swiper-pagination-bullet{
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 0 8px !important;
+  background: transparent;
+  opacity: 1;
+  cursor: pointer;
+}
+.best-pagination .swiper-pagination-bullet .num{
+  line-height: 1;
+  color: var(--cb-color-100);
+}
+.best-pagination .swiper-pagination-bullet .line{
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background: var(--cb-color-800);
+  margin-left: 10px;
+  transition: width 0.3s;
+}
+.best-pagination .swiper-pagination-bullet-active .num{
+  color: var(--cb-color-800);
+}
+.best-pagination .swiper-pagination-bullet-active .line{
+  width: 100px;
+}
+/* 마지막 숫자 뒤에는 선 안 보이게 */
+.best-pagination .swiper-pagination-bullet:last-child .line{
+  display: none;
+}
+
+
 .sub-banner2{
     height: 970px;
 }
@@ -155,6 +197,9 @@ main .hero-banner.swiper .swiper-pagination{
     width: 100%;
     height: 100%;
 }
+
+
+
 
 
 
