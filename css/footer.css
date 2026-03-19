@@ -1,0 +1,105 @@
+footer{
+    background-color: var(--cb-color-900);
+    color: #fff;
+}
+footer .common-frame{
+    padding: var(--space-x-large) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-large);
+}
+.f-content1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.f-nav{
+    display: flex;
+    gap: var(--space-large);
+    align-items: center;
+}
+.f-logo img{
+    height: 100px;
+}
+.fnb{
+    display: flex;
+    gap: var(--space-large);
+    align-items: center;
+}
+.fnb li:last-of-type{
+    color: var(--cb-color-200);
+}
+.news-letter{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-small);
+}
+.news-letter #u-email{
+    background-color: #fff;
+    color: #606060;
+    width: 440px;
+    height: 40px;
+    border-radius: .5rem;
+    padding-left: var(--space-small);
+}
+.news-letter button{
+    background-color: var(--cb-color-400);
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    border-radius: .5rem;
+    position: absolute;
+    left: calc(440px - 69px);
+    top: 0;
+}
+.u-agree-box{
+    display: flex;
+    align-items: center;
+    gap: var(--space-small);
+}
+input[id="u-agree"]{
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+input[id="u-agree"]:checked:after{
+    content: '';
+    background-color: var(--cb-color-400);
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.f-content2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.co-info{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: var(--space-small) var(--space-x-large);
+}
+.co-info dd{
+    font-weight: var(--fw-bold);
+}
+.sub-co-info{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-small);
+}
+.sub-co-info .sns{
+    display: flex;
+    gap: var(--space-small);
+}
+.copy{
+    text-align: center;
+}
