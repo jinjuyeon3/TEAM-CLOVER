@@ -9,13 +9,18 @@
     <link rel="stylesheet" href="./css/system.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./js/header.js"></script>
 </head>
 <body>
     <!-- pc용 헤더 영역 -->
     <header>
         <div class="common-frame">
-            <div>
+            <div class="sub-menu">
                 <div class="logo">
                     <a href="#">
                         <img src="./img/icon/H-logo.svg" alt="크리니크 로고">
@@ -25,7 +30,81 @@
                     <li><a href="#">로그인/회원가입</a></li>
                     <li><a href="#">마이페이지</a></li>
                     <li><a href="#">장바구니</a></li>
-                    <li><img src="./img/icon/search.svg" alt="검색 버튼"></li>
+                    <!-- 검색 영역 -->
+                    <li>
+                        <div class="search-btn">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-in">
+                            <path d="M17.6399 18.9L11.97 13.23C11.52 13.59 11.0025 13.875 10.4175 14.085C9.83245 14.295 9.20995 14.4 8.54995 14.4C6.91495 14.4 5.53135 13.8336 4.39915 12.7008C3.26695 11.568 2.70055 10.1844 2.69995 8.55001C2.69935 6.91561 3.26575 5.53201 4.39915 4.39921C5.53255 3.26641 6.91615 2.70001 8.54995 2.70001C10.1838 2.70001 11.5677 3.26641 12.7017 4.39921C13.8357 5.53201 14.4018 6.91561 14.4 8.55001C14.4 9.21001 14.295 9.83251 14.085 10.4175C13.875 11.0025 13.59 11.52 13.23 11.97L18.9 17.64L17.6399 18.9ZM8.54995 12.6C9.67495 12.6 10.6314 12.2064 11.4192 11.4192C12.207 10.632 12.6006 9.67561 12.6 8.55001C12.5994 7.42441 12.2058 6.46831 11.4192 5.68171C10.6326 4.89511 9.67615 4.50121 8.54995 4.50001C7.42375 4.49881 6.46765 4.89271 5.68165 5.68171C4.89565 6.47071 4.50175 7.42681 4.49995 8.55001C4.49815 9.67321 4.89205 10.6296 5.68165 11.4192C6.47125 12.2088 7.42735 12.6024 8.54995 12.6Z" fill="black"/>
+                            </svg>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-close">
+                            <path d="M6.17963 4.63716C5.75776 4.21529 5.07263 4.21529 4.65076 4.63716C4.22888 5.05904 4.22888 5.74416 4.65076 6.16604L9.28801 10.7999L4.65413 15.4372C4.23226 15.859 4.23226 16.5442 4.65413 16.966C5.07601 17.3879 5.76113 17.3879 6.18301 16.966L10.8169 12.3288L15.4541 16.9627C15.876 17.3845 16.5611 17.3845 16.983 16.9627C17.4049 16.5408 17.4049 15.8557 16.983 15.4338L12.3458 10.7999L16.9796 6.16266C17.4015 5.74079 17.4015 5.05566 16.9796 4.63379C16.5578 4.21191 15.8726 4.21191 15.4508 4.63379L10.8169 9.27104L6.17963 4.63716Z" fill="black"/>
+                            </svg>
+                        </div>
+                        <div class="search-container">
+                            <form action="#" class="search-box">
+                                <span><img src="./img/icon/search-box-in.svg" alt="검색"></span>
+                                <label for="search-keyword">검색어 입력</label>
+                                <input type="text" placeholder="검색어를 입력하세요." id="search-keyword" class="bd2">
+                            </form>
+                            <div class="search-content">
+                                <div class="search-top bd2">
+                                    <p>인기검색어</p>
+                                    <ul class="search-top-list">
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-top-list1.jpg" alt="치크팝">
+                                                치크팝
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-top-list2.jpg" alt="클라리파잉 로션">
+                                                클라리파잉 로션
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-top-list3.jpg" alt="드라마티컬리 디퍼런트모이스춰라이징 로션">
+                                                드라마티컬리 디퍼런트<br>모이스춰라이징 로션
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-top-list4.jpg" alt="테이크 더 데이 오프 클렌징 밤">
+                                                테이크 더 데이 오프<br> 클렌징 밤
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-top-list5.jpg" alt="이븐베러 리프레쉬">
+                                                이븐베러 리프레쉬
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="search-last bd2">
+                                    <div class="search-title">
+                                        <p>최근 본 제품</p>
+                                        <p>삭제하기</p>
+                                    </div>
+                                    <ul class="search-last-list">
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-last-list1.jpg" alt="이븐 베러 리프레쉬">
+                                                이븐 베러 리프레쉬
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/product/search-last-list2.jpg" alt="7데이 스크럽 크림">
+                                                7데이 스크럽 크림
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <nav class="gnb">
@@ -33,7 +112,8 @@
                     <li class="menu-item">
                         <a href="#">스킨케어</a>
                         <div class="mega-menu">
-                            <div class="menu-left">
+                            <div class="mega-menu-content">
+                                <div class="menu-left">
                                 <div class="menu-column">
                                     <p class="bd2 fwb"><a href="#">제품라인별</a></p>
                                     <ul>
@@ -70,16 +150,22 @@
                                     <img src="./img/banner/menu-banner1.jpg" alt="피부 속까지 채우는 핑크빛 100시간 보습">
                                 </a>
                             </div>
-                            <!-- <div class="btn-menu-all">
-                                <a href="#">전체 제품 보기</a>
-                                <img src="./img/icon/menu-all-arrow.svg" alt="전체 제품 보기">
-                            </div> -->
+                            </div>
+                            <div class="btn-menu-all bd2">
+                                <a href="#">
+                                    전체 제품 보기
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 12L20 12M20 12L14 18M20 12L14 6" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </li>
                     <li class="menu-item">
                         <a href="#">메이크업</a>
                         <div class="mega-menu">
-                            <div class="menu-left">
+                            <div class="mega-menu-content">
+                                <div class="menu-left">
                                 <div class="menu-column">
                                     <p class="bd2 fwb"><a href="#">페이스</a></p>
                                     <ul>
@@ -118,10 +204,15 @@
                                     <img src="./img/banner/menu-banner2.jpg" alt="맑게 퍼지는 수채화 발색 cheek pop">
                                 </a>
                             </div>
-                            <!-- <div class="btn-menu-all">
-                                <a href="#">전체 제품 보기</a>
-                                <img src="./img/icon/menu-all-arrow.svg" alt="전체 제품 보기">
-                            </div> -->
+                            </div>
+                            <div class="btn-menu-all bd2">
+                                <a href="#">
+                                    전체 제품 보기
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 12L20 12M20 12L14 18M20 12L14 6" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </li>
                     <li class="menu-item"><a href="#">피부진단</a></li>
@@ -130,7 +221,8 @@
                     <li class="menu-item">
                         <a href="#">커뮤니티</a>
                         <div class="mega-menu">
-                            <div class="menu-left">
+                            <div class="mega-menu-content">
+                               <div class="menu-left">
                                 <div class="menu-column">
                                     <p class="bd2 fwb"><a href="#">고객센터</a></p>
                                     <ul>
@@ -138,15 +230,12 @@
                                         <li><a href="#">문의하기</a></li>
                                     </ul>
                                 </div>
-                            <div class="mega-banner">
-                            <a href="#">
-                                <img src="./img/banner/menu-banner3.jpg" alt="피부과학연구소 사진">
-                            </a>
-                            </div>
-                            <!-- <div class="btn-menu-all">
-                                <a href="#">전체 제품 보기</a>
-                                <img src="./img/icon/menu-all-arrow.svg" alt="전체 제품 보기">
-                            </div> -->
+                                    <div class="mega-banner">
+                                       <a href="#">
+                                           <img src="./img/banner/menu-banner3.jpg" alt="피부과학연구소 사진">
+                                       </a>
+                                  </div>
+                               </div>
                             </div>
                         </div>
                     </li>
@@ -156,7 +245,111 @@
     </header>
 
     <!-- 전체 콘텐츠 영역 -->
-    <main></main>
+    <main>
+        <!-- 히어로 배너 영역 -->
+        <!-- Slider main container -->
+        <div class="swiper hero-banner">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./img/banner/hero-banner1.1-pc.jpg" alt="피부 과학이 만든 클린 더마 솔루션" class="pc">
+                    <img src="./img/banner/hero-banner1-pc.jpg" alt="피부 과학이 만든 클린 더마 솔루션" class="tab">
+                    <img src="./img/banner/hero-banner1-pc.jpg" alt="피부 과학이 만든 클린 더마 솔루션" class="mo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner/hero-banner2.1-pc.jpg" alt="깨끗한 수분으로 완성하는 데일리 케어" class="pc">
+                    <img src="./img/banner/hero-banner2-tab.jpg" alt="깨끗한 수분으로 완성하는 데일리 케어" class="tab">
+                    <img src="./img/banner/hero-banner2-mo.jpg" alt="깨끗한 수분으로 완성하는 데일리 케어" class="mo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner/hero-banner3.1-pc.jpg" alt="피부에 피어나는 생기있는 컬러" class="pc">
+                    <img src="./img/banner/hero-banner3-tab.jpg" alt="피부에 피어나는 생기있는 컬러" class="tab">
+                    <img src="./img/banner/hero-banner3-mo.jpg" alt="피부에 피어나는 생기있는 컬러" class="mo">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                // direction: 'vertical',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+
+        <!-- 서브 카테고리 영역 -->
+        <div class="sub-category">
+            <div class="common-frame">
+                <ul class="sub-cate-list bd2">
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37.0615 57H35.4092L40.0674 44.2734H41.7373L46.3955 57H44.7256L43.46 53.4141H38.3447L37.0615 57ZM38.8193 52.0254H42.9678L40.9463 46.3301H40.8408L38.8193 52.0254ZM48.1182 57V44.2734H49.7002V55.5938H55.6064V57H48.1182ZM57.7158 57V44.2734H59.2979V55.5938H65.2041V57H57.7158Z" fill="black"/>
+                                </svg>
+                            </figure>
+                            <figcaption>전제품</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="./img/product/클래리파잉 로션 트와이스 어 데이 엑스폴리에이터 2.png" alt="토너"></figure>
+                            <figcaption>토너</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="./img/product/이븐 베터 크리니컬 다크 스팟 클리어링 세럼.png" alt="세럼"></figure>
+                            <figcaption>세럼</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="./img/product/드라마티컬리 디퍼런트 모이스춰라이징 로션+-누끼.png" alt="로션 & 크림"></figure>
+                            <figcaption>로션 & 크림</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="./img/product/데이 스크럽 크림 린스-오프 포뮬러.png" alt="스크럽 & 마스크"></figure>
+                            <figcaption>스크럽 & 마스크</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="./img/product/테이크 더 데이 오프 클렌징 밤.png" alt="클렌징"></figure>
+                            <figcaption>클렌징</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="./img/product/이븐베터 리프레쉬 하이드레이팅 앤 리페어링 메이크업.png" alt="베이스 메이크업"></figure>
+                            <figcaption>베이스 메이크업</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="./img/product/치크 팝-누끼.png" alt="색조 메이크업"></figure>
+                            <figcaption>색조 메이크업</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="./img/product/파운데이션 브러쉬.png" alt="메이크업 소품"></figure>
+                            <figcaption>메이크업 소품</figcaption>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
     
     <!-- 푸터 영역 -->
     <footer></footer>

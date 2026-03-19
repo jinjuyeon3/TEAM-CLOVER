@@ -41,3 +41,14 @@ p{
     width: 1440px;
     margin: 0 auto;
 }
+.mo{
+    display: none;
+}
+.tab{
+    display: none;
+}
+.pc{
+    display: block;
+}
+
+

@@ -1,0 +1,82 @@
+.hero-banner{
+    width:100%;
+    height: 100vh;
+}
+.hero-banner .swiper-slide img{
+    width: 100%;
+    height: 970px;
+    object-fit: cover;
+}
+main .hero-banner.swiper .swiper-pagination{
+    display: flex;
+    gap:.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    z-index: 10;
+    justify-content: center;
+}
+.hero-banner .swiper-pagination .swiper-pagination-bullet{
+    background: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+}
+.hero-banner .swiper-pagination-bullet{
+    opacity: 1;
+}
+.hero-banner .swiper-pagination>span.swiper-pagination-bullet-active{
+    background: var(--main-color);
+}
+.sub-category{
+    margin-top: var(--space-large);
+    margin-bottom: var(--space-3x-large);
+}
+.sub-cate-list{
+    font-weight: var(--fw-med);
+    color: #9C9C9C;
+    display: flex;
+    justify-content: center;
+    gap: var(--space-large);
+}
+.sub-cate-list li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-small);
+}
+.sub-cate-list li:hover a{
+    color: var(--main-color);
+}
+.sub-cate-list figure{
+    border: 1px solid var(--cb-color-0);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.sub-cate-list li:hover figure{
+    background-color: var(--cb-color-0);
+}
+.sub-cate-list figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all .5s ease 0s;
+}
+.sub-cate-list li:hover figure img{
+    transform: scale(1.1);
+}
+.sub-cate-list figure svg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all .5s ease 0s;
+}
+.sub-cate-list li:hover figure svg{
+    transform: scale(1.1);
+}
+.sub-cate-list li:hover figure svg path{
+    fill: var(--main-color);
+}
