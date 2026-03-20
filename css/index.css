@@ -4,7 +4,7 @@
 }
 .hero-banner .swiper-slide img{
     width: 100%;
-    height: 970px;
+    height: 100%;
     object-fit: cover;
 }
 main .hero-banner.swiper .swiper-pagination{
@@ -13,7 +13,7 @@ main .hero-banner.swiper .swiper-pagination{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    bottom: var(--space-large);
     z-index: 10;
     justify-content: center;
 }
@@ -81,7 +81,8 @@ main .hero-banner.swiper .swiper-pagination{
     fill: var(--main-color);
 }
 .sub-banner1{
-    background-color: #e9e7e7;
+    text-align: center;
+    /* background-color: var(--cb-color-0); */
     min-height: 600px;
 }
 .best-item{
@@ -95,15 +96,15 @@ main .hero-banner.swiper .swiper-pagination{
 .best-item-list{
     font-size: var(--fs-bd1);
     display: flex;
-    /* justify-content: center; */
-    gap: var(--space-normal);
+}
+.best-item-list>li>a{
+    position: relative;
+    z-index: 2;
 }
 .best-item-list>li{
-    flex: 1;
     padding: var(--space-normal);
     position: relative;
     box-sizing: border-box;
-    cursor: pointer;
 }
 .best-item-list>li::after{
     content: "";
@@ -127,6 +128,8 @@ main .hero-banner.swiper .swiper-pagination{
     justify-content: center;
     align-items: center;
     margin-bottom: var(--space-normal);
+    aspect-ratio: 1/1;
+    line-height: 0;
 }
 .best-item figure img{
     width: 100%;
@@ -191,10 +194,8 @@ main .hero-banner.swiper .swiper-pagination{
 .best-pagination .swiper-pagination-bullet:last-child .line{
   display: none;
 }
-
-
 .sub-banner2{
-    height: 970px;
+    height: 600px;
 }
 .sub-banner2 img{
     width: 100%;
@@ -226,6 +227,70 @@ main .hero-banner.swiper .swiper-pagination{
 
 
 
+/* 테스트 중 */
+.brand-pilo{
+    margin: var(--space-3x-large);
+}
+.brand-pilo .commom-frame{
+    text-align: center;
+}
+.brand-pilo .commom-frame>h4{
+    margin-bottom: var(--space-small);
+}
+.brand-pilo .commom-frame>h1{
+    margin-bottom: var(--space-large);
+}
+.brand-pilo .commom-frame>h1>span{
+    color: var(--main-color);
+}
+.brand-pilo .commom-frame>h1+p{
+    margin-bottom: var(--space-small);
+}
 
 
+
+/* 테스트 중 */
+.parallax{
+    height: 600px;
+    background: url("../img/model-bg/test2.png") no-repeat 50% 50% / cover;
+    /* background-color: var(--cb-color-0); */
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space-x-large);
+}
+.title{
+    text-align: center;
+    margin-top: var(--space-3x-large);
+    position: relative;
+}
+.title>h1{
+    margin-bottom: var(--space-small);;
+}
+.card{
+    margin: -300px var(--space-x-large) 0;
+    background: #fff;
+    text-align: center;
+    background-color: transparent;
+}
+.card>li{
+    border: 1px solid var(--cb-color-400);
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--space-normal);
+    background-color: #fff;
+}
+.card>li:first-of-type{
+    margin-bottom: var(--space-normal);
+}
+.card figure{
+    border: 1px solid var(--cb-color-600);
+    height: 80%;
+    width: 60%;
+}
+.desc{
+    margin-bottom: var(--space-3x-large);
+}
 
