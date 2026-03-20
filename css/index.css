@@ -4,7 +4,7 @@
 }
 .hero-banner .swiper-slide img{
     width: 100%;
-    height: 970px;
+    height: 100%;
     object-fit: cover;
 }
 main .hero-banner.swiper .swiper-pagination{
@@ -13,7 +13,7 @@ main .hero-banner.swiper .swiper-pagination{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    bottom: var(--space-large);
     z-index: 10;
     justify-content: center;
 }
@@ -80,9 +80,34 @@ main .hero-banner.swiper .swiper-pagination{
 .sub-cate-list li:hover figure svg path{
     fill: var(--main-color);
 }
-.sub-banner1{
-    background-color: #e9e7e7;
-    min-height: 600px;
+.new-item{
+    margin-bottom: var(--space-3x-large);
+}
+.new-item>h1{
+    text-align: center;
+    margin-bottom: var(--space-x-large);
+    text-transform: uppercase;
+}
+.new-item .common-frame{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: var(--space-large);
+    align-items: center;
+    text-align: left;
+}
+.new-video{
+    flex: 2;
+}
+.new-desc{
+    flex: 1;
+}
+.new-desc>h3{
+    margin-bottom: var(--space-normal);
+}
+.desc-pra{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-small);
 }
 .best-item{
     margin: var(--space-3x-large) 0;
@@ -90,17 +115,20 @@ main .hero-banner.swiper .swiper-pagination{
 .best-item .common-frame>h1{
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: var(--space-large);
+    margin-bottom: var(--space-x-large);
 }
 .best-item-list{
     font-size: var(--fs-bd1);
     display: flex;
-    gap: var(--space-normal);
+}
+.best-item-list>li>a{
     position: relative;
+    z-index: 2;
 }
 .best-item-list>li{
-    flex: 1;
     padding: var(--space-normal);
+    position: relative;
+    box-sizing: border-box;
 }
 .best-item-list>li::after{
     content: "";
@@ -109,7 +137,7 @@ main .hero-banner.swiper .swiper-pagination{
     top: 0;
     width: 0;
     height: 0;
-    border: 0px solid var(--main-color);
+    box-sizing: border-box;
 }
 .best-item-list>li:hover::after{
     width: 440px;
@@ -124,6 +152,8 @@ main .hero-banner.swiper .swiper-pagination{
     justify-content: center;
     align-items: center;
     margin-bottom: var(--space-normal);
+    aspect-ratio: 1/1;
+    line-height: 0;
 }
 .best-item figure img{
     width: 100%;
@@ -190,20 +220,106 @@ main .hero-banner.swiper .swiper-pagination{
 }
 
 
-.sub-banner2{
-    height: 970px;
+
+
+
+.bottom-banner{
+    height: 600px;
 }
-.sub-banner2 img{
+.bottom-banner img{
     width: 100%;
     height: 100%;
 }
 
+.wrap{
+    position: relative;
+}
+.aside-menu{
+    position: fixed;
+    text-align: center;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 99999;
+}
+.team-clover{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-small);
+}
+.team-clover img{
+    height: 44px;
+    border-radius: 50%;
+}
 
 
 
 
 
+/* 테스트 중 */
+.brand-pilo{
+    margin: var(--space-3x-large);
+}
+.brand-pilo .commom-frame{
+    text-align: center;
+}
+.brand-pilo .commom-frame>h4{
+    margin-bottom: var(--space-small);
+}
+.brand-pilo .commom-frame>h1{
+    margin-bottom: var(--space-large);
+}
+.brand-pilo .commom-frame>h1>span{
+    color: var(--main-color);
+}
+.brand-pilo .commom-frame>h1+p{
+    margin-bottom: var(--space-small);
+}
 
 
 
+/* 테스트 중 */
+.parallax{
+    height: 600px;
+    background: url("../img/model-bg/test4.png") no-repeat 50% 50% / cover;
+    /* background-color: var(--cb-color-0); */
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space-x-large);
+}
+.title{
+    text-align: center;
+    margin-top: var(--space-3x-large);
+    position: relative;
+}
+.title>h1{
+    margin-bottom: var(--space-small);;
+}
+.card{
+    margin: -300px var(--space-x-large) 0;
+    background: #fff;
+    text-align: center;
+    background-color: transparent;
+}
+.card>li{
+    border: 1px solid var(--cb-color-400);
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--space-normal);
+    background-color: #fff;
+}
+.card>li:first-of-type{
+    margin-bottom: var(--space-normal);
+}
+.card figure{
+    border: 1px solid var(--cb-color-600);
+    height: 80%;
+    width: 60%;
+}
+.desc{
+    margin-bottom: var(--space-3x-large);
+}
 

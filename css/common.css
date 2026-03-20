@@ -2,6 +2,7 @@ html{
     font-family: 'Pretendard', sans-serif;
     font-size: var(--basic-font-pc);
     font-weight: var(--fw-re);
+    scroll-behavior: smooth;
 }
 h1{
     font-size: var(--fs-h1);
@@ -65,19 +66,5 @@ button{
 .sns img{
     height: 1.2rem;
 }
-.aside-menu{
-    position: fixed;
-    text-align: center;
-    right: 20px;
-    bottom: 20px;
-    cursor: pointer;
-    z-index: 99999;
-}
-.team-clover{
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-small);
-}
-.team-clover img{
-    height: 44px;
-}
+
+
