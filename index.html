@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/aside.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script src="./js/header.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/aside.js"></script>
     <script src="./js/heart.js"></script>
 </head>
 <body>
@@ -257,19 +259,19 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <img src="./img/banner/hero-banner1.1-pc.jpg" alt="피부 과학이 만든 클린 더마 솔루션" class="pc">
-                        <img src="./img/banner/hero-banner1-pc.jpg" alt="피부 과학이 만든 클린 더마 솔루션" class="tab">
-                        <img src="./img/banner/hero-banner1-pc.jpg" alt="피부 과학이 만든 클린 더마 솔루션" class="mo">
+                        <a href="#"><img src="./img/banner/hero-banner1.1-pc.jpg" alt="피부 과학이 만든 클린 더마 솔루션" class="pc"></a>
+                        <a href="#"><img src="./img/banner/hero-banner1-pc.jpg" alt="피부 과학이 만든 클린 더마 솔루션" class="tab"></a>
+                        <a href="#"><img src="./img/banner/hero-banner1-pc.jpg" alt="피부 과학이 만든 클린 더마 솔루션" class="mo"></a>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/banner/hero-banner2.1-pc.jpg" alt="깨끗한 수분으로 완성하는 데일리 케어" class="pc">
-                        <img src="./img/banner/hero-banner2-tab.jpg" alt="깨끗한 수분으로 완성하는 데일리 케어" class="tab">
-                        <img src="./img/banner/hero-banner2-mo.jpg" alt="깨끗한 수분으로 완성하는 데일리 케어" class="mo">
+                        <a href="#"><img src="./img/banner/hero-banner2.1-pc.jpg" alt="깨끗한 수분으로 완성하는 데일리 케어" class="pc"></a>
+                        <a href="#"><img src="./img/banner/hero-banner2-tab.jpg" alt="깨끗한 수분으로 완성하는 데일리 케어" class="tab"></a>
+                        <a href="#"><img src="./img/banner/hero-banner2-mo.jpg" alt="깨끗한 수분으로 완성하는 데일리 케어" class="mo"></a>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/banner/hero-banner3.1-pc.jpg" alt="피부에 피어나는 생기있는 컬러" class="pc">
-                        <img src="./img/banner/hero-banner3-tab.jpg" alt="피부에 피어나는 생기있는 컬러" class="tab">
-                        <img src="./img/banner/hero-banner3-mo.jpg" alt="피부에 피어나는 생기있는 컬러" class="mo">
+                        <a href="#"><img src="./img/banner/hero-banner3.1-pc.jpg" alt="피부에 피어나는 생기있는 컬러" class="pc"></a>
+                        <a href="#"><img src="./img/banner/hero-banner3-tab.jpg" alt="피부에 피어나는 생기있는 컬러" class="tab"></a>
+                        <a href="#"><img src="./img/banner/hero-banner3-mo.jpg" alt="피부에 피어나는 생기있는 컬러" class="mo"></a>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -364,7 +366,7 @@
                 </div>
             </div>
 
-            <!-- 비디오 영역 -->
+            <!-- 뉴 아이템 영역 -->
             <div class="new-item">
                 <h1>what's new</h1>
                 <div class="common-frame">
@@ -642,24 +644,75 @@
 
         <!-- aside 메뉴 영역 -->
         <aside class="aside-menu">
-            <ul class="team-clover">
-                <li class="gunhee">
-                    <a href="#">
-                        <img src="./img/icon/aside-icon1.svg" alt="챗봇상담">
-                    </a>
+            <ul class="aside-menu-list">
+                <li class="btn-chat">
+                    <img src="./img/icon/aside-icon1.svg" alt="챗봇상담">
                 </li>
-                <li class="jinju">
+                <li>
                     <a href="#">
                         <img src="./img/icon/aside-icon2.svg" alt="장바구니">
                     </a>
                 </li>
-                <li class="seohyun">
+                <li>
                     <a href="#top">
                         <img src="./img/icon/aside-icon3.svg" alt="맨 위로 이동하기">
                     </a>
                 </li>
             </ul>
+
+            <!-- 챗봇 상담창 영역 -->
+            <div class="chat-panel">
+                <!-- 헤더 -->
+                <div class="chat-header">
+                    <div class="chat-inner-header">
+                        <span class="fwm">Clinique Advisor</span>
+                        <button class="btn-chat-close">
+                            <img src="./img/icon/btn-chat-close.svg" alt="챗봇 상담창 닫기">
+                        </button>
+                    </div>
+                </div>
+                <!-- 채팅 영역 -->
+                <div class="chat-content">
+                    <!-- 날짜 -->
+                    <div class="chat-date">
+                        <span>2026년 3월 20일 금요일</span>
+                    </div>
+                    <!-- 상담 메시지 -->
+                    <div class="chat-message bot">
+                        <div class="avatar">
+                            <img src="./img/icon/chat-ai.svg" alt="챗봇 아이콘">
+                            <span class="fwm">약 1분 전</span>
+                        </div>
+                        <div class="bubble fwm">
+                            안녕하세요. 크리니크 뷰티 어드바이저입니다.
+                            피부 타입과 고민에 맞는 제품을 추천해드릴게요.
+                        </div>
+                    </div>
+                    <!-- 선택 질문 -->
+                    <div class="chat-question fwm">어떤 도움이 필요하신가요?</div>
+                    <!-- 버튼 리스트 -->
+                    <div class="chat-options fwm">
+                        <span>피부 타입 찾기</span>
+                        <span>피부진단</span>
+                        <span>수분케어 추천</span>
+                        <span>상담원 연결</span>
+                        <span>민감성 피부 추천</span>
+                    </div>
+                    <!-- 입력 영역 -->
+                    <div class="chat-input">
+                        <label for="u-chat" class="visually-hidden">궁금하신 내용을 입력해주세요.</label>
+                        <input class="fwm" type="text" id="u-chat" placeholder="궁금하신 내용을 입력해주세요."/>
+                        <button class="chat-btn-send">
+                            <img src="./img/icon/btn-chat-arrow.svg" alt="send">
+                        </button>
+                    </div>
+                </div>
+            </div>
         </aside>
+
+        
+
+
     </div>
 
     

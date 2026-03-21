@@ -66,5 +66,7 @@ button{
 .sns img{
     height: 1.2rem;
 }
-
+main{
+    min-height: 600px;
+}
 
