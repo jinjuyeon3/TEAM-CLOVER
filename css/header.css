@@ -70,7 +70,7 @@ header .sub-menu{
     transition: all 0.4s ease;
 }
 /* hover 시 0 → 100% */
-.menu-item>a:hover::after{
+.menu-item:hover>a::after{
     width: 100%;
 }
 .mega-menu{
