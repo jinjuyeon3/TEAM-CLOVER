@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메이크업</title>
+    <title>피부진단</title>
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/system.css">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/aside.css">
 
-    <link rel="stylesheet" href="./css/make-up.css">
+    <link rel="stylesheet" href="./css/skin-consulting.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -21,7 +21,6 @@
     <script src="./js/aside.js"></script>
     <script src="./js/heart.js"></script>
 
-    <script src="./js/make-up.js"></script>
 </head>
 <body>
     <div class="wrap" id="top">
@@ -254,87 +253,98 @@
 
         <!-- 전체 콘텐츠 영역 -->
         <main>
-            <!-- 배너 영역 -->
-            <div class="banner">
-                <img src="./img/banner/make-up-banner.jpg" alt="가볍게 밀착, 하루종일 무결점 even better refresh">
+            <!-- 배너 영역A-->
+            <div class="bannerA">
+                <img src="./img/banner/skin-consulting-banner.jpg" alt="정밀한 피부 진단의 시작">
             </div>
 
-            <!-- 상품 리스트 영역 -->
-            <div class="product-list-make">
+            <!-- 컨설팅 서비스 소개 영역 -->
+            <div class="service-intro">
                 <div class="common-frame">
-                    <h1>MAKE UP</h1>
-                    <div class="make-tabs">
-                        <span>페이스</span>
-                        <span>아이</span>
-                        <span>립</span>
-                        <span>툴&악세서리</span>
+                    <figure>
+                        <img src="./img/banner/skin-consulting-img1.jpg" alt="피부 진단 서비스 모델 이미지">
+                    </figure>
+                    <div class="service-desc">
+                        <p>크리니크 AI 피부 분석</p>
+                        <h1>크리니크의 피부과학으로 시작하는 맞춤 케어, 피부 자가 진단 서비스</h1>
+                        <p>AI 피부분석을 통해 현재 피부 상태를 정밀하게 확인하고, 수분·모공·탄력·민감도 등 다양한 요소를 기반으로나에게 꼭 맞는 맞춤형 스킨케어 솔루션을 제안합니다.</p>
+                        <ul>
+                            <li>
+                                <p class="fwb">Step 1. 얼굴 스캔</p>
+                                <p>한 번의 촬영으로 분석이 시작됩니다.</p>
+                            </li>
+                            <li>
+                                <p class="fwb">Step 2. 피부 진단</p>
+                                <p>데이터 기반으로 피부 상태를 정밀하게 파악합니다.</p>
+                            </li>
+                            <li>
+                                <p class="fwb">Step 3. 맞춤 솔루션</p>
+                                <p>나에게 꼭 맞는 제품과 케어를 제안합니다.</p>
+                            </li>
+                        </ul>
+                        <div class="qr-cord">
+                            <img src="./img/icon/qr-cord.svg" alt="QR코드를 스캔하고 지금 바로 피부 상태를 확인해보세요.">
+                            <p>QR코드를 스캔하고<br>지금 바로 피부 상태를<br>확인해보세요.</p>
+                        </div>
                     </div>
-                    <div class="array-option">
-                        <span>총 <span class="fwb">16</span>개 상품</span>
-                        <select id="view-filter" class="bd2">
-                            <option value="정렬선택">정렬선택</option>
-                            <option value="인기순">인기순</option>
-                            <option value="신제품">신제품</option>
-                            <option value="가격 높은 순">가격 높은 순</option>
-                            <option value="가격 낮은 순">가격 낮은 순</option>
-                        </select>
-                    </div>
-                    <ul class="make-list">
-                        <script>
-                            for(let i=0 ; i<productListMake.length ; i++){
-                                document.write(`
-                                <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="./img/product/product-publishing/${productListMake[i].image}">
-                                </figure>
-                                <div class="sale-badge fwb">${productListMake[i].discount}%</div>
-                            </a>
-                                <div class="color-option">
-                                    <div class="color1"></div>
-                                    <div class="color2"></div>
-                                    <div class="color3"></div>
-                                    <div class="color4"></div>
-                                </div>
-                            <a href="#">
-                                <div class="make-desc">
-                                    <p class="fwb bd2">${productListMake[i].name}</p>
-                                    <p class="bd2">${productListMake[i].desc}</p>
-                                </div>
-                                <div class="make-price">
-                                    <span class="original bd2">${productListMake[i].originalPrice}원</span>
-                                    <span class="sale fwb">${productListMake[i].price}원</span>
-                                </div>
-                            </a>
+                </div>
+            </div>
+
+            <!-- 배너 영역B -->
+            <div class="bannerB">
+                <div class="common-frame">
+                    <h1>컨설팅 서비스 안내</h1>
+                    <a href="#">
+                        <img src="./img/banner/skin-consulting-banner2.jpg" alt="피부를 가꾸는 맞춤 컨설팅">
+                    </a>
+                </div>
+            </div>
+
+            <!-- 컨설팅 서비스 내용 영역 -->
+            <div class="service-contents">
+                <div class="common-frame">
+                    <h1>HOW TO</h1>
+                    <ul class="content-box">
+                        <li>
+                            <figure>
+                                <img src="./img/banner/skin-consulting-img2.jpg" alt="맞춤형 스킨케어 컨설팅">
+                            </figure>
+                            <h3>맞춤형 스킨케어 컨설팅</h3>
                         </li>
-                                `)
-                            }
-                        </script>
-                        <!-- <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="./img/product/all/[로션&크림]드라마티컬리 디퍼런트 모이스춰라이징 로션.png" alt="드라마티컬리 디퍼런트 모이스춰라이징 로션+">
-                                </figure>
-                                <div class="sale-badge fwb">36%</div>
-                            </a>
-                                <div class="amount-option">
-                                    <span>50ml</span>
-                                    <span class="selected">75ml</span>
-                                </div>
-                            <a href="#">
-                                <div class="skin-desc">
-                                    <p class="fwb bd2">드라마티컬리 디퍼런트 모이스춰라이징 로션+</p>
-                                    <p class="bd2">하루 종일 수분을 채워 부드럽고 빛나는 피부로<br>가꿔주는 산뜻한 모이스춰라이저</p>
-                                </div>
-                                <div class="skin-price">
-                                    <span class="original bd2">58,000원</span>
-                                    <span class="sale fwb">37,120원</span>
-                                </div>
-                            </a>
-                        </li> -->
+                        <li>
+                            <figure>
+                                <img src="./img/banner/skin-consulting-img3.jpg" alt="데일리 메이크업">
+                            </figure>
+                            <h3>데일리 메이크업</h3>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/banner/skin-consulting-img4.jpg" alt="민감성 피부를 위한 스킨케어">
+                            </figure>
+                            <h3>민감성 피부를 위한 스킨케어</h3>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/banner/skin-consulting-img5.jpg" alt="나이트 스킨케어 루틴">
+                            </figure>
+                            <h3>나이트 스킨케어 루틴</h3>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/banner/skin-consulting-img6.jpg" alt="남성을 위한 최적의 스킨케어 루틴">
+                            </figure>
+                            <h3>남성을 위한 최적의 스킨케어 루틴</h3>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/banner/skin-consulting-img7.jpg" alt="얼굴 각질 제거를 위한 A to Z">
+                            </figure>
+                            <h3>얼굴 각질 제거를 위한 A to Z</h3>
+                        </li>
                     </ul>
                 </div>
             </div>
+
         </main>
 
         <!-- 푸터 영역 -->

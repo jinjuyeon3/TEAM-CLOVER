@@ -55,7 +55,7 @@ header .sub-menu{
     box-sizing: border-box;
     position: relative;
 }
-.menu-item>a:hover{
+.menu-item:hover>a{
     color: var(--main-color);
 }
 /* 언더라인 기본 상태 */
