@@ -4,9 +4,7 @@ header{
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 1000;
-}
-header .common-frame{
+    z-index: 100000;
 }
 header .sub-menu{
     height: 100px;
@@ -80,7 +78,7 @@ header .sub-menu{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: var(--space-x-large);
+    gap: var(--space-large);
     position: absolute;
     left: 0;
     top: 100%;
@@ -172,7 +170,7 @@ header .sub-menu{
     display: flex;
     gap: .6rem;
     justify-self: center;
-    margin-top: var(--space-3x-large);
+    margin-top: var(--space-x-large);
 }
 input[id="search-keyword"]::placeholder{
     font-weight: var(--fw-med);

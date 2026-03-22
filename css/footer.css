@@ -68,7 +68,7 @@ input[id="u-agree"]{
 }
 input[id="u-agree"]:checked:after{
     content: '';
-    background-color: var(--cb-color-400);
+    background: linear-gradient(180deg,var(--cb-color-400),var(--cb-color-800));
     border-radius: 50%;
     width: 80%;
     height: 80%;
@@ -96,8 +96,12 @@ input[id="u-agree"]:checked:after{
     flex-direction: column;
     gap: var(--space-small);
 }
+.sub-co-info>p{
+    text-align: right;
+}
 .sub-co-info .sns{
     display: flex;
+    justify-content: flex-end;
     gap: var(--space-small);
 }
 .copy{
