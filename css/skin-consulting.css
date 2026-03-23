@@ -8,24 +8,110 @@ main{
     height: 600px;
     margin-bottom: var(--space-3x-large);
 }
-.service-for{
+.consulting-contents{
     text-align: center;
-    
 }
-.service-for h1{
+.consulting-contents>div{
+    margin-bottom: var(--space-3x-large);;
+}
+.consulting-contents>div>h1{
+    margin-bottom: var(--space-normal);
+}
+.consulting-contents ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--space-x-large);
+}
+.consulting-contents ul li figure{
     margin-bottom: var(--space-normal);
 }
 .service-for h1 span{
     color: var(--main-color);
-}
-.service-for ul{
-    display: flex;
-    justify-content: space-between;
-    margin-top: var(--space-x-large);
 }
 .service-for ul li{
     background-color: #fff;
     width: 345px;
     height: 354px;
     border-radius: 1.5rem;
+}
+.step-desc{
+    display: flex;
+    justify-content: center;
+    gap: var(--space-small);
+}
+.step-desc span{
+    font-size: var(--fs-bd1);
+}
+.service-process ul li{
+    border-radius: 1.5rem 1.5rem 0 0;
+    background-color: #fff;
+    width: 280px;
+    height: 345px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-small);
+}
+.service-process ul li figure{
+    width: 280px;
+    height: 245px;
+}
+.service-process ul li figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.service-benefit ul li{
+    width: 345px;
+    height: 314px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+}
+.service-benefit ul li figure{
+    width: 274px;
+    height: 274px;
+    margin-bottom: 0;
+}
+.service-why ul{
+    width: 1021px;
+    justify-self: center;
+}
+.form-wrap{
+    width: 100%;
+    /* max-height: 60px; */
+    /* overflow: hidden; */
+}
+.title{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #000;
+    padding: var(--space-2x-small) var(--space-x-small);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.title>img{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.form-box{
+    background-color: #fff;
+    border-radius: 2.5rem;
+    height: 1780px;
+}
+.form-box>h4{
+    text-align: center;
+    width: 975px;
+    padding: var(--space-normal);
+    box-sizing: border-box;
+    border-bottom: 1px solid #9F9F9F;
+    margin: 0 auto;
 }

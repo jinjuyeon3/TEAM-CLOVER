@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded",()=>{
                 e.preventDefault()
                 let imgtag = iconHerat.children[0]
                 let originSrc = imgtag.getAttribute("src")
-                if(originSrc=='./img/icon/heart.svg'){
-                    imgtag.setAttribute("src","./img/icon/heart-clicked.svg")
+                if(originSrc=='./img/0-imgPublishing/icon/heart.svg'){
+                    imgtag.setAttribute("src","./img/0-imgPublishing/icon/heart-clicked.svg")
                 }else{
-                    imgtag.setAttribute("src","./img/icon/heart.svg")
+                    imgtag.setAttribute("src","./img/0-imgPublishing/icon/heart.svg")
                 }
             })
         })

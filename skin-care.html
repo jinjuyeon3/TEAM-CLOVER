@@ -20,8 +20,10 @@
     <script src="./js/header.js"></script>
     <script src="./js/aside.js"></script>
     <script src="./js/heart.js"></script>
+    <script src="./js/toWon.js"></script>
 
-    <script src="./js/skin-care.js"></script>
+    <script src="./js/skin-care-array.js"></script>
+    <script src="./js/skin-care-control.js"></script>
 </head>
 <body>
     <div class="wrap" id="top">
@@ -270,7 +272,7 @@
                         <span>민감성</span>
                     </div>
                     <div class="array-option">
-                        <span>총 <span class="fwb">22</span>개 상품</span>
+                        <span>총 <span class="fwb" id="current-count">22</span>개 상품</span>
                         <select id="view-filter" class="bd2">
                             <option value="정렬선택">정렬선택</option>
                             <option value="인기순">인기순</option>
@@ -280,34 +282,28 @@
                         </select>
                     </div>
                     <ul class="skin-list">
-                        <script>
-                            for(let i=0 ; i<productListSkin.length ; i++){
-                                document.write(`
-                                <li>
+                        <li>
                             <a href="#">
                                 <figure>
-                                    <img src="./img/0-imgPublishing/skinCare/${productListSkin[i].image}">
+                                    <img src="./img/0-imgPublishing/skinCare/DramaticallyDifferentMoisturizingLotionPlus.png">
                                 </figure>
-                                <div class="sale-badge fwb">${productListSkin[i].discount}%</div>
+                                <div class="sale-badge fwb">36%</div>
                             </a>
                                 <div class="amount-option">
-                                    <span>${productListSkin[i].sizes[0]}</span>
-                                    <span class="selected">${productListSkin[i].sizes[1]}</span>
+                                    <span>50ml</span>
+                                    <span class="selected">75ml</span>
                                 </div>
                             <a href="#">
                                 <div class="skin-desc">
-                                    <p class="fwb bd2">${productListSkin[i].name}</p>
-                                    <p class="bd2">${productListSkin[i].desc}</p>
+                                    <p class="fwb bd2">드라마티컬리 디퍼런트 모이스춰라이징 로션+</p>
+                                    <p class="bd2">하루 종일 수분을 채워 부드럽고 빛나는 피부로 가꿔주는 산뜻한 모이스춰라이저</p>
                                 </div>
                                 <div class="skin-price">
-                                    <span class="original bd2">${productListSkin[i].originalPrice}원</span>
-                                    <span class="sale fwb">${productListSkin[i].price}원</span>
+                                    <span class="original bd2">58000원</span>
+                                    <span class="sale fwb">37120원</span>
                                 </div>
                             </a>
                         </li>
-                                `)
-                            }
-                        </script>
                     </ul>
                 </div>
             </div>
