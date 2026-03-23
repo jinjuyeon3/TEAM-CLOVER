@@ -55,7 +55,7 @@ header .sub-menu{
     box-sizing: border-box;
     position: relative;
 }
-.menu-item>a:hover{
+.menu-item:hover>a{
     color: var(--main-color);
 }
 /* 언더라인 기본 상태 */
@@ -70,7 +70,7 @@ header .sub-menu{
     transition: all 0.4s ease;
 }
 /* hover 시 0 → 100% */
-.menu-item>a:hover::after{
+.menu-item:hover>a::after{
     width: 100%;
 }
 .mega-menu{
