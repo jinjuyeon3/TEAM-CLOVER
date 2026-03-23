@@ -81,9 +81,10 @@ main{
     justify-self: center;
 }
 .form-wrap{
+    padding-top: 20px;
     width: 100%;
-    /* max-height: 60px; */
-    /* overflow: hidden; */
+    /* max-height: 60px;
+    overflow: hidden; */
 }
 .title{
     width: 100%;
@@ -95,6 +96,7 @@ main{
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    margin-bottom: var(--space-normal);
 }
 .title>img{
     position: absolute;
@@ -114,4 +116,99 @@ main{
     box-sizing: border-box;
     border-bottom: 1px solid #9F9F9F;
     margin: 0 auto;
+}
+.form-inner{
+    width: 975px;
+    margin: 0 auto;
+}
+.form-content>h3{
+    margin: var(--space-large) 0;
+}
+.form-content{
+    border-bottom: 1px solid #9F9F9F;
+    padding-bottom: var(--space-large);
+}
+.form-group{
+    display: flex;
+    align-items: center;
+    gap: var(--space-normal);
+    margin-bottom: var(--space-large);
+}
+.form-group:last-of-type{
+    margin-bottom: 0;
+}
+.form-group label{
+    /* padding: var(--space-small); */
+    /* box-sizing: border-box; */
+    width: 102px;
+    font-size: var(--fs-bd1);
+    font-weight: var(--fw-med);
+}
+.btn-group{
+    display: flex;
+    gap: var(--space-normal)
+}
+.btn-group button{
+    padding: .35rem 1.4rem;
+    box-sizing: border-box;
+    border: 1px solid #9F9F9F;
+    border-radius: .5rem;
+}
+.form-group input[type="date"]::-webkit-datetime-edit { padding: 0 0.5rem; } /* 날짜 텍스트 여백 */
+.form-group input[type="date"]::-webkit-datetime-edit-fields-wrapper { background: none; } /* 배경 제거 */
+.form-group input[type="date"]::-webkit-datetime-edit-text { color: #ccc; padding: 0 0.2rem; } /* 년, 월, 일 사이의 슬래시(/) 색상 */
+.form-group input[type="date"]::-webkit-datetime-edit-year-field { color: #333; } /* 년도 숫자 색상 */
+.form-group input[type="date"] {
+    position: relative;
+    width: 344px;
+    padding: .35rem var(--space-small);
+    font-size: 14px;
+    border: 1px solid #9F9F9F;
+    border-radius: var(--space-x-small);
+    color: #9F9F9F;
+    outline: none;
+}
+.form-group.uinfo input{
+    border-radius: .5rem;
+    border: 1px solid #9F9F9F;
+    padding: .35rem var(--space-normal);
+    box-sizing: border-box;
+    width: 305px;
+    font-size: var(--fs-bd1);
+    font-weight: var(--fw-med);
+}
+.form-group.add{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form-group.add textarea{
+    width: 956px;
+    height: 268px;
+    resize: none;
+    border-radius: var(--space-normal); 
+    border: 1px solid #9F9F9F;
+    padding-left: var(--space-normal);
+    padding-top: var(--space-normal);
+}
+.form-group.add textarea::placeholder{
+    color: #9F9F9F;
+    font-size: var(--fs-bd1);
+    font-weight: var(--fw-med);
+}
+.checkbox-group span{
+    color: var(--main-color);
+}
+.btn-apply{
+    background-color: var(--main-color);
+    color: #fff;
+    width: 332px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    margin: 0 auto;
+    margin-top: var(--space-large);
+    font-size: var(--fs-h2);
 }
