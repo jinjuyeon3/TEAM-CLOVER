@@ -262,7 +262,7 @@ main .hero-banner.swiper .swiper-pagination{
 /* 테스트 중 */
 .parallax{
     height: 600px;
-    background: url("../img/model-bg/test4.png") no-repeat 50% 50% / cover;
+    background: url("../img/0-imgPublishing/etc/test4.png") no-repeat 50% 50% / cover;
     /* background-color: var(--cb-color-0); */
     background-attachment: fixed;
     display: flex;
