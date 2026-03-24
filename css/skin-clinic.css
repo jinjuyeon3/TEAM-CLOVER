@@ -1,0 +1,58 @@
+main{
+    padding-top: 180px;
+}
+.bannerA{
+    height: 600px;
+    margin-bottom: var(--space-3x-large);
+}
+.service-intro .common-frame{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-3x-large);
+}
+.service-intro .common-frame figure{
+    flex: 1.3;
+}
+.service-desc{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+}
+.qr-cord{
+    display: flex;
+    gap: var(--space-small);
+    align-items: center;
+}
+.bannerB{
+    margin-bottom: var(--space-3x-large);
+}
+.bannerB h1{
+    margin-bottom: var(--space-x-large);
+}
+.bannerB img{
+    height: 400px;
+}
+.service-contents{
+    margin-bottom: var(--space-3x-large);
+}
+.service-contents .common-frame>h1{
+    margin-bottom: var(--space-x-large);
+}
+.content-box{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--space-x-large) var(--space-large);
+}
+.content-box li{
+    text-align: center;
+}
+.content-box li figure{
+    margin-bottom: var(--space-normal);
+}
+.content-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

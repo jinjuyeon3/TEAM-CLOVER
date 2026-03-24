@@ -1,0 +1,31 @@
+.wrap{
+    background-color: #FAF7F4;
+}
+main{
+    padding-top: 180px;
+}
+.banner{
+    height: 600px;
+    margin-bottom: var(--space-3x-large);
+}
+.service-for{
+    text-align: center;
+    
+}
+.service-for h1{
+    margin-bottom: var(--space-normal);
+}
+.service-for h1 span{
+    color: var(--main-color);
+}
+.service-for ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--space-x-large);
+}
+.service-for ul li{
+    background-color: #fff;
+    width: 345px;
+    height: 354px;
+    border-radius: 1.5rem;
+}
