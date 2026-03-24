@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>피부진단</title>
+    <title>커뮤니티</title>
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/system.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/aside.css">
 
-    <link rel="stylesheet" href="./css/skin-clinic.css">
+    <link rel="stylesheet" href="./css/community.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/aside.js"></script>
     <script src="./js/heart.js"></script>
-
 </head>
 <body>
     <div class="wrap" id="top">
@@ -253,98 +254,13 @@
 
         <!-- 전체 콘텐츠 영역 -->
         <main>
-            <!-- 배너 영역A-->
-            <div class="bannerA">
-                <img src="./img/0-imgPublishing/banner/skin-clinic-banner.jpg" alt="정밀한 피부 진단의 시작">
+            <div class="search-container">
+                <form action="#" class="search-box">
+                    <button><img src="./img/0-imgPublishing/icon/search-box-in.svg" alt="검색"></button>
+                    <label for="search-keyword" class="visually-hidden">검색어 입력</label>
+                    <input type="text" placeholder="검색어를 입력하세요." id="search-keyword" class="bd2">
+                </form>
             </div>
-
-            <!-- 컨설팅 서비스 소개 영역 -->
-            <div class="service-intro">
-                <div class="common-frame">
-                    <figure>
-                        <img src="./img/0-imgPublishing/etc/skin-clinic-img1.jpg" alt="피부 진단 서비스 모델 이미지">
-                    </figure>
-                    <div class="service-desc">
-                        <p>크리니크 AI 피부 분석</p>
-                        <h1>크리니크의 피부과학으로 시작하는 맞춤 케어,<br> 피부 자가 진단 서비스</h1>
-                        <p>AI 피부분석을 통해 현재 피부 상태를 정밀하게 확인하고,<br>수분·모공·탄력·민감도 등 다양한 요소를 기반으로<br>나에게 꼭 맞는 맞춤형 스킨케어 솔루션을 제안합니다.</p>
-                        <ul>
-                            <li>
-                                <p class="fwb">Step 1. 얼굴 스캔</p>
-                                <p>한 번의 촬영으로 분석이 시작됩니다.</p>
-                            </li>
-                            <li>
-                                <p class="fwb">Step 2. 피부 진단</p>
-                                <p>데이터 기반으로 피부 상태를 정밀하게 파악합니다.</p>
-                            </li>
-                            <li>
-                                <p class="fwb">Step 3. 맞춤 솔루션</p>
-                                <p>나에게 꼭 맞는 제품과 케어를 제안합니다.</p>
-                            </li>
-                        </ul>
-                        <div class="qr-cord">
-                            <img src="./img/0-imgPublishing/icon/qr-cord.svg" alt="QR코드를 스캔하고 지금 바로 피부 상태를 확인해보세요.">
-                            <p>QR코드를 스캔하고<br>지금 바로 피부 상태를<br>확인해보세요.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 배너 영역B -->
-            <div class="bannerB">
-                <div class="common-frame">
-                    <h1>컨설팅 서비스 안내</h1>
-                    <a href="./skin-consulting.html">
-                        <img src="./img/0-imgPublishing/banner/skin-clinic-banner2.jpg" alt="피부를 가꾸는 맞춤 컨설팅">
-                    </a>
-                </div>
-            </div>
-
-            <!-- 컨설팅 서비스 내용 영역 -->
-            <div class="service-contents">
-                <div class="common-frame">
-                    <h1>HOW TO</h1>
-                    <ul class="content-box">
-                        <li>
-                            <figure>
-                                <img src="./img/0-imgPublishing/etc/skin-clinic-img2.jpg" alt="맞춤형 스킨케어 컨설팅">
-                            </figure>
-                            <h3>맞춤형 스킨케어 컨설팅</h3>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="./img/0-imgPublishing/etc/skin-clinic-img3.jpg" alt="데일리 메이크업">
-                            </figure>
-                            <h3>데일리 메이크업</h3>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="./img/0-imgPublishing/etc/skin-clinic-img4.jpg" alt="민감성 피부를 위한 스킨케어">
-                            </figure>
-                            <h3>민감성 피부를 위한 스킨케어</h3>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="./img/0-imgPublishing/etc/skin-clinic-img5.jpg" alt="나이트 스킨케어 루틴">
-                            </figure>
-                            <h3>나이트 스킨케어 루틴</h3>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="./img/0-imgPublishing/etc/skin-clinic-img6.jpg" alt="남성을 위한 최적의 스킨케어 루틴">
-                            </figure>
-                            <h3>남성을 위한 최적의 스킨케어 루틴</h3>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="./img/0-imgPublishing/etc/skin-clinic-img7.jpg" alt="얼굴 각질 제거를 위한 A to Z">
-                            </figure>
-                            <h3>얼굴 각질 제거를 위한 A to Z</h3>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
         </main>
 
         <!-- 푸터 영역 -->
@@ -488,7 +404,6 @@
             </div>
         </aside>
 
-
-    </div>
+    </div>    
 </body>
 </html>

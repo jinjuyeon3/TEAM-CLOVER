@@ -89,7 +89,7 @@
     height: 32px;
 }
 .avatar>span{
-    font-size: .3rem;
+    font-size: .6rem;
     color: #AEAEAE;
 }
 .bubble{
@@ -119,6 +119,10 @@
     box-sizing: border-box;
     display: inline-block;
     border-radius: 2.5rem;
+    transition: all .3s ease 0s;
+}
+.chat-options>span:hover{
+    background-color: #fff;
 }
 .chat-input{
     position: relative;
