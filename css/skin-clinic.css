@@ -1,5 +1,6 @@
 main{
     padding-top: 180px;
+    margin-bottom: var(--space-foot);
 }
 .bannerA{
     height: 600px;
@@ -37,9 +38,6 @@ main{
 }
 .bannerB img{
     height: 400px;
-}
-.service-contents{
-    margin-bottom: var(--space-3x-large);
 }
 .service-contents .common-frame>h1{
     margin-bottom: var(--space-x-large);
