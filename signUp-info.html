@@ -21,7 +21,7 @@
         <main>
             <div class="common-frame">
                 <div class="signUp-logo">
-                    <img src="./img/0-imgPublishing/icon/signUp-logo.svg" alt="크리니크 로고">
+                    <a href="./index.html"><img src="./img/0-imgPublishing/icon/signUp-logo.svg" alt="크리니크 로고"></a>
                 </div>
                 <div class="signUp-box">
                     <ul class="su-process">
@@ -40,8 +40,163 @@
                     </ul>
                     <div class="su-content">
                         <h2>기본정보입력</h2>
-
+                        <form action="#" method="post" class="join-form">
+                            <ul class="form-list">
+                                <!-- 아이디 -->
+                                <li class="form-item">
+                                    <label for="userId">아이디 <span>*</span></label>
+                                    <div class="input-row">
+                                        <input
+                                            type="text"
+                                            id="userId"
+                                            name="userId"
+                                            placeholder="아이디 입력 6~12자 이내 입력"
+                                            minlength="6"
+                                            maxlength="12"
+                                            required
+                                        >
+                                        <button type="button" class="btn-pw">중복 확인</button>
+                                    </div>
+                                </li>
+                                <!-- 비밀번호 -->
+                                <li class="form-item">
+                                    <label for="userPw">비밀번호 <span>*</span></label>
+                                    <input
+                                        type="password"
+                                        id="userPw"
+                                        name="userPw"
+                                        placeholder="비밀번호는 영문/숫자/특수문자 2가지 이상 조합 8~20자 이내 입력"
+                                        minlength="8"
+                                        maxlength="20"
+                                        required
+                                    >
+                                </li>
+                                <!-- 비밀번호 확인 -->
+                                <li class="form-item">
+                                    <label for="userPwCheck">비밀번호 확인 <span>*</span></label>
+                                    <input
+                                        type="password"
+                                        id="userPwCheck"
+                                        name="userPwCheck"
+                                        placeholder="비밀번호 확인 입력"
+                                        required
+                                    >
+                                </li>
+                                <!-- 이름 -->
+                                <li class="form-item">
+                                    <label for="userName">이름 <span>*</span></label>
+                                    <input
+                                        type="text"
+                                        id="userName"
+                                        name="userName"
+                                        placeholder="이름 입력"
+                                        required
+                                    >
+                                </li>
+                                <!-- 성별 -->
+                                <li class="form-item">
+                                    <p class="form-title">성별 <span>*</span></p>
+                                    <div class="radio-group">
+                                        <label for="female">
+                                            <input
+                                                type="radio"
+                                                id="female"
+                                                name="gender"
+                                                value="female"
+                                                checked
+                                                required
+                                            >
+                                            여성
+                                        </label>
+                                        <label for="male">
+                                            <input
+                                                type="radio"
+                                                id="male"
+                                                name="gender"
+                                                value="male"
+                                                required
+                                            >
+                                            남성
+                                        </label>
+                                    </div>
+                                </li>
+                                <!-- 이메일 -->
+                                <li class="form-item">
+                                    <label for="emailId">이메일 <span>*</span></label>
+                                    <div class="email-row">
+                                        <input
+                                            type="text"
+                                            id="emailId"
+                                            name="emailId"
+                                            placeholder="이메일 주소 입력"
+                                            required
+                                        ><span>@</span><select id="emailDomain" name="emailDomain" required>
+                                            <option value="">직접 입력</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="gmail.com">gmail.com</option>
+                                            <option value="daum.net">daum.net</option>
+                                            <option value="kakao.com">kakao.com</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <!-- 휴대폰 번호 -->
+                                <li class="form-item">
+                                    <label for="phone">휴대폰 번호 <span>*</span></label>
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="-없이 번호만 입력"
+                                        required
+                                    >
+                                </li>
+                                <!-- 주소 -->
+                                <li class="form-item">
+                                    <label for="address1">주소</label>
+                                    <div class="input-row">
+                                        <input
+                                            type="text"
+                                            id="address1"
+                                            name="address1"
+                                            placeholder="주소를 입력하세요"
+                                        >
+                                        <button type="button" class="btn-ad">우편번호 검색</button>
+                                    </div>
+                                </li>
+                                <li class="form-item">
+                                    <label for="address2" class="visually-hidden">상세주소1</label>
+                                    <input
+                                        type="text"
+                                        id="address2"
+                                        name="address2"
+                                        placeholder="상세주소1"
+                                    >
+                                </li>
+                                <li class="form-item">
+                                    <label for="address3" class="visually-hidden">상세주소2</label>
+                                    <input
+                                        type="text"
+                                        id="address3"
+                                        name="address3"
+                                        placeholder="상세주소2"
+                                    >
+                                </li>
+                            </ul>
+                            <!-- 하단 버튼 -->
+                            <div class="btn-group fwb bd2">
+                                <button type="reset">취소</button>
+                                <button type="submit"  class="submit">회원가입</button>
+                            </div>
+                         </form>
                     </div>
+                </div>
+                <div class="su-foot">
+                    <ul class="bd2">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">쿠키정책</a></li>
+                    </ul>
+                    <p>© Clinique Laboratories, 취업용도의 포트폴리오 웹사이트입니다.</p>
                 </div>
             </div>
         </main>
