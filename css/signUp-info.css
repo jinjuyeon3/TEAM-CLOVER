@@ -1,0 +1,41 @@
+main{
+    margin-bottom: var(--space-foot);
+}
+.common-frame{
+    text-align: center;
+}
+.signUp-logo{
+    padding: var(--space-2x-large);
+}
+.signUp-box{
+    width: 719px;
+    background-color: var(--cb-color-0);
+    padding: var(--space-2x-large);
+    margin: 0 auto;
+    margin-bottom: var(--space-x-large);
+} 
+.su-process{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    border-bottom: 4px solid var(--main-color);
+    padding-bottom: var(--space-normal);
+}
+.su-process>li{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-small);
+}
+.su-process>li img{
+    width: 55px;
+    height: 55px;
+}
+.su-content{
+    margin-bottom: var(--space-x-large);
+}
+.su-content h2{
+    margin-top: var(--space-x-large);
+    margin-bottom: var(--space-small);
+}
