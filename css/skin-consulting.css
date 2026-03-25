@@ -3,6 +3,7 @@
 }
 main{
     padding-top: 180px;
+    margin-bottom: var(--space-foot);
 }
 .banner{
     height: 600px;
@@ -83,8 +84,20 @@ main{
 .form-wrap{
     padding-top: 20px;
     width: 100%;
-    /* max-height: 60px;
-    overflow: hidden; */
+    max-height: 60px;
+    overflow: hidden;
+    transition: all .7s ease 0s;
+    margin-bottom: var(--space-3x-large);
+}
+.form-wrap.clicked{
+    max-height: 2000px;
+}
+.btn-down{
+    cursor: pointer;
+}
+.btn-up{
+    cursor: pointer;
+    display: none;
 }
 .title{
     width: 100%;
@@ -106,7 +119,7 @@ main{
 }
 .form-box{
     background-color: #fff;
-    border-radius: 2.5rem;
+    border-radius: 1.5rem;
     height: 1780px;
 }
 .form-box>h4{
@@ -152,29 +165,64 @@ main{
     padding: .35rem 1.4rem;
     box-sizing: border-box;
     border: 1px solid #9F9F9F;
-    border-radius: .5rem;
+    border-radius: .25rem;
 }
-.form-group input[type="date"]::-webkit-datetime-edit { padding: 0 0.5rem; } /* 날짜 텍스트 여백 */
-.form-group input[type="date"]::-webkit-datetime-edit-fields-wrapper { background: none; } /* 배경 제거 */
-.form-group input[type="date"]::-webkit-datetime-edit-text { color: #ccc; padding: 0 0.2rem; } /* 년, 월, 일 사이의 슬래시(/) 색상 */
-.form-group input[type="date"]::-webkit-datetime-edit-year-field { color: #333; } /* 년도 숫자 색상 */
+.btn-group button:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.btn-group button.clicked{
+    background-color: var(--main-color);
+    color: #fff;
+}
+/* input wrapper */
+.date-input {
+    position: relative;
+    width: 100%;
+}
+/* input 기본 스타일 제거 */
+.date-input input[type="date"] {
+    width: 100%;
+    height: 48px;
+    padding: 0 44px 0 16px; /* 오른쪽 아이콘 공간 */
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+
+    font-size: 14px;
+    color: #333;
+
+    /* 기본 스타일 제거 */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+/* placeholder 느낌 (date는 placeholder 안먹어서 대응) */
+.date-input input[type="date"]:invalid {
+    color: #aaa;
+}
 .form-group input[type="date"] {
     position: relative;
     width: 344px;
     padding: .35rem var(--space-small);
     font-size: 14px;
     border: 1px solid #9F9F9F;
-    border-radius: var(--space-x-small);
+    border-radius: .25rem;
     color: #9F9F9F;
     outline: none;
+    box-sizing: border-box;
 }
 .form-group.uinfo input{
-    border-radius: .5rem;
+    border-radius: .25rem;
     border: 1px solid #9F9F9F;
     padding: .35rem var(--space-normal);
     box-sizing: border-box;
     width: 305px;
     font-size: var(--fs-bd1);
+    font-weight: var(--fw-med);
+}
+.form-group label{
     font-weight: var(--fw-med);
 }
 .form-group.add{
@@ -186,7 +234,7 @@ main{
     width: 956px;
     height: 268px;
     resize: none;
-    border-radius: var(--space-normal); 
+    border-radius: .25rem; 
     border: 1px solid #9F9F9F;
     padding-left: var(--space-normal);
     padding-top: var(--space-normal);
@@ -196,8 +244,55 @@ main{
     font-size: var(--fs-bd1);
     font-weight: var(--fw-med);
 }
-.checkbox-group span{
+.form-content>.checkbox-group:first-of-type{
+    margin-bottom: var(--space-normal);
+}
+.checkbox-group{
+    display: flex;
+    gap: var(--space-small);
+}
+.checkbox-group label{
+    position: relative;
+    padding-left: var(--space-large);
+    cursor: pointer;
+    display: inline-block;
+    font-size: var(--fs-bd1);
+    font-weight: var(--fw-med);
+}
+.checkbox-group label span{
     color: var(--main-color);
+}
+.checkbox-group input{
+    display: none;
+}
+.checkbox-group label::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9F9F9F;
+    border-radius: .25rem;
+    background:#fff;
+    transition: all 0.2s;
+}
+.checkbox-group input:checked + label::before{
+    background: var(--main-color);
+    border-color: var(--main-color);
+}
+/* 체크 아이콘 */
+.checkbox-group input:checked + label::after{
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-60%) rotate(45deg);
+    width: 6px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
 }
 .btn-apply{
     background-color: var(--main-color);
@@ -207,8 +302,90 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: .5rem;
+    border-radius: .25rem;
     margin: 0 auto;
     margin-top: var(--space-large);
     font-size: var(--fs-h2);
+}
+.recomend-item{
+    margin: 0 auto;
+    width: 1660px;
+}
+.recomend-item h1{
+    margin-bottom: var(--space-large);
+    text-align: center;
+}
+.reco-list {
+    display: flex;
+    gap: var(--space-normal);
+}
+.reco-list>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 400px;
+}
+.reco-list figure{
+    background-color: var(--cb-color-0);
+    width: 400px;
+    height: 400px;
+    margin-bottom: var(--space-normal);
+}
+.reco-list figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.sale-badge{
+    position: absolute;
+    left: 17px;
+    top: 17px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    color: #fff;
+    font-size: var(--fs-h2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amount-option{
+    display: flex;
+    justify-content: center;
+    gap: var(--space-small);
+    margin-bottom: var(--space-small);
+    cursor: pointer;
+}
+.amount-option>span{
+    border: 1px solid #BABABA;
+    padding: var(--space-x-small);
+    box-sizing: border-box;
+    color: #BABABA;
+}
+.amount-option>span.selected{
+    border: 1px solid #000;
+    padding: var(--space-x-small);
+    box-sizing: border-box;
+    color: #000;
+}
+.pro-desc>p:first-of-type{
+    margin-bottom: var(--space-normal);
+}
+.pro-desc>p:last-of-type{
+    margin-bottom: var(--space-small);
+}
+.pro-price{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--space-small);
+}
+.pro-price .sale{
+    font-size: var(--fs-h4);
+}
+.pro-price .original{
+    color: #BABABA;
+    text-decoration: line-through;
 }

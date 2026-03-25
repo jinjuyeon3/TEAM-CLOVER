@@ -1,12 +1,10 @@
 main{
     padding-top: 180px;
+    margin-bottom: var(--space-foot);
 }
 .banner{
     width: 100%;    
     height: 600px;
-    margin-bottom: var(--space-3x-large);
-}
-.product-list-make{
     margin-bottom: var(--space-3x-large);
 }
 .product-list-make .common-frame{

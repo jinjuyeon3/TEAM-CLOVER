@@ -1,0 +1,110 @@
+main{
+    padding-top: 180px;
+    margin-bottom: var(--space-foot);
+}
+.faq-search{
+    margin-top: var(--space-3x-large);
+    margin-bottom: var(--space-x-large);
+}
+.faq-search-box{
+    width: 648px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    gap: .6rem;
+    justify-self: center;
+}
+.faq-search-box img{
+    max-width: 100%;
+}
+input[id="faq-search-keyword"]::placeholder{
+    font-weight: var(--fw-med);
+    color: rgba(0, 0, 0, 0.5);
+}
+.cate-box{
+    margin-bottom: var(--space-foot);
+}
+.cate-box .common-frame{
+    width: 919px;
+}
+.faq-cate-list{
+    display: flex;
+    justify-content: center;
+    padding-bottom: var(--space-x-large);
+    margin-bottom: var(--space-x-large);;
+    border-bottom: 1px solid #000;
+}
+.faq-cate-list li{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-normal);
+    justify-content: center;
+    border: 1px solid #9F9F9F;
+    cursor: pointer;
+}
+.faq-list>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 1.5rem;
+    padding: 0 1.5rem;
+    margin-bottom: var(--space-normal);
+    max-height: 90px;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.faq-list>li.on{
+    max-height: 200px;
+}
+.faq-list>li>div {
+    display: flex;
+    gap: var(--space-normal);
+    padding: var(--space-normal) 1.5rem;
+}
+.f-title{
+    width: 769px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f-title img{
+    cursor: pointer;
+}
+.que{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+.ans{
+    width: 100%;
+    background-color: var(--cb-color-0);
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+.faq-foot .common-frame{
+    height: 400px;
+    background-color: #eee;
+    text-align: center;
+}
+.faq-foot .common-frame p:first-of-type{
+    padding-top: var(--space-large);
+    margin-bottom: var(--space-normal);
+}
+.faq-foot .common-frame p:nth-of-type(2){
+    margin-bottom: var(--space-normal);
+}
+.btn-per-que{
+    background-color: var(--main-color);
+    color: #fff;
+    width: 332px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .25rem;
+    margin: 0 auto;
+    margin-top: var(--space-large);
+    font-size: var(--fs-h2);
+}

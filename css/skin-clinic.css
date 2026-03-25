@@ -1,5 +1,6 @@
 main{
     padding-top: 180px;
+    margin-bottom: var(--space-foot);
 }
 .bannerA{
     height: 600px;
@@ -19,6 +20,11 @@ main{
     flex-direction: column;
     gap: var(--space-normal);
 }
+.service-desc>ul{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+}
 .qr-cord{
     display: flex;
     gap: var(--space-small);
@@ -33,9 +39,6 @@ main{
 .bannerB img{
     height: 400px;
 }
-.service-contents{
-    margin-bottom: var(--space-3x-large);
-}
 .service-contents .common-frame>h1{
     margin-bottom: var(--space-x-large);
 }
@@ -47,6 +50,7 @@ main{
 }
 .content-box li{
     text-align: center;
+
 }
 .content-box li figure{
     margin-bottom: var(--space-normal);
