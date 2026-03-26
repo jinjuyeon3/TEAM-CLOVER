@@ -1,0 +1,55 @@
+main{
+    margin-bottom: var(--space-foot);
+}
+.common-frame{
+    text-align: center;
+}
+.signUp-logo{
+    padding: var(--space-2x-large);
+}
+.signUp-logo{
+    padding: var(--space-2x-large);
+}
+.signUp-box{
+    width: 642px;
+    margin: 0 auto;
+    margin-bottom: var(--space-x-large);
+} 
+.su-process{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    border-bottom: 4px solid var(--main-color);
+    padding-bottom: var(--space-normal);
+}
+.su-process>li{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-small);
+}
+.su-process>li img{
+    width: 55px;
+    height: 55px;
+}
+.signUp-box h1{
+    margin: var(--space-3x-large) 0;
+    color: var(--main-color);
+}
+.btn-group{
+    display: flex;
+    gap: var(--space-small);
+    justify-content: center;
+}
+.btn-group button{
+    margin-top: var(--space-normal);
+    padding: var(--space-small) var(--space-2x-large);
+    box-sizing: border-box;
+    border: 1px solid var(--main-color);
+    border-radius: var(--space-x-small);
+}
+.btn-login{
+    background-color: var(--main-color);
+    color: #fff;
+}

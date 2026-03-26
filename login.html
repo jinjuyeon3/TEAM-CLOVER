@@ -14,6 +14,8 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./js/login.js"></script>
 </head>
 <body>
     <main>
@@ -29,7 +31,7 @@
                         <button type="button">비회원(주문조회)</button>
                     </div>
                     <!-- 로그인 폼 -->
-                    <form action="#">
+                    <form action="#" class="loginForm tab-content active">
                         <div class="input-group">
                             <label for="userId" class="visually-hidden">아이디</label>
                             <input type="text" placeholder="아이디를 입력하세요">
@@ -41,10 +43,10 @@
                         <button type="submit" class="btn-login fwb">로그인</button>
                         <!-- 아래 옵션 영역 -->
                         <div class="login-option">
-                            <label>
-                                <input type="checkbox">
-                                아이디 저장
-                            </label>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="terms1">
+                                <label for="terms1">아이디 저장</label>
+                            </div>
                             <div class="find-menu">
                                 <a href="#">비밀번호 찾기</a>
                                 <span>|</span>
@@ -67,8 +69,26 @@
                             </li>
                         </ul>
                     </form>
+                    <!-- 비회원주문 폼 -->
+                    <form action="#" class="gestForm tab-content">
+                        <div class="input-group">
+                            <label for="userName" class="visually-hidden">주문자명</label>
+                            <input type="text" placeholder="주문자명">
+                        </div>
+                        <div class="input-group">
+                            <label for="userPw" class="visually-hidden">주문번호</label>
+                            <input type="text" placeholder="주문번호">
+                        </div>
+                        <button type="submit" class="btn-oc fwb">주문조회</button>
+                        <ul class="gestNotice bd2">
+                            <li>&bull; 비회원 고객님께서 주문하신 제품의 목록과 배송상태를 확인할 수 있습니다.</li>
+                            <li>&bull; 주문번호는 주문 시 전송된 이메일 혹은 카카오 알림톡에서 확인 가능합니다.</li>
+                            <li>&bull; 주문번호를 잊어버린 경우, 1:1 상담 및 고객케어센터로 문의 바랍니다.</li>
+                        </ul>
+                    </form>
                 </div>
             </div>
+
             <div class="su-foot">
                 <ul class="bd2">
                     <li><a href="#">이용약관</a></li>

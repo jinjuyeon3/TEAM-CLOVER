@@ -22,6 +22,9 @@ address,i{
 ul,ol{
     list-style: none;
 }
+b{
+    font-weight: inherit;
+}
 input{
     -webkit-appearance: none; /* 크롬/사파리 */
     -moz-appearance: none;    /* 파이어폭스 */
