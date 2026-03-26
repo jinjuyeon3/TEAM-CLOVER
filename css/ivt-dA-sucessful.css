@@ -1,0 +1,95 @@
+main{
+    margin-bottom: var(--space-foot);
+}
+.common-frame{
+    text-align: center;
+}
+.logo{
+    padding: var(--space-2x-large);
+}
+.uProfile{
+    text-align: center;
+    margin-bottom: 5.3rem;
+}
+.uProfile span{
+    font-size: 2rem;
+    display: block;
+}
+.pwForm{
+    border: 1px solid var(--main-color);
+    border-radius: .25rem;
+    width: 620px;
+    padding: var(--space-x-large);
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.pwForm>h1{
+    color: var(--main-color);
+    margin-bottom: var(--space-small);
+}
+.pwForm>h1+p{
+    margin-bottom: var(--space-x-large);
+}
+.pwForm input{
+    width: 100%;
+    padding: 1.5rem 0 1.5rem var(--space-normal);
+    border: 1px solid #808080;
+    box-sizing: border-box;
+    font-weight: var(--fw-med);
+    font-size: var(--fs-reg);
+}
+.pwForm>div:first-of-type{
+    margin-bottom: var(--space-small);
+}
+.pwForm button{
+    margin-top: 1.5rem;
+    font-size: var(--fs-h2);
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 1.5rem 0;
+    width: 100%;
+}
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal.on{
+    opacity: 0.5;
+    pointer-events: auto;
+}
+.popup{
+    position: fixed;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    text-align: center;
+    padding: var(--space-large);
+    display: none;
+}
+.popup.on{
+    display: block;
+}
+.content-popup{
+    margin-bottom: var(--space-x-large);
+}
+.content-popup img{
+    margin-bottom: var(--space-normal);
+}
+.content-popup>p:first-of-type{
+    margin-bottom: var(--space-small);
+}
+.btn-home{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: var(--space-x-small) var(--space-x-large);
+    border-radius: .25rem;
+    display: inline-block;
+}
