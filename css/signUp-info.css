@@ -1,0 +1,126 @@
+main{
+    margin-bottom: var(--space-foot);
+}
+.common-frame{
+    text-align: center;
+}
+.signUp-logo{
+    padding: var(--space-2x-large);
+}
+.signUp-box{
+    width: 642px;
+    margin: 0 auto;
+    margin-bottom: var(--space-x-large);
+} 
+.su-process{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    border-bottom: 4px solid var(--main-color);
+    padding-bottom: var(--space-normal);
+}
+.su-process>li{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-small);
+}
+.su-process>li img{
+    width: 55px;
+    height: 55px;
+}
+.su-content{
+    margin-bottom: var(--space-x-large);
+}
+.su-content h2{
+    margin-top: var(--space-x-large);
+    margin-bottom: var(--space-large);
+}
+.form-list{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: var(--space-normal);
+}
+.form-item label{
+    font-weight: var(--fw-bold);
+}
+.form-list input{
+    border: 1px solid #808080;
+    padding: .75rem;
+    padding-right: 0;
+    box-sizing: border-box;
+    font-size: var(--fs-bd1);
+    height: 58px;
+}
+.form-list span{
+    color: red;
+}
+.form-list button{
+    height: 58px;
+    padding: .75rem var(--space-x-large);
+    box-sizing: border-box;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    font-weight: var(--fw-bold);
+}
+.input-row{
+    display: flex;
+    gap: var(--space-small);
+}
+.input-row>input[id="userId"]{
+    width: 435px;
+}
+.btn-pw{
+    width: 197px;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-x-small);
+}
+.input-row>input[id="address1"]{
+    width: 401px;
+}
+.btn-ad{
+    width: 231px;
+}
+.email-row>span{
+    color: #000;
+    font-weight: var(--fw-bold);
+    padding: .75rem var(--space-small);
+    width: 38px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.email-row>input[id="emailId"]{
+    width: 300px;
+}
+.email-row>select{
+    width: 300px;
+    height: 58px;
+    padding: .75rem;
+    font-size: var(--fs-bd1);
+    color: #808080;
+    border-radius: 0;
+    cursor: pointer;
+}
+.btn-group{
+    margin-top: var(--space-x-large);
+    display: flex;
+    gap: var(--space-x-small);
+    justify-content: center;
+}
+.btn-group button{
+    padding: var(--space-small) var(--space-2x-large);
+    border: 1px solid var(--main-color);
+    border-radius: var(--space-x-small);
+    box-sizing: border-box;
+    width: 240px;
+    height: 45px;
+}
+.submit{
+    background-color: var(--main-color);
+    color: #fff;
+}
