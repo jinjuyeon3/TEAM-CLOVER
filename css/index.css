@@ -215,16 +215,13 @@ main .hero-banner.swiper .swiper-pagination{
   display: none;
 }
 
-
-
-
-
 .bottom-banner{
     height: 600px;
 }
 .bottom-banner img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 
