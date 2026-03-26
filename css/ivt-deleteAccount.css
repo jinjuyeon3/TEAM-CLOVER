@@ -12,6 +12,18 @@ main{
     flex-direction: column;
     align-items: center;
 }
+.myInventory h1{
+    padding-bottom: var(--space-large);
+}
+.myInventory ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.myInventory ul li:hover{
+    font-weight: var(--fw-bold);
+    color: var(--main-color);
+}
 .notice{
     flex: 10;
 }
