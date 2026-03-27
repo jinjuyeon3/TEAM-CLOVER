@@ -1,10 +1,16 @@
-document.addEventListener("DOMContentLoaded",()=>{
-    const modal = document.querySelector(".modal")
-    const popup = document.querySelector(".popup")
-    const btnOk = document.querySelector(".btn-ok")
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.querySelector(".modal");
+    const popup = document.querySelector(".popup");
+    const form = document.querySelector(".pwForm");
 
-    btnOk.addEventListener("click",()=>{
-        modal.classList.add("on")
-        popup.classList.add("on")
-    })
-})
+    form.addEventListener("submit", (e) => {
+        e.preventDefault(); // 기본 제출 막기
+
+        if (form.checkValidity()) {
+            modal.classList.add("on");
+            popup.classList.add("on");
+        } else {
+            form.reportValidity(); // required 메시지 표시
+        }
+    });
+});
