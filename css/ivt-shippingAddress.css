@@ -91,6 +91,10 @@ main{
 /* 배송지 등록 영역 */
 .uProfile-content3{
     margin-top: 5rem;
+    
+}
+.uProfile-content3 input{
+    font-size: var(--fs-reg);
 }
 .uProfile-content3 h1{
     font-size: 2rem;
