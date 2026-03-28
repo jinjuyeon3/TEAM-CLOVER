@@ -83,6 +83,9 @@ input[id="faq-search-keyword"]::placeholder{
     background-color: var(--cb-color-0);
     border-radius: 0 0 1.5rem 1.5rem;
 }
+.btn-down{
+    transition: all .3s ease 0s;
+}
 .faq-foot .common-frame{
     height: 400px;
     background-color: #eee;

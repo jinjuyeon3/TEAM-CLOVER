@@ -1,0 +1,292 @@
+main{
+    padding-top: 280px;
+    margin-bottom: var(--space-foot);
+}
+.ivt-wrap{
+    display: flex;
+}
+.inventory-box{
+    flex: 3;
+}
+.myInventory h1{
+    padding-bottom: var(--space-large);
+}
+.myInventory ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.myInventory ul li:hover{
+    font-weight: var(--fw-bold);
+    color: var(--main-color);
+}
+.uProfile-box{
+    flex: 9;
+}
+.uProfile-content1{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: var(--space-large);
+    background-color: var(--cb-color-0);
+    margin-bottom: var(--space-2x-large);
+}
+.uProfile-content1 img{
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+.uProfile-hello span{
+    background-color: #CE9C4D;
+    color: #fff;
+    padding: var(--space-x-small);
+    text-align: center;
+    border-radius: .25rem;
+}
+.uProfile-hello h3{
+    margin-top: var(--space-x-small);
+    margin-bottom: var(--space-small);
+}
+.uProfile-content2{
+    margin-bottom: var(--space-x-large);
+}
+.uProfile-content2 h1{
+    color: var(--main-color);
+}
+.uProfile-content2 .icon-group{
+    display: flex;
+    gap: var(--space-normal);
+}
+.uProfile-content2 .icon-group li{
+    flex: 1;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-small);
+    padding: .75rem .45rem 1.35rem .45rem;
+    box-sizing: border-box;
+}
+.uProfile-content2 .icon-group li>span{
+    font-weight: var(--fw-bold);
+}
+.uProfile-content2 .icon-group li>div{
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+}
+.uProfile-content2 .icon-group li>div>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-small);
+    font-weight: var(--fw-med);
+}
+.uProfile-content3 h1{
+    margin-bottom: var(--space-large);
+}
+.form-row{
+    display: flex;
+}
+
+/* 취소/반품/교환 내역 */
+.uProfile-content3 h1 {
+    margin-bottom: var(--space-large);
+}
+/* 조회 박스 */
+.ivt-filter{
+    background-color: var(--cb-color-0);
+    padding: var(--space-normal);
+    margin-bottom: var(--space-x-large);
+    text-align: center;
+}
+.filter-period{
+    display: flex;
+    gap: 2.6rem;
+    margin-bottom: var(--space-normal);
+}
+.filter-period > span {
+    color: #111;
+    font-weight: var(--fw-bold);
+}
+.period-group{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+}
+.period-btns{
+    display: flex;
+    gap: var(--space-small);
+}
+.period-btns button{
+    padding: var(--space-small) var(--space-normal);
+    border: 1px solid #808080;
+    background-color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.period-btns button.active{
+    background-color: #808080;
+    color: #fff;
+}
+.filter-date{
+    display: flex;
+    align-items: center;
+    gap: var(--space-normal);
+}
+.date-select-group{
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+.date-select-group select{
+    padding: .25rem var(--space-small);
+    border: 1px solid #bfc5cf;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #000;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../img/0-imgPublishing/icon/ivt-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    background-size: 12px;
+}
+.date-select-group select:focus{
+    outline: none;
+    border-color: var(--main-color);
+}
+#start-year, #end-year{
+    width: 123px;
+}
+#start-month, #end-month,
+#start-day, #end-day{
+    width: 80px;
+}
+.date-dash{
+    font-weight: 2px;
+}
+.btn-search{
+    padding: var(--space-small) var(--space-normal);
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: var(--fw-bold);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: var(--space-large);
+}
+.ivt-list{
+    width: 100%;
+}
+.list-head{
+    display: flex;
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-bold);
+    text-align: center;
+    cursor: pointer;
+}
+.list-head li{
+    width: 100%;
+    color: #808080;
+    border-bottom: 5px solid #808080;
+    padding: var(--space-normal) var(--space-small);
+}
+.list-head li.active{
+    color: var(--main-color);
+    border-bottom: 5px solid var(--main-color);
+}
+.list-filter{
+    display: flex;
+    justify-content: flex-end;
+    gap: .75rem;
+    margin-top: var(--space-normal);
+    margin-bottom: var(--space-small);
+}
+select{
+    width: 105px;
+    height: 35px;
+    padding: var(--space-x-small) var(--space-small);
+    border: 1px solid #E2E2E2;
+    color: #000;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    cursor: pointer;
+
+    /* 커스텀 화살표 */
+   background-image: url("../img/0-imgPublishing/icon/ivt-arrow-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16.8px;
+}
+select:focus{
+    outline: none;
+    border-color: #E2E2E2;
+}
+.list-body li{
+    padding: 0 var(--space-normal);
+    max-height: 148px;
+    overflow: hidden;
+    transition: all .6s ease 0s;
+}
+.list-body li.on{
+    max-height: 1000px;
+}
+.column1{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #000;
+}
+.column1>div{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-x-small);
+    justify-content: center;
+    align-items: flex-start;
+}
+.date{
+    font-size: .7rem;
+}
+.status{
+    font-size: .6rem;
+    background-color: #808080;
+    padding: .1rem var(--space-x-small);
+    border-radius: .1rem;
+    box-sizing: border-box;
+    color: #fff;
+}
+.btn-group{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-group img{
+    transition: all .6s ease 0s;
+}
+.column2{
+    margin-top: var(--space-normal);
+}
+.iq-q{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+    margin-bottom: var(--space-large);
+    padding: 0 var(--space-normal);
+}
+.iq-a{
+    background-color: var(--cb-color-0);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+    padding: var(--space-normal);
+    border-radius: .5rem;
+    margin-bottom: var(--space-3x-large);
+}

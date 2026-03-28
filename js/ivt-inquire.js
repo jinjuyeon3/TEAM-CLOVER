@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const faqItems = document.querySelectorAll(".faq-list > li");
+    const inquireLists = document.querySelectorAll(".list-body > li");
 
-    faqItems.forEach((item) => {
-        const btn = item.querySelector(".btn-down");
+    inquireLists.forEach((list) => {
+        const btn = list.querySelector(".btn-group > img");
 
         btn.addEventListener("click", () => {
-            item.classList.toggle("on");
-            
+            list.classList.toggle("on");
+
             // 화살표 회전도 상태에 따라 변경
-            if (item.classList.contains("on")) {
+            if (list.classList.contains("on")) {
                 btn.style.transform = "rotate(-180deg)";
             } else {
                 btn.style.transform = "rotate(0deg)";

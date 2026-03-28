@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLINIQUE</title>
+    <title>주문/배송조회</title>
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/system.css">
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/aside.css">
     
+    <link rel="stylesheet" href="./css/ivt-orderlist.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
@@ -252,323 +254,280 @@
 
         <!-- 전체 콘텐츠 영역 -->
         <main>
-            <!-- 히어로 배너 영역 -->
-            <!-- Slider main container -->
-            <div class="swiper hero-banner">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <a href="#"><img src="./img/0-imgPublishing/banner/hero-banner1.1-pc.jpg" alt="피부 과학이 만든 클린 더마 솔루션" class="pc"></a>
-                        <a href="#"><img src="./img/0-imgPublishing/banner/hero-banner1-tab.jpg" alt="피부 과학이 만든 클린 더마 솔루션" class="tab"></a>
-                        <a href="#"><img src="./img/0-imgPublishing/banner/hero-banner1-mo.jpg" alt="피부 과학이 만든 클린 더마 솔루션" class="mo"></a>
+            <div class="common-frame ivt-wrap">
+                <section class="inventory-box">
+                    <div class="myInventory">
+                        <h1>MY 인벤토리</h1>
+                        <ul>
+                            <li><a href="#">주문/배송조회</a></li>
+                            <li><a href="#">취소/반품/교환내역</a></li>
+                            <li><a href="#">배송지 관리</a></li>
+                            <li><a href="#">리뷰 관리</a></li>
+                            <li><a href="#">1:1 문의</a></li>
+                            <li><a href="#">회원정보 수정</a></li>
+                            <li><a href="#">회원탈퇴</a></li>
+                        </ul>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="#"><img src="./img/0-imgPublishing/banner/hero-banner2.1-pc.jpg" alt="깨끗한 수분으로 완성하는 데일리 케어" class="pc"></a>
-                        <a href="#"><img src="./img/0-imgPublishing/banner/hero-banner2-tab.jpg" alt="깨끗한 수분으로 완성하는 데일리 케어" class="tab"></a>
-                        <a href="#"><img src="./img/0-imgPublishing/banner/hero-banner2-mo.jpg" alt="깨끗한 수분으로 완성하는 데일리 케어" class="mo"></a>
+                </section>
+                <section class="uProfile-box">
+                    <div class="uProfile-content1">
+                        <img src="./img/0-imgPublishing/icon/uProfile.svg" alt="사용자 프로필 사진">
+                        <div class="uProfile-hello">
+                            <span class="bd2 fwb">GOLD</span>
+                            <h3>---님 , 반가워요.</h3>
+                            <p>보유 중인 혜택을 한눈에 확인해보세요.</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="#"><img src="./img/0-imgPublishing/banner/hero-banner3.1-pc.jpg" alt="피부에 피어나는 생기있는 컬러" class="pc"></a>
-                        <a href="#"><img src="./img/0-imgPublishing/banner/hero-banner3-tab.jpg" alt="피부에 피어나는 생기있는 컬러" class="tab"></a>
-                        <a href="#"><img src="./img/0-imgPublishing/banner/hero-banner3-mo.jpg" alt="피부에 피어나는 생기있는 컬러" class="mo"></a>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <script>
-                const swiper = new Swiper('.swiper', {
-                    // Optional parameters
-                    // direction: 'vertical',
-                    loop: true,
-
-                    // If we need pagination
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                });
-            </script>
-
-            <!-- 서브 카테고리 영역 -->
-            <div class="sub-category">
-                <div class="common-frame">
-                    <ul class="sub-cate-list bd2">
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M37.0615 57H35.4092L40.0674 44.2734H41.7373L46.3955 57H44.7256L43.46 53.4141H38.3447L37.0615 57ZM38.8193 52.0254H42.9678L40.9463 46.3301H40.8408L38.8193 52.0254ZM48.1182 57V44.2734H49.7002V55.5938H55.6064V57H48.1182ZM57.7158 57V44.2734H59.2979V55.5938H65.2041V57H57.7158Z" fill="black"/>
-                                    </svg>
-                                </figure>
-                                <figcaption>전제품</figcaption>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure><img src="./img/0-imgPublishing/skinCare/ClarifyingLotion2TwiceADayExfoliator.png" alt="토너"></figure>
-                                <figcaption>토너</figcaption>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure><img src="./img/0-imgPublishing/skinCare/EvenBetterClinicalBrighteningEssenceLotion.png" alt="세럼"></figure>
-                                <figcaption>세럼</figcaption>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure><img src="./img/0-imgPublishing/skinCare/DramaticallyDifferentMoisturizingLotionPlus.png" alt="로션 & 크림"></figure>
-                                <figcaption>로션 & 크림</figcaption>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure><img src="./img/0-imgPublishing/skinCare/DayScrubCreamRinseOffFormula.png" alt="스크럽 & 마스크"></figure>
-                                <figcaption>스크럽 & 마스크</figcaption>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure><img src="./img/0-imgPublishing/skinCare/TakeTheDayOffCleansingBalm.png" alt="클렌징"></figure>
-                                <figcaption>클렌징</figcaption>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure><img src="./img/0-imgPublishing/makeUp/EvenBetterMakeup.png" alt="베이스 메이크업"></figure>
-                                <figcaption>베이스 메이크업</figcaption>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure><img src="./img/0-imgPublishing/makeUp/CheekPop.png" alt="색조 메이크업"></figure>
-                                <figcaption>색조 메이크업</figcaption>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure><img src="./img/0-imgPublishing/makeUp/foundation-brush.png" alt="메이크업 소품"></figure>
-                                <figcaption>메이크업 소품</figcaption>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- 브랜드 소개 영역A -->
-            <div class="brand-pilo fade-up">
-                <div class="commom-frame">
-                    <h4>Allergy Tested, 100% Fragrance Free</h4>
-                    <h1>피부를 위한 가장 깨끗한 선택, <span>클린 더마</span></h1>
-                    <p class="bd2 fwm">불필요한 것은 덜고,<br>꼭 필요한 성분만 담아 피부 본연의 균형을 건강하게 되돌립니다.</p>
-                    <p class="det">피부과학으로 만든 클린 포뮬러로 매일 더 편안하고 건강한 피부를 경험하세요.</p>
-                </div>
-            </div>
-
-            <!-- 뉴 아이템 영역 -->
-            <div class="new-item">
-                <h1>what's new</h1>
-                <div class="common-frame">
-                    <video class="new-video" src="./video/Home Clinique Official Site.mp4" loop autoplay muted></video>
-                    <!-- <div class="new-desc">
-                        <h3>피부를 밝히는 새로운 기준,<br>크리니크 브라이트닝 세럼 4세대</h3>
-                        <p class="bd2">
-                            멜라닌 생성부터 차단해 맑고 균일한 톤을 완성합니다.
-                        </p>
-                    </div> -->
-                </div>
-            </div>
-
-            <!-- 베스트 메뉴 영역 -->
-            <div class="best-item">
-                <div class="common-frame">
-                    <h1>best item</h1>
-                    <div class="swiper best-item-swiper">
-                        <ul class="best-item-list swiper-wrapper">
-                            <li class="swiper-slide">
-                                <a href="#">
-                                    <figure>
-                                        <img src="./img/0-imgPublishing/skinCare/DramaticallyDifferentMoisturizingLotionPlus.png" alt="드라마티컬리 디퍼런트 모이스춰라이징 로션+">
-                                    </figure>
-                                    <div class="item-info">
-                                    <p class="fwb">드라마티컬리 디퍼런트 모이스춰라이징 로션+</p>
-                                    <p>하루 종일 수분을 채워 부드럽고 빛나는 피부로 가꿔주는 산뜻한 모이스춰라이저</p>
-                                    <div class="item-info-price">
-                                            <p class="fwb">58,000원</p>
-                                            <div class="item-pinfo-icon">
-                                                <span class="icon-heart">
-                                                    <img src="./img/0-imgPublishing/icon/heart.svg" alt="관심상품 추가">
-                                                </span>
-                                                <span>
-                                                    <img src="./img/0-imgPublishing/icon/cart.svg" alt="장바구니 추가">
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                    <div class="uProfile-content2">
+                        <ul class="icon-group">
+                            <li>
+                                <img src="./img/0-imgPublishing/icon/cupon.svg" alt="쿠폰 아이콘">
+                                <span>쿠폰</span>
+                                <h1>쿠폰 3장</h1>
+                                <div>
+                                    <a href="#">
+                                        보유 쿠폰 보기
+                                        <img src="./img/0-imgPublishing/icon/ivt-arrow.svg" alt="보유 쿠폰 보기">
+                                    </a>
+                                </div>
                             </li>
-                            <li class="swiper-slide">
-                                <a href="#">
-                                    <figure>
-                                        <img src="./img/0-imgPublishing/skinCare/ClarifyingLotion2TwiceADayExfoliator.png" alt="클래리파잉 로션 트와이스 어 데이 엑스폴리에이터 2">
-                                    </figure>
-                                    <div class="item-info">
-                                        <p class="fwb">클래리파잉 로션 트와이스 어 데이 엑스폴리에이터2</p>
-                                        <p>묵은 각질과 노폐물을 정돈해 맑고 매끄러운 피부로 가꿔주는 각질 케어 토너</p>
-                                        <div class="item-info-price">
-                                            <p class="fwb">62,000원</p>
-                                            <div class="item-pinfo-icon">
-                                                <span class="icon-heart">
-                                                    <img src="./img/0-imgPublishing/icon/heart.svg" alt="관심상품 추가">
-                                                </span>
-                                                <span>
-                                                    <img src="./img/0-imgPublishing/icon/cart.svg" alt="장바구니 추가">
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                            <li>
+                                <img src="./img/0-imgPublishing/icon/membership.svg" alt="등급 헤택 아이콘">
+                                <span>멤버십</span>
+                                <h1>Gold</h1>
+                                <div>
+                                    <a href="#">
+                                        등급 혜택 확인
+                                        <img src="./img/0-imgPublishing/icon/ivt-arrow.svg" alt="보유 쿠폰 보기">
+                                    </a>
+                                </div>
                             </li>
-                            <li class="swiper-slide">
-                                <a href="#">
-                                    <figure>
-                                        <img src="./img/0-imgPublishing/skinCare/EvenBetterClinicalDarkSpotCorrectorSerum.png" alt="이븐 베터 크리니컬 다크 스팟 클리어링 세럼">
-                                    </figure>
-                                    <div class="item-info">
-                                        <p class="fwb">이븐 베터 크리니컬 다크 스팟 클리어링 세럼</p>
-                                        <p>잡티와 피부 톤을 케어해 맑고 균일한 피부로 가꿔주는 브라이트닝 세럼</p>
-                                        <div class="item-info-price">
-                                            <p class="fwb">105,000원</p>
-                                            <div class="item-pinfo-icon">
-                                                <span class="icon-heart">
-                                                    <img src="./img/0-imgPublishing/icon/heart.svg" alt="관심상품 추가">
-                                                </span>
-                                                <span>
-                                                    <img src="./img/0-imgPublishing/icon/cart.svg" alt="장바구니 추가">
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="swiper-slide">
-                                <a href="#">
-                                    <figure>
-                                        <img src="./img/0-imgPublishing/skinCare/DayScrubCreamRinseOffFormula.png" alt="데이 스크럽 크림 린스-오프 포뮬러">
-                                    </figure>
-                                    <div class="item-info">
-                                        <p class="fwb">데이 스크럽 크림 린스-오프 포뮬러</p>
-                                        <p>부드러운 스크럽으로 묵은 각질을 제거해 매끈하고 환한 피부로 가꿔주는 페이셜 스크럽</p>
-                                        <div class="item-info-price">
-                                            <p class="fwb">58,000원</p>
-                                            <div class="item-pinfo-icon">
-                                                <span class="icon-heart">
-                                                    <img src="./img/0-imgPublishing/icon/heart.svg" alt="관심상품 추가">
-                                                </span>
-                                                <span>
-                                                    <img src="./img/0-imgPublishing/icon/cart.svg" alt="장바구니 추가">
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="swiper-slide">
-                                <a href="#">
-                                    <figure>
-                                        <img src="./img/0-imgPublishing/makeUp/CheekPop.png" alt="치크 팝">
-                                    </figure>
-                                    <div class="item-info">
-                                        <p class="fwb">치크 팝</p>
-                                        <p>맑고 생기 있는 컬러로 자연스러운 혈색을 더해주는 파우더 블러셔</p>
-                                        <div class="item-info-price">
-                                            <p class="fwb">36,000원</p>
-                                            <div class="item-pinfo-icon">
-                                                <span class="icon-heart">
-                                                    <img src="./img/0-imgPublishing/icon/heart.svg" alt="관심상품 추가">
-                                                </span>
-                                                <span>
-                                                    <img src="./img/0-imgPublishing/icon/cart.svg" alt="장바구니 추가">
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                            <li>
+                                <img src="./img/0-imgPublishing/icon/point.svg" alt="쿠폰 아이콘">
+                                <span>포인트</span>
+                                <h1>12,500P</h1>
+                                <div>
+                                    <a href="#">
+                                        적립/사용 내역 보기
+                                        <img src="./img/0-imgPublishing/icon/ivt-arrow.svg" alt="보유 쿠폰 보기">
+                                    </a>
+                                </div>
                             </li>
                         </ul>
-                        <div class="best-pagination"></div>
                     </div>
-                    <script>
-                        const bestItemSwiper = new Swiper('.best-item-swiper',{
-                            slidesPerView: 3,
-                            spaceBetween: 18,
-                            pagination: {
-                                el: '.best-pagination',
-                                clickable: true,
-                                renderBullet: function (index, className) {
-                                let number = index + 1;
-                                number = number < 10 ? "0" + number : number;
-
-                                return `
-                                    <span class="${className}">
-                                    <span class="num">${number}</span>
-                                    <span class="line"></span>
-                                    </span>
-                                `;
-                                }
-                            },
-                        })
-                    </script>
-                </div>
-                
-            </div>
-
-            <!-- 브랜드 소개 영역B  -->
-            <div class="parallax"></div>
-            <div class="visual-hero">
-                <h3 class="fade-up">OUR STORY</h3>
-                <p class="fwm bd2 fade-up">Allergy Tested, 100% Fragrance Free</p>
-                <div class="card">
-                    <div class="title fade-up">
-                        <h1>[ CLINIQUE : Clean, Derma ]</h1>
-                        <p class="fwb">“ 피부를 이해하는 것에서 시작합니다. ”</p>
+                    <div class="uProfile-content3">
+                        <h1>주문내역</h1>
+                        <div class="ivt-filter">
+                            <div class="filter-period">
+                                <span>구매기간</span>
+                                <div class="period-group">
+                                    <div class="period-btns">
+                                        <button type="button" class="active">1개월</button>
+                                        <button type="button">3개월</button>
+                                        <button type="button">6개월</button>
+                                        <button type="button">1년</button>
+                                    </div>
+                                    <div class="filter-date">
+                                        <div class="date-select-group">
+                                            <select name="start-year" id="start-year">
+                                                <option value="2026">2026</option>
+                                                <option value="2025">2025</option>
+                                                <option value="2024">2024</option>
+                                            </select>
+                                            <span>년</span>
+    
+                                            <select name="start-month" id="start-month">
+                                                <option value="1">1</option>
+                                                <option value="2" selected>2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <span>월</span>
+    
+                                            <select name="start-day" id="start-day">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25" selected>25</option>
+                                                <option value="26">26</option>
+                                                <option value="27">27</option>
+                                                <option value="28">28</option>
+                                                <option value="29">29</option>
+                                                <option value="30">30</option>
+                                                <option value="31">31</option>
+                                            </select>
+                                            <span>일</span>
+                                        </div>
+    
+                                        <strong class="date-dash">-</strong>
+    
+                                        <div class="date-select-group">
+                                            <select name="end-year" id="end-year">
+                                                <option value="2026" selected>2026</option>
+                                                <option value="2025">2025</option>
+                                                <option value="2024">2024</option>
+                                            </select>
+                                            <span>년</span>
+    
+                                            <select name="end-month" id="end-month">
+                                                <option value="1">1</option>
+                                                <option value="2" selected>2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <span>월</span>
+    
+                                            <select name="end-day" id="end-day">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25" selected>25</option>
+                                                <option value="26">26</option>
+                                                <option value="27">27</option>
+                                                <option value="28">28</option>
+                                                <option value="29">29</option>
+                                                <option value="30">30</option>
+                                                <option value="31">31</option>
+                                            </select>
+                                            <span>일</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-search">조회하기</button>
+                        </div>
+                        <div class="ivt-list">
+                            <ul class="list-head fwb">
+                                <li>주문일자</li>
+                                <li>상품</li>
+                                <li>주문금액</li>
+                                <li>진행상태</li>
+                                <li>구매확정 및 리뷰</li>
+                            </ul>
+                            <ul class="list-body bd2">
+                                <li>
+                                    <div class="column1">
+                                        <span>2026.03.25</span>
+                                        <a href="#">
+                                            <span>주문상세</span>
+                                            <img src="./img/0-imgPublishing/icon/ivt-arrow-more.svg" alt="주문상세보기">
+                                        </a>
+                                    </div>
+                                    <div class="column2">
+                                        <img src="./img/0-imgPublishing/skinCare/OD-DramaticallyDifferentMoisturizingLotionPlus.png" alt="드라마티컬리 디퍼런트 모이스춰라이징 로션+">
+                                        <div>
+                                            <span>드라마티컬리 디퍼런트 모이스춰라이징 로션+</span>
+                                            <span>[용량] 125ml / 수량 1개</span>
+                                        </div>
+                                    </div>
+                                    <div class="column3">
+                                        <span>58,000원</span>
+                                    </div>
+                                    <div class="column4">
+                                        <span>상품중비중</span>
+                                        <span>4.6 (월)이내 배송 시작</span>
+                                    </div>
+                                    <div class="column5">
+                                        <button>취소접수</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="column1">
+                                        <span>2026.03.24</span>
+                                        <a href="#">
+                                            <span>주문상세</span>
+                                            <img src="./img/0-imgPublishing/icon/ivt-arrow-more.svg" alt="주문상세보기">
+                                        </a>
+                                    </div>
+                                    <div class="column2">
+                                        <img src="./img/0-imgPublishing/skinCare/OD-MoistureSurge100HAutoReplenishingHydrator.png" alt="모이스춰 써지 100H 오토-리플레니싱 하이드레이터">
+                                        <div>
+                                            <span>모이스춰 써지 100H 오토-리플레니싱 하이드레이터</span>
+                                            <span>[용량] 50ml / 수량 1개</span>
+                                        </div>
+                                    </div>
+                                    <div class="column3">
+                                        <span>64,000원</span>
+                                    </div>
+                                    <div class="column4">
+                                        <span>배송완료</span>
+                                        <span>3.25 (수) 도착</span>
+                                        <span>롯데택배</span>
+                                        <span>26030230822</span>
+                                    </div>
+                                    <div class="column5">
+                                        <button>반품신청</button>
+                                        <button>교환신청</button>
+                                        <button>구매확정</button>
+                                        <button>리뷰작성</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="para1 fade-up">
-                        <p>크리니크는 모든 피부가 다르다는 전제에서 출발합니다.<br>알러지 테스트와 향료 무첨가 원칙을 바탕으로 피부에 꼭 필요한 성분만을 담아,<br>누구나 편안하게 사용할 수 있는 기준을 제시합니다.</p>
-                        <!-- <h2>Clinique Philosophy</h2>
-                        <p class="fwm">피부에 불필요한 것은 덜어내고, 꼭 필요한 것만 남기는 더마 스킨케어.</p>
-                    </div>
-                    <div class="para2 fade-up">
-                        <h2>Science-Based Care</h2>
-                        <p class="fwm">알러지 테스트와 향료 무첨가 원칙으로, 모든 피부에 편안한 기준을 제시합니다.</p> -->
-                    </div>
-                </div>
-            </div>
-
-            <!-- 하단 마지막 섹션 고민중 -->
-            <div class="brand-last">
-                <div class="commom-frame">
-                    <div>
-                        <h3 class="fade-left">Healthy skin begins with understanding.</h3>
-                        <p class="det">당신의 피부를 이해하는 순간, 크리니크의 솔루션이 시작됩니다.</p>
-                    </div>
-                    <figure>
-                        <img src="./img/0-imgPublishing/44.1.png" alt="모델">
-                    </figure>
-                </div>
-            </div>
-
-
-            <!-- 서브 배너 영역 -->
-            <div class="bottom-banner">
-                <a href="./skin-consulting.html">
-                    <img src="./img/0-imgPublishing/banner/test-1.jpg" alt="clinique skin clinic">
-                </a>
+                </section>
             </div>
         </main>
-        
-        <!-- 푸터 영역 -->
+
+         <!-- 푸터 영역 -->
         <footer>
             <div class="common-frame">
                 <div class="f-content1">
@@ -709,7 +668,6 @@
             </div>
         </aside>
 
-    </div>
-
+    </div>        
 </body>
 </html>

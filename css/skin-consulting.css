@@ -9,6 +9,11 @@ main{
     height: 600px;
     margin-bottom: var(--space-3x-large);
 }
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .consulting-contents{
     text-align: center;
 }

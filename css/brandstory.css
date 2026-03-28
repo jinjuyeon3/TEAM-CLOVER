@@ -1,0 +1,135 @@
+main{
+    padding-top: 180px;
+    margin-bottom: var(--space-foot);
+}
+.banner{
+    height: 600px;
+    margin-bottom: var(--space-3x-large);
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.story{
+    margin-bottom: var(--space-3x-large);
+}
+.story .common-frame{
+    display: flex;
+    align-items: flex-end;
+}
+.story .common-frame figure{
+    flex: 6;
+}
+.story-desc{
+    flex: 5;
+}
+.title h1{
+    text-align: left;
+    margin-bottom: var(--space-normal);
+}
+.title h1+p{
+    margin-bottom: var(--space-large);
+}
+.para{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+}
+.timeline{
+    margin-bottom: var(--space-3x-large);
+}
+.timeline h1{
+    text-align: center;
+    margin-bottom: var(--space-large);
+}
+.tList{
+    display: flex;
+    gap:var(--space-normal);
+}
+.tList li{
+    flex: 1;
+    text-align: center;
+}
+.tList li img{
+    margin-bottom: var(--space-normal);
+}
+.tList li img+h4{
+    margin-bottom: var(--space-normal);
+}
+.philo{
+    margin-bottom: var(--space-3x-large);
+}
+.philo .common-frame{
+    text-align: center;
+}
+.philo .common-frame h1:first-of-type{
+    margin-bottom: var(--space-large);
+}
+.philo .common-frame h1:last-of-type{
+    margin-bottom: var(--space-x-large);
+    color: var(--main-color);
+}
+.pList{
+    display: flex;
+    gap:var(--space-normal)
+}
+.pList li{
+    flex: 1;
+    border: 1px solid rgba(14, 46, 135, 0.5);
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 2.5rem var(--space-small);
+}
+.addDesc{
+    display: flex;
+    justify-content: center;
+    gap: 4.75rem;
+    margin: var(--space-x-large) 0;
+    color: var(--main-color);
+}
+.addDesc span{
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-bold);
+}
+.addDesc+h3{
+    color: var(--main-color);
+}
+.selling-point{
+    background-color: #F5F5F5;
+    height: 888px;
+    margin-bottom: var(--space-foot);
+}
+.selling-point .common-frame{
+    text-align: center;
+}
+.selling-point .common-frame>p:first-of-type{
+    padding-top: var(--space-large);
+    margin-bottom: var(--space-normal);
+}
+.selling-point h3{
+    margin-bottom: var(--space-normal);
+}
+.selling-point h3+p{
+    margin-bottom: var(--space-large);
+}
+.spList{
+    display: flex;
+    gap: var(--space-normal);
+    margin-bottom: var(--space-large);
+}
+.spList li{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+}
+.selling-point button{
+    color: #fff;
+    background-color: var(--main-color);
+    height: 54px;
+    width: 244px;
+    border-radius: .5rem;
+}
