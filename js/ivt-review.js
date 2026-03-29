@@ -26,23 +26,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-
-    // 2. 문의내역 아코디언 기능
-    const inquireLists = document.querySelectorAll(".list-body > li");
-
-    inquireLists.forEach((list) => {
-        const btn = list.querySelector(".btn-group > img");
-
-        if (!btn) return;
-
-        btn.addEventListener("click", () => {
-            list.classList.toggle("on");
-
-            if (list.classList.contains("on")) {
-                btn.style.transform = "rotate(-180deg)";
-            } else {
-                btn.style.transform = "rotate(0deg)";
-            }
-        });
-    });
 });

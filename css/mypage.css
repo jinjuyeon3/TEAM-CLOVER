@@ -1,0 +1,186 @@
+main{
+    padding-top: 280px;
+    margin-bottom: var(--space-foot);
+}
+.ivt-wrap{
+    display: flex;
+}
+.inventory-box{
+    flex: 3;
+}
+.myInventory h1{
+    padding-bottom: var(--space-large);
+}
+.myInventory ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.myInventory ul li:hover{
+    font-weight: var(--fw-bold);
+    color: var(--main-color);
+}
+.uProfile-box{
+    flex: 9;
+}
+.uProfile-content1{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: var(--space-large);
+    background-color: var(--cb-color-0);
+    margin-bottom: var(--space-2x-large);
+}
+.uProfile-content1 img{
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+.uProfile-hello span{
+    background-color: #CE9C4D;
+    color: #fff;
+    padding: var(--space-x-small);
+    text-align: center;
+    border-radius: .25rem;
+}
+.uProfile-hello h3{
+    margin-top: var(--space-x-small);
+    margin-bottom: var(--space-small);
+}
+.uProfile-content2{
+    margin-bottom: var(--space-3x-large);
+}
+.uProfile-content2 h1{
+    color: var(--main-color);
+}
+.uProfile-content2 .icon-group{
+    display: flex;
+    gap: var(--space-normal);
+}
+.uProfile-content2 .icon-group li{
+    flex: 1;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-small);
+    padding: .75rem .45rem 1.35rem .45rem;
+    box-sizing: border-box;
+}
+.uProfile-content2 .icon-group li>span{
+    font-weight: var(--fw-bold);
+}
+.uProfile-content2 .icon-group li>div{
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+}
+.uProfile-content2 .icon-group li>div>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-small);
+    font-weight: var(--fw-med);
+}
+.uProfile-content3 h1{
+    margin-bottom: var(--space-large);
+}
+.box-head{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-all{
+    display: flex;
+    align-items: center;
+    gap: var(--space-small);
+    cursor: pointer;
+}
+.box-head span{
+    color: #808080;
+}
+.box-list{
+    margin-bottom: var(--space-3x-large);
+    padding: var(--space-normal) 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--space-x-large) var(--space-3x-large);
+}
+.box-list>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.box-list figure{
+    background-color: var(--cb-color-0);
+    width: 400px;
+    height: 400px;
+    margin-bottom: var(--space-normal);
+}
+.box-list figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.sale-badge{
+    position: absolute;
+    left: 17px;
+    top: 17px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    color: #fff;
+    font-size: var(--fs-h2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pro-option{
+    display: flex;
+    justify-content: center;
+    gap: var(--space-small);
+    margin-bottom: var(--space-small);
+    cursor: pointer;
+}
+.pro-option>span{
+    border: 1px solid #BABABA;
+    padding: var(--space-x-small);
+    box-sizing: border-box;
+    color: #BABABA;
+}
+.pro-option>span.selected{
+    border: 1px solid #000;
+    padding: var(--space-x-small);
+    box-sizing: border-box;
+    color: #000;
+}
+.pro-option>div{
+    width: 24px;
+    height: 24px;
+}
+.color1{background-color: #F1D2BD;}
+.color2{background-color: #EECBB4;}
+.color3{background-color: #E9BC9D;}
+.color4{background-color: #D7A07C;}
+.pro-desc>p:first-of-type{
+    margin-bottom: var(--space-normal);
+}
+.pro-desc>p:last-of-type{
+    margin-bottom: var(--space-small);
+}
+.pro-price{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--space-small);
+}
+.pro-price .sale{
+    font-size: var(--fs-h4);
+}
+.pro-price .original{
+    color: #BABABA;
+    text-decoration: line-through;
+}

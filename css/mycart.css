@@ -1,0 +1,158 @@
+main{
+    padding-top: 280px;
+    margin-bottom: var(--space-foot);
+}
+.uProfile-wrap{
+    display: flex;
+    gap: var(--space-normal);
+    margin-bottom: var(--space-3x-large);
+}
+.uProfile-content1{
+    flex: 5;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: var(--space-large);
+    background-color: var(--cb-color-0);
+    margin-bottom: var(--space-2x-large);
+}
+.uProfile-content1 img{
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+.uProfile-hello span{
+    background-color: #CE9C4D;
+    color: #fff;
+    padding: var(--space-x-small);
+    text-align: center;
+    border-radius: .25rem;
+}
+.uProfile-hello h3{
+    margin-top: var(--space-x-small);
+    margin-bottom: var(--space-small);
+}
+.uProfile-content2{
+    flex: 7;
+    margin-bottom: var(--space-x-large);
+}
+.uProfile-content2 h1{
+    color: var(--main-color);
+}
+.uProfile-content2 .icon-group{
+    display: flex;
+    gap: var(--space-normal);
+}
+.uProfile-content2 .icon-group li{
+    flex: 1;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-small);
+    padding: .75rem .45rem 1.35rem .45rem;
+    box-sizing: border-box;
+}
+.uProfile-content2 .icon-group li>span{
+    font-weight: var(--fw-bold);
+}
+.uProfile-content2 .icon-group li>div{
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+}
+.uProfile-content2 .icon-group li>div>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-small);
+    font-weight: var(--fw-med);
+}
+.mycart-box{
+    display: flex;
+    gap: 7rem;
+    align-items: center;
+}
+.cartList{
+    flex: 7;
+}
+.cartList>h1{
+    margin-bottom: var(--space-large);
+}
+.cartList>ul li:first-child{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.cartList>ul li{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border-bottom: 1px solid #000;
+}
+.cartList>ul figure{
+    width: 223px;
+    height: 202px;
+}
+.cartList>ul figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+}
+.inv-g{
+    display: flex;
+    justify-content: space-between;
+}
+.span-g{
+    display: flex;
+    gap: 0;
+    text-align: center;
+}
+.span-g span{
+    height: 24px;
+    width: 24px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.span-g .number{
+    width: 71px;
+}
+.invoice{
+    flex: 4;
+}
+.sellInfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--space-normal) 0;
+    margin-top: var(--space-normal);
+    margin-bottom: var(--space-normal);
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: var(--space-normal) 0;
+}
+.sellInfo dd{
+    text-align: right;
+}
+.sellInfo .sale{
+    color: red;
+}
+.sellPrice{
+    display: flex;
+    justify-content: space-between;
+}
+.sellPrice dd{
+    font-size: var(--fs-h1);
+}
+.invoice button{
+    color: #fff;
+    background-color: var(--main-color);
+    height: 51px;
+    width: 100%;
+    text-align: center;
+    margin-top: var(--space-normal);
+}
