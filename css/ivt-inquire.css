@@ -1,0 +1,558 @@
+main{
+    padding-top: 280px;
+    margin-bottom: var(--space-foot);
+}
+.ivt-wrap{
+    display: flex;
+}
+.inventory-box{
+    flex: 3;
+}
+.myInventory h1{
+    padding-bottom: var(--space-large);
+}
+.myInventory ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.myInventory ul li:hover{
+    font-weight: var(--fw-bold);
+    color: var(--main-color);
+}
+.uProfile-box{
+    flex: 9;
+}
+.uProfile-content1{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: var(--space-large);
+    background-color: var(--cb-color-0);
+    margin-bottom: var(--space-2x-large);
+}
+.uProfile-content1 img{
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+.uProfile-hello span{
+    background-color: #CE9C4D;
+    color: #fff;
+    padding: var(--space-x-small);
+    text-align: center;
+    border-radius: .25rem;
+}
+.uProfile-hello h3{
+    margin-top: var(--space-x-small);
+    margin-bottom: var(--space-small);
+}
+.uProfile-content2{
+    margin-bottom: var(--space-x-large);
+}
+.uProfile-content2 h1{
+    color: var(--main-color);
+}
+.uProfile-content2 .icon-group{
+    display: flex;
+    gap: var(--space-normal);
+}
+.uProfile-content2 .icon-group li{
+    flex: 1;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-small);
+    padding: .75rem .45rem 1.35rem .45rem;
+    box-sizing: border-box;
+}
+.uProfile-content2 .icon-group li>span{
+    font-weight: var(--fw-bold);
+}
+.uProfile-content2 .icon-group li>div{
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+}
+.uProfile-content2 .icon-group li>div>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-small);
+    font-weight: var(--fw-med);
+}
+.uProfile-content3 h1{
+    margin-bottom: var(--space-large);
+}
+.form-row{
+    display: flex;
+}
+
+/* 취소/반품/교환 내역 */
+.uProfile-content3 h1 {
+    margin-bottom: var(--space-large);
+}
+/* 조회 박스 */
+.ivt-filter{
+    background-color: var(--cb-color-0);
+    padding: var(--space-normal);
+    margin-bottom: var(--space-x-large);
+    text-align: center;
+}
+.filter-period{
+    display: flex;
+    gap: 2.6rem;
+    margin-bottom: var(--space-normal);
+}
+.filter-period > span {
+    color: #111;
+    font-weight: var(--fw-bold);
+}
+.period-group{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+}
+.period-btns{
+    display: flex;
+    gap: var(--space-small);
+}
+.period-btns button{
+    padding: var(--space-small) var(--space-normal);
+    border: 1px solid #808080;
+    background-color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.period-btns button.active{
+    background-color: #808080;
+    color: #fff;
+}
+.filter-date{
+    display: flex;
+    align-items: center;
+    gap: var(--space-normal);
+}
+.date-select-group{
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+.date-select-group select{
+    padding: .25rem var(--space-small);
+    border: 1px solid #bfc5cf;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #000;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../img/0-imgPublishing/icon/ivt-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    background-size: 12px;
+}
+.date-select-group select:focus{
+    outline: none;
+    border-color: var(--main-color);
+}
+#start-year, #end-year{
+    width: 123px;
+}
+#start-month, #end-month,
+#start-day, #end-day{
+    width: 80px;
+}
+.date-dash{
+    font-weight: 2px;
+}
+.btn-search{
+    padding: var(--space-small) var(--space-normal);
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: var(--fw-bold);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: var(--space-large);
+}
+.ivt-list{
+    width: 100%;
+}
+.list-head{
+    display: flex;
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-bold);
+    text-align: center;
+    cursor: pointer;
+}
+.list-head li{
+    width: 100%;
+    color: #808080;
+    border-bottom: 5px solid #808080;
+    padding: var(--space-normal) var(--space-small);
+}
+.list-head li.active{
+    color: var(--main-color);
+    border-bottom: 5px solid var(--main-color);
+}
+.list-filter{
+    display: flex;
+    justify-content: flex-end;
+    gap: .75rem;
+    margin-top: var(--space-normal);
+    margin-bottom: var(--space-small);
+}
+select{
+    width: 105px;
+    height: 35px;
+    padding: var(--space-x-small) var(--space-small);
+    border: 1px solid #E2E2E2;
+    color: #000;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    cursor: pointer;
+
+    /* 커스텀 화살표 */
+   background-image: url("../img/0-imgPublishing/icon/ivt-arrow-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16.8px;
+}
+select:focus{
+    outline: none;
+    border-color: #E2E2E2;
+}
+
+.list-body li{
+    padding: 0 var(--space-normal);
+    max-height: 148px;
+    overflow: hidden;
+    transition: all .6s ease 0s;
+}
+.list-body li.on{
+    max-height: 1000px;
+}
+.column1{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #000;
+}
+.column1>div{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-x-small);
+    justify-content: center;
+    align-items: flex-start;
+}
+.date{
+    font-size: .7rem;
+}
+.status{
+    font-size: .6rem;
+    background-color: #808080;
+    padding: .1rem var(--space-x-small);
+    border-radius: .1rem;
+    box-sizing: border-box;
+    color: #fff;
+}
+.btn-group{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-group img{
+    transition: all .6s ease 0s;
+}
+.column2{
+    margin-top: var(--space-normal);
+}
+.iq-q{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+    margin-bottom: var(--space-large);
+    padding: 0 var(--space-normal);
+}
+.iq-a{
+    background-color: var(--cb-color-0);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+    padding: var(--space-normal);
+    border-radius: .5rem;
+    margin-bottom: var(--space-3x-large);
+}
+
+/* 탭 콘텐츠 공통 */
+.tab-content{
+    display: none;
+}
+.tab-content.active{
+    display: block;
+}
+/* 1:1 문의하기 */
+.inquiry-form{
+    margin-top: var(--space-large);
+    border-top: 3px solid var(--main-color);
+}
+.inquiry-row{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    border-bottom: 1px solid var(--main-color);
+    min-height: 60px;
+}
+.inquiry-title{
+    padding: var(--space-normal);
+    background-color: var(--cb-color-0);
+    border-right: 1px solid var(--main-color);
+    font-weight: var(--fw-bold);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.inquiry-cont{
+    padding: var(--space-small) var(--space-normal);
+    display: flex;
+    align-items: center;
+    gap: var(--space-normal);
+    box-sizing: border-box;
+}
+/* 문의유형 */
+/* 인풋 공통 */
+.inquiry-cont input[type="text"],
+.inquiry-cont input[type="email"],
+.inquiry-cont textarea,
+.inquiry-cont select{
+    border: 1px solid #808080;
+    height: 48px;
+    padding: var(--space-small);
+    box-sizing: border-box;
+    font-size: var(--fs-bd2);
+    color: #808080;
+}
+/* 기본 radio 숨기기 */
+.radio-box input[type="radio"]{
+    display: none;
+}
+/* 라벨 정렬 */
+.radio-box{
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-x-small);
+    cursor: pointer;
+}
+/* 동그라미 만들기 */
+.radio-box span{
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: var(--fs-reg);
+    font-weight: var(--fw-med);
+}
+/* 바깥 원 */
+.radio-box span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+/* 안쪽 점 (선택 상태) */
+.radio-box input:checked + span::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(180deg, var(--cb-color-500), var(--main-color));
+}
+/* 선택 시 외곽 색 */
+.radio-box input:checked + span::before{
+    border-color: var(--main-color);
+}
+.order-input{
+    width: 250px;
+}
+.full-input{
+    width: 100%;
+}
+.inquiry-textarea-row .inquiry-cont{
+    align-items: flex-start;
+}
+.inquiry-textarea-row textarea{
+    width: 100%;
+    min-height: 200px;
+    resize: none;
+    padding: var(--space-small);
+}
+/* 주문번호 버튼 */
+.btn-order-search {
+    height: 48px;
+    padding: var(--space-small);
+    border: 1px solid var(
+    --main-color);
+    background-color: var(
+    --main-color);
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.btn-change {
+    height: 48px;
+    padding: var(--space-small);
+    border: 1px solid #808080;
+    cursor: pointer;
+    color: #808080;
+    box-sizing: border-box;
+}
+/* 첨부 */
+.file-row{
+    align-items: center;
+}
+.file-box{
+    width: 98px;
+    height: 98px;
+    box-sizing: border-box;
+    padding: var(--space-large);
+    border: 1px solid #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(---sapce-normal);
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: var(--fs-h4);
+}
+.file-guide{
+    display: flex;
+    flex-direction: column;
+    color: #808080;
+}
+.file-guide .point{
+    color: #EF5C18;
+}
+/* 이메일 */
+.email-row input[type="text"]{
+    width: 150px;
+}
+.inquiry-cont select{
+    font-size: var(--fs-bd2);
+    width: 132px;
+    height: 48px;
+    padding: var(--space-small) var(--space-normal);
+    border: 1px solid #808080;
+    color: #000;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    cursor: pointer;
+
+    /* 커스텀 화살표 */
+   background-image: url("../img/0-imgPublishing/icon/ivt-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 16px;
+}
+.inquiry-cont select:focus{
+    outline: none;
+    border-color: #808080;
+}
+/* 기본 구조 */
+.check-inline{
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-x-small);
+    cursor: pointer;
+    margin-left: var(--space-small);
+    color: #808080;
+}
+/* input 숨기기 */
+.check-inline input{
+    display: none;
+}
+/* 텍스트 영역 */
+.check-inline span{
+    position: relative;
+    padding-left: 22px;
+}
+/* 체크박스 */
+.check-inline span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background: #fff;
+}
+/* 체크 상태 */
+.check-inline input:checked + span::before{
+    background: #000;
+    border-color: #000;
+}
+/* 체크 아이콘 */
+.check-inline input:checked + span::after{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-60%) rotate(45deg);
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+}
+/* 전화번호 */
+.phone-row select{
+    width: 140px;
+}
+.phone-row input[type="text"]{
+    width: 140px;
+    text-align: center;
+}
+/* 하단 버튼 */
+.form-btn-group{
+    display: flex;
+    justify-content: center;
+    gap: var(--space-x-small);
+    margin-top: 7rem;
+}
+.form-btn-group button{
+    width: 192px;
+    padding: var(--space-small) 3rem;
+    font-weight: var(--fw-bold);
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    border-radius: .25rem;
+}
+.btn-cancel{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #999;
+}
+.btn-submit{
+    background-color: var(--main-color);
+    color: #fff;
+    border: 1px solid var(--main-color);
+}

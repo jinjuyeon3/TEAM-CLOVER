@@ -2,15 +2,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const faqItems = document.querySelectorAll(".faq-list > li");
 
     faqItems.forEach((item) => {
-        const btnDown = item.querySelector(".btn-down");
-        const btnUp = item.querySelector(".btn-up");
+        const btn = item.querySelector(".btn-down");
 
-        btnDown.addEventListener("click", () => {
-            item.classList.add("on");
-        });
-
-        btnUp.addEventListener("click", () => {
-            item.classList.remove("on");
+        btn.addEventListener("click", () => {
+            item.classList.toggle("on");
+            
+            // 화살표 회전도 상태에 따라 변경
+            if (item.classList.contains("on")) {
+                btn.style.transform = "rotate(-180deg)";
+            } else {
+                btn.style.transform = "rotate(0deg)";
+            }
         });
     });
 });

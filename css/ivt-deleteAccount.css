@@ -75,7 +75,7 @@ main{
 .inventory-foot .common-frame>p{
     color: #4D4D4D;
 }
-.inventory-foot .common-frame>button{
+.inventory-foot .common-frame>a{
     padding: var(--space-small) 3.25rem;
     background-color: var(--main-color);
     color: #fff;

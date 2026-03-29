@@ -161,7 +161,7 @@ main .hero-banner.swiper .swiper-pagination{
 }
 .best-item figure{
     background-color: var(--cb-color-0);
-    width: 400x;
+    width: 400x; 
     height: 400px;
     display: flex;
     justify-content: center;
@@ -245,7 +245,7 @@ main .hero-banner.swiper .swiper-pagination{
 .parallax{
     height: 800px;
     background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url(../img/0-imgPublishing/test5.png);
     background-repeat: no-repeat;
     background-position: 50% 10%;
@@ -265,8 +265,8 @@ main .hero-banner.swiper .swiper-pagination{
 }
 .visual-hero>h3{
     color: #fff;
+    border-bottom: 1px solid #fff;
     margin-bottom: var(--space-small);
-    letter-spacing: 1px;
 }
 .visual-hero>h3+p{
     margin-bottom: var(--space-2x-large);
@@ -285,7 +285,7 @@ main .hero-banner.swiper .swiper-pagination{
     gap: var(--space-normal);
     padding: 2.5rem;
 
-    border-radius: 24px;
+    border-radius: 1.2rem;
 
     /* glass */
     background: rgba(255, 255, 255, 0.18);
@@ -336,6 +336,7 @@ main .hero-banner.swiper .swiper-pagination{
 .card>*{
     position: relative;
     z-index: 2;
+    text-align: center;
 }
 .card>div>h2{
     margin-bottom: var(--space-small);
@@ -346,17 +347,17 @@ main .hero-banner.swiper .swiper-pagination{
     line-height: 1.7;
 }
 .title h1{
-    width: 220px;
-    font-size: 60px;
+    text-align: center;
+    /* width: 220px; */
+    font-size: 54px;
     line-height: 1.05;
-    letter-spacing: -1px;
-    padding-bottom: var(--space-small);
+    letter-spacing: 2px;
     margin-bottom: var(--space-large);
     position: relative;
     border-bottom: none;
     color: #111;
 }
-.title h1::after{
+/* .title h1::after{
     content: "";
     display: block;
     width: 220px;
@@ -364,7 +365,14 @@ main .hero-banner.swiper .swiper-pagination{
     margin-top: 14px;
     border-radius: 999px;
     background: rgba(0,0,0,0.85);
-}
+} */
+
+
+
+
+
+
+/* 하단 마지막 섹션 고민중 */
 .brand-last{
     text-align: center;
     margin-bottom: var(--space-foot);

@@ -83,19 +83,33 @@ input[id="faq-search-keyword"]::placeholder{
     background-color: var(--cb-color-0);
     border-radius: 0 0 1.5rem 1.5rem;
 }
+.btn-down{
+    transition: all .3s ease 0s;
+}
 .faq-foot .common-frame{
     height: 400px;
     background-color: #eee;
     text-align: center;
 }
-.faq-foot .common-frame p:first-of-type{
+.faq-foot .common-frame h3{
     padding-top: var(--space-large);
     margin-bottom: var(--space-normal);
 }
-.faq-foot .common-frame p:nth-of-type(2){
+.faq-foot .common-frame h3+p{
     margin-bottom: var(--space-normal);
 }
-.btn-per-que{
+.faq-foot .common-frame dl{
+    padding: var(--space-small);
+    width: 600px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: var(--space-small);
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+.faq-foot a .btn-per-que{
     background-color: var(--main-color);
     color: #fff;
     width: 332px;

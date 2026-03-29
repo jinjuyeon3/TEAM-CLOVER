@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // fade-up + fade-left 모두 선택, 스크롤 감지
-    const elements = document.querySelectorAll('.fade-up, .fade-left');
+    // fade-up + fade-left + fade-right 모두 선택, 스크롤 감지
+    const elements = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

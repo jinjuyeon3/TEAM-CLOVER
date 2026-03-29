@@ -86,9 +86,22 @@ label.visually-hidden{
 .fade-left {
   opacity: 0;
   transform: translateX(-50px);
-  transition: all 0.6s ease;
+  transition: all .6s ease 0.2s;
 }
 .fade-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fade-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fade-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all .6s ease 0.2s;
+}
+.fade-right.active {
   opacity: 1;
   transform: translateX(0);
 }

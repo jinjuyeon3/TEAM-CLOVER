@@ -86,6 +86,54 @@ main{
 .btn-ad{
     width: 231px;
 }
+/* 기본 radio 숨기기 */
+.radio-group input[type="radio"]{
+    display: none;
+}
+/* 라벨 정렬 */
+.radio-group{
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-x-small);
+    cursor: pointer;
+}
+/* 동그라미 만들기 */
+.radio-group span{
+    position: relative;
+    padding-left: var(--space-normal);
+    font-size: var(--fs-reg);
+    font-weight: var(--fw-med);
+    color: #000;
+}
+/* 바깥 원 */
+.radio-group span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    /* background-color: #D9D9D9; */
+}
+/* 안쪽 점 (선택 상태) */
+.radio-group input:checked + span::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 8px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(180deg, var(--cb-color-500), var(--main-color));
+}
+/* 선택 시 외곽 색 */
+.radio-group input:checked + span::before{
+    border-color: var(--main-color);
+}
 .email-row>span{
     color: #000;
     font-weight: var(--fw-bold);
@@ -124,3 +172,6 @@ main{
     background-color: var(--main-color);
     color: #fff;
 }
+
+
+
