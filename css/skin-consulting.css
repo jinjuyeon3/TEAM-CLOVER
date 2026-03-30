@@ -367,13 +367,13 @@ main{
 }
 .amount-option>span{
     border: 1px solid #BABABA;
-    padding: var(--space-x-small);
+    padding: var(--space-x-small) var(--space-normal);
     box-sizing: border-box;
     color: #BABABA;
 }
 .amount-option>span.selected{
     border: 1px solid #000;
-    padding: var(--space-x-small);
+    padding: var(--space-x-small) var(--space-normal);
     box-sizing: border-box;
     color: #000;
 }
