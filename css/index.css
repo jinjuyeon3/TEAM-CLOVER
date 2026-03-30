@@ -233,7 +233,34 @@ main .hero-banner.swiper .swiper-pagination{
 .best-pagination .swiper-pagination-bullet:last-child .line{
   display: none;
 }
-
+.benefits{
+    padding-top: var(--space-2x-large);
+    text-align: center;
+    margin-bottom: var(--space-foot);
+}
+.benefits .common-frame h1{
+    margin-bottom: var(--space-normal);
+}
+.benefits .common-frame h1+p{
+    margin-bottom: var(--space-x-large);
+}
+.benefit-list{
+    height: 320px;
+    display: flex;
+    gap: var(--space-normal);
+    font-weight: var(--fw-bold);
+}
+.benefit-list li{
+    flex: 1;
+    background-color: var(--cb-color-0);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.benefit-list li span:first-of-type{
+    margin-bottom: var(--space-normal);
+}
 .bottom-banner{
     height: 600px;
 }
@@ -372,29 +399,4 @@ main .hero-banner.swiper .swiper-pagination{
 
 
 
-/* 하단 마지막 섹션 고민중 */
-.brand-last{
-    text-align: center;
-    margin-bottom: var(--space-foot);
-}
-.brand-last .commom-frame{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space-large);
-}
-.brand-last figure{
-    width: 400px;
-    height: 500px;
-}
-.brand-last img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.brand-last h3{
-    margin-bottom: var(--space-normal);
-}
-.brand-last h1+p{
-    
-}
+

@@ -1,0 +1,132 @@
+main{
+    padding-top: 180px;
+}
+.banner{
+    width: 100%;    
+    height: 600px;
+    margin-bottom: var(--space-3x-large);
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.event-benefit{
+    margin-bottom: var(--space-foot);
+}
+.benefit1{
+    text-align: center;
+    margin: 0 auto;
+}
+.benefit1>h4{
+    color: #fff;
+    background-color: var(--main-color);
+    padding: var(--space-small) var(--space-normal);
+    border-radius: 50rem;
+    width: 123px;;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: var(--space-x-large);
+}
+.benefit1>h4+p{
+    margin-bottom: var(--space-3x-large);
+}
+.benefit1>h5{
+    margin-top: var(--space-small);
+    margin-bottom: var(--space-x-large);
+    font-size: 2.5rem;
+    font-weight: var(--fw-bold);
+    color: var(--main-color);
+}
+.cupon-box{
+    margin: 0 auto;
+    width: 657px;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    gap: var(--space-normal);
+    margin-bottom: var(--space-x-large);
+}
+.cupon-box li a{
+    display: flex;
+}
+.cupon-content{
+    background-color: var(--cb-color-0);
+    width: 261px;
+    padding: var(--space-small) var(--space-normal);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-x-small);
+    font-size: var(--fs-bd2);
+}
+.cupon-content span:first-of-type{
+    font-size: .65rem;
+    color: #808080;
+}
+.cupon-box li img{
+    background-color: var(--main-color);
+    padding: var(--space-small) var(--space-normal);
+    border-radius: 0 .5rem .5rem 0;
+}
+.all-cupon{
+    color: #fff;
+    display: inline-flex;
+    gap: 1.8rem;
+    background-color: var(--main-color);
+    padding: var(--space-small) var(--space-2x-large);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h4);
+    border-radius: .5rem;
+}
+.benefit2{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: var(--space-3x-large);
+}
+.benefit2>h4{
+    color: #fff;
+    background-color: var(--main-color);
+    padding: var(--space-small) var(--space-normal);
+    border-radius: 50rem;
+    width: 123px;;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: var(--space-x-large);
+}
+.benefit2>h5{
+    margin-top: var(--space-small);
+    margin-bottom: var(--space-x-large);
+    font-size: 2.5rem;
+    font-weight: var(--fw-bold);
+    color: var(--main-color);
+}
+.set-list{
+    display: flex;
+    gap: 4.45rem;
+}
+.set-list li{
+    flex: 1;
+    padding: var(--space-small);
+}
+.set-list li a{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+}
+.set-desc span{
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-bold);
+}
+.set-desc p:first-of-type{
+    margin-bottom: var(--space-small);
+}
+.set-desc p:last-of-type{
+    margin-bottom: var(--space-normal);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
