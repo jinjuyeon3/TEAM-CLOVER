@@ -250,15 +250,530 @@
             </div>
         </header>
 
-        <!-- 스마트 기기용 헤더 영역-->
+        <!-- 탭용 헤더 영역 -->
         <div class="header-smart">
-            <div class="common-frame">
-                <div class="logo">
-                    <a href="./index.html">
-                        <img src="./img/0-imgPublishing/icon/H-logo.svg" alt="상단로고">
-                    </a>
+            <!-- 메뉴/검색 오픈 시 뒤에 깔리는 모달 -->
+            <div class="tab-header-dim"></div>
+
+            <!-- 기본 닫힘 상태 -->
+            <div class="tab-header-closed">
+                <div class="common-frame">
+                    <button type="button" class="menu-btn" aria-label="전체 메뉴 열기">
+                        <img src="./img/0-imgPublishing/icon/smart-menu.svg" alt="전체메뉴버튼">
+                    </button>
+
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./img/0-imgPublishing/icon/H-logo.svg" alt="상단로고">
+                        </a>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="./mycart.html" class="cart-btn" aria-label="장바구니">
+                            <img src="./img/0-imgPublishing/icon/smart-cart.svg" alt="장바구니 버튼">
+                        </a>
+                        <button type="button" class="search-btn" aria-label="검색 열기">
+                            <img src="./img/0-imgPublishing/icon/smart-search.svg" alt="검색 버튼">
+                        </button>
+                    </div>
                 </div>
-                <span class="btn-menu"><img src="./img/0-imgPublishing/icon/smart-menu.svg" alt="전체메뉴버튼"></span>
+            </div>
+
+            <!-- 메뉴 오픈 상태 -->
+            <div class="tab-header-menu">
+                <div class="tab-menu-wrap">
+                    <div class="tab-menu-top">
+                        <button type="button" class="tab-menu-close" aria-label="전체 메뉴 닫기">
+                            <img src="./img/0-imgPublishing/icon/smart-close.svg" alt="메뉴 닫기 버튼">
+                        </button>
+                    </div>
+
+                    <div class="tab-menu-body">
+                        <!-- 왼쪽 1depth -->
+                        <div class="tab-menu-left">
+                            <ul class="tab-depth1-list">
+                                <li class="depth1-item" data-menu="skin">
+                                    <a href="./skin-care.html">스킨케어</a>
+                                    <button type="button" class="depth1-arrow" aria-label="스킨케어 열기">
+                                        <img src="./img/0-imgPublishing/icon/smart-arrow1.svg" alt="메뉴 더보기">
+                                    </button>
+                                </li>
+                                <li class="depth1-item" data-menu="makeup">
+                                    <a href="./make-up.html">메이크업</a>
+                                    <button type="button" class="depth1-arrow" aria-label="메이크업 열기">
+                                        <img src="./img/0-imgPublishing/icon/smart-arrow1.svg" alt="메뉴 더보기">
+                                    </button>
+                                </li>
+                                <li class="depth1-item" data-menu="clinic">
+                                    <a href="./skin-clinic.html">피부진단</a>
+                                </li>
+                                <li class="depth1-item" data-menu="event">
+                                    <a href="./event.html">이벤트</a>
+                                </li>
+                                <li class="depth1-item" data-menu="brand">
+                                    <a href="./brandstory.html">브랜드</a>
+                                </li>
+                                <li class="depth1-item" data-menu="community">
+                                    <a href="./community.html">커뮤니티</a>
+                                    <button type="button" class="depth1-arrow" aria-label="커뮤니티 열기">
+                                        <img src="./img/0-imgPublishing/icon/smart-arrow1.svg" alt="메뉴 더보기">
+                                    </button>
+                                </li>
+                            </ul>
+
+                            <div class="tab-member-menu">
+                                <a href="./login.html">로그인/회원가입</a>
+                                <a href="./mypage.html">마이페이지</a>
+                            </div>
+
+                            <div class="tab-menu-logo">
+                                <img src="./img/0-imgPublishing/icon/F-logo.svg" alt="크리니크 로고">
+                            </div>
+                        </div>
+
+                        <!-- 오른쪽 2depth / 3depth -->
+                        <div class="tab-menu-right">
+                            <!-- 스킨케어 -->
+                            <div class="tab-panel" data-panel="skin">
+                                <ul class="tab-accordion">
+                                    <li class="accordion-item">
+                                        <button type="button" class="accordion-title">
+                                            <span>제품라인별</span>
+                                            <span class="accordion-icon">
+                                                <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="메뉴 더보기">
+                                            </span>
+                                        </button>
+                                        <ul class="accordion-panel">
+                                            <li><a href="./skin-care.html">이븐베러</a></li>
+                                            <li><a href="./skin-care.html">모이스처 서지</a></li>
+                                            <li><a href="./skin-care.html">드라마티컬리 디퍼런트</a></li>
+                                            <li><a href="./skin-care.html">스마트 크리니컬</a></li>
+                                            <li><a href="./skin-care.html">안티 블레미쉬 솔루션</a></li>
+                                            <li><a href="./skin-care.html">레드니스 솔루션</a></li>
+                                            <li><a href="./skin-care.html">테이크 더 데이 오프</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="accordion-item">
+                                        <button type="button" class="accordion-title">
+                                            <span>카테고리별</span>
+                                            <span class="accordion-icon">
+                                                <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="메뉴 더보기">
+                                            </span>
+                                        </button>
+                                        <ul class="accordion-panel">
+                                            <li><a href="./skin-care.html">토너</a></li>
+                                            <li><a href="./skin-care.html">세럼</a></li>
+                                            <li><a href="./skin-care.html">로션 &amp; 크림</a></li>
+                                            <li><a href="./skin-care.html">스크럽 &amp; 마스크</a></li>
+                                            <li><a href="./skin-care.html">클렌징</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="accordion-item">
+                                        <button type="button" class="accordion-title">
+                                            <span>피부고민별</span>
+                                            <span class="accordion-icon">
+                                                <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="메뉴 더보기">
+                                            </span>
+                                        </button>
+                                        <ul class="accordion-panel">
+                                            <li><a href="./skin-care.html">수분보습</a></li>
+                                            <li><a href="./skin-care.html">피부 트러블</a></li>
+                                            <li><a href="./skin-care.html">안티에이징</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 메이크업 -->
+                            <div class="tab-panel" data-panel="makeup">
+                                <ul class="tab-accordion">
+                                    <li class="accordion-item">
+                                        <button type="button" class="accordion-title">
+                                            <span>페이스</span>
+                                            <span class="accordion-icon">
+                                                <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="메뉴 더보기">
+                                            </span>
+                                        </button>
+                                        <ul class="accordion-panel">
+                                            <li><a href="./make-up.html">파운데이션</a></li>
+                                            <li><a href="./make-up.html">컨실러</a></li>
+                                            <li><a href="./make-up.html">파우더</a></li>
+                                            <li><a href="./make-up.html">블러셔</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="accordion-item">
+                                        <button type="button" class="accordion-title">
+                                            <span>아이</span>
+                                            <span class="accordion-icon">
+                                                <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="메뉴 더보기">
+                                            </span>
+                                        </button>
+                                        <ul class="accordion-panel">
+                                            <li><a href="./make-up.html">마스카라</a></li>
+                                            <li><a href="./make-up.html">아이섀도우</a></li>
+                                            <li><a href="./make-up.html">아이라이너</a></li>
+                                            <li><a href="./make-up.html">브로우</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="accordion-item">
+                                        <button type="button" class="accordion-title">
+                                            <span>립</span>
+                                            <span class="accordion-icon">
+                                                <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="메뉴 더보기">
+                                            </span>
+                                        </button>
+                                        <ul class="accordion-panel">
+                                            <li><a href="./make-up.html">립스틱</a></li>
+                                            <li><a href="./make-up.html">립글로스</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="accordion-item">
+                                        <button type="button" class="accordion-title">
+                                            <span>툴 &amp; 액세서리</span>
+                                            <span class="accordion-icon">
+                                                <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="메뉴 더보기">
+                                            </span>
+                                        </button>
+                                        <ul class="accordion-panel">
+                                            <li><a href="./make-up.html">브러쉬</a></li>
+                                            <li><a href="./make-up.html">액세서리</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 커뮤니티 -->
+                            <div class="tab-panel" data-panel="community">
+                                <ul class="tab-accordion">
+                                    <li class="accordion-item">
+                                        <button type="button" class="accordion-title">
+                                            <span>고객센터</span>
+                                            <span class="accordion-icon">
+                                                <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="메뉴 더보기">
+                                            </span>
+                                        </button>
+                                        <ul class="accordion-panel">
+                                            <li><a href="./community.html">FAQ</a></li>
+                                            <li><a href="./ivt-inquire.html">문의하기</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 화살표 없는 메뉴용 빈 패널 -->
+                            <div class="tab-panel" data-panel="clinic"></div>
+                            <div class="tab-panel" data-panel="event"></div>
+                            <div class="tab-panel" data-panel="brand"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 검색 오픈 상태 -->
+            <div class="tab-header-search">
+                <div class="tab-search-wrap">
+                    <div class="tab-search-top">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="./img/0-imgPublishing/icon/H-logo.svg" alt="상단로고">
+                            </a>
+                        </div>
+
+                        <div class="tab-search-icons">
+                            <a href="./mycart.html" class="cart-btn" aria-label="장바구니">
+                                <img src="./img/0-imgPublishing/icon/smart-cart.svg" alt="장바구니 버튼">
+                            </a>
+                            <button type="button" class="tab-search-close" aria-label="검색 닫기">
+                                <img src="./img/0-imgPublishing/icon/smart-search-close.svg" alt="검색 닫기 버튼">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="tab-search-body">
+                        <form action="#" class="tab-search-box">
+                            <button type="submit" class="tab-search-submit" aria-label="검색">
+                                <img src="./img/0-imgPublishing/icon/smart-search.svg" alt="검색">
+                            </button>
+                            <label for="tab-search-keyword" class="visually-hidden">검색어 입력</label>
+                            <input type="text" id="tab-search-keyword" placeholder="검색어를 입력하세요.">
+                        </form>
+
+                        <div class="tab-search-section">
+                            <h3>인기검색어</h3>
+                            <ul class="tab-search-list">
+                                <li>
+                                    <a href="./detail-face.html">
+                                        <img src="./img/0-imgPublishing/makeUp/CheekPop.png" alt="치크팝">
+                                        <span>치크팝</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./detail-serum.html">
+                                        <img src="./img/0-imgPublishing/skinCare/AntiBlemishSolutionsClarifyingLotion.png" alt="클라리파잉 로션">
+                                        <span>클라리파잉 로션</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./detail-serum.html">
+                                        <img src="./img/0-imgPublishing/skinCare/DramaticallyDifferentMoisturizingLotionPlus.png" alt="드라마티컬리 디퍼런트">
+                                        <span>드라마티컬리 디퍼런트</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./detail.html">
+                                        <img src="./img/0-imgPublishing/skinCare/TakeTheDayOffCleansingBalm.png" alt="테이크 더 데이 오프">
+                                        <span>테이크 더 데이 오프</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./detail-face.html">
+                                        <img src="./img/0-imgPublishing/makeUp/EvenBetterRefreshHydratingAndRepairingMakeup.png" alt="이븐 베러 리프레쉬">
+                                        <span>이븐 베러 리프레쉬</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-search-section recent-section">
+                            <div class="recent-title">
+                                <h3>최근 본 제품</h3>
+                                <button type="button">삭제하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일 헤더 영역 -->
+        <div class="header-mobile">
+            <!-- 메뉴 열렸을 때 뒤에 깔리는 딤 -->
+            <div class="mobile-header-dim"></div>
+
+            <!-- mobile-header : 기본 닫힘 상태 -->
+            <div class="mobile-header">
+                <div class="common-frame">
+                    <button type="button" class="mobile-menu-btn" aria-label="전체 메뉴 열기">
+                        <img src="./img/0-imgPublishing/icon/smart-menu.svg" alt="전체메뉴버튼">
+                    </button>
+
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./img/0-imgPublishing/icon/H-logo.svg" alt="상단로고">
+                        </a>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="./mycart.html" class="cart-btn" aria-label="장바구니">
+                            <img src="./img/0-imgPublishing/icon/smart-cart.svg" alt="장바구니 버튼">
+                        </a>
+                        <button type="button" class="search-btn" aria-label="검색 열기">
+                            <img src="./img/0-imgPublishing/icon/smart-search.svg" alt="검색 버튼">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile-header-1depth / 2depth / 3depth : 메뉴 오픈 상태 -->
+            <div class="mobile-header-menu">
+                <div class="mobile-menu-wrap">
+                    <div class="mobile-menu-top">
+                        <button type="button" class="mobile-menu-close" aria-label="전체 메뉴 닫기">
+                            <img src="./img/0-imgPublishing/icon/smart-close.svg" alt="메뉴 닫기 버튼">
+                        </button>
+                    </div>
+
+                    <div class="mobile-menu-body">
+                        <ul class="mobile-depth1-list">
+                            <!-- 스킨케어 -->
+                            <li class="mobile-depth1-item">
+                                <div class="mobile-depth1-head">
+                                    <a href="./skin-care.html" class="mobile-depth1-link">스킨케어</a>
+                                    <button type="button" class="mobile-depth1-arrow" aria-label="스킨케어 메뉴 열기">
+                                        <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="1뎁스 열기">
+                                    </button>
+                                </div>
+
+                                <div class="mobile-depth2-wrap">
+                                    <ul class="mobile-depth2-list">
+                                        <li class="mobile-depth2-item">
+                                            <div class="mobile-depth2-head">
+                                                <a href="./skin-care.html" class="mobile-depth2-link">제품라인별</a>
+                                                <button type="button" class="mobile-depth2-arrow" aria-label="제품라인별 메뉴 열기">
+                                                    <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="2뎁스 열기">
+                                                </button>
+                                            </div>
+                                            <ul class="mobile-depth3-list">
+                                                <li><a href="./skin-care.html">이븐베러</a></li>
+                                                <li><a href="./skin-care.html">모이스처 서지</a></li>
+                                                <li><a href="./skin-care.html">드라마티컬리 디퍼런트</a></li>
+                                                <li><a href="./skin-care.html">스마트 크리니컬</a></li>
+                                                <li><a href="./skin-care.html">안티 블레미쉬 솔루션</a></li>
+                                                <li><a href="./skin-care.html">레드니스 솔루션</a></li>
+                                                <li><a href="./skin-care.html">테이크 더 데이 오프</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="mobile-depth2-item">
+                                            <div class="mobile-depth2-head">
+                                                <a href="./skin-care.html" class="mobile-depth2-link">카테고리별</a>
+                                                <button type="button" class="mobile-depth2-arrow" aria-label="카테고리별 메뉴 열기">
+                                                    <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="2뎁스 열기">
+                                                </button>
+                                            </div>
+                                            <ul class="mobile-depth3-list">
+                                                <li><a href="./skin-care.html">토너</a></li>
+                                                <li><a href="./skin-care.html">세럼</a></li>
+                                                <li><a href="./skin-care.html">로션 &amp; 크림</a></li>
+                                                <li><a href="./skin-care.html">스크럽 &amp; 마스크</a></li>
+                                                <li><a href="./skin-care.html">클렌징</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="mobile-depth2-item">
+                                            <div class="mobile-depth2-head">
+                                                <a href="./skin-care.html" class="mobile-depth2-link">피부타입별</a>
+                                                <button type="button" class="mobile-depth2-arrow" aria-label="피부타입별 메뉴 열기">
+                                                    <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="2뎁스 열기">
+                                                </button>
+                                            </div>
+                                            <ul class="mobile-depth3-list">
+                                                <li><a href="./skin-care.html">수분보습</a></li>
+                                                <li><a href="./skin-care.html">피부트러블</a></li>
+                                                <li><a href="./skin-care.html">안티에이징</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- 메이크업 -->
+                            <li class="mobile-depth1-item">
+                                <div class="mobile-depth1-head">
+                                    <a href="./make-up.html" class="mobile-depth1-link">메이크업</a>
+                                    <button type="button" class="mobile-depth1-arrow" aria-label="메이크업 메뉴 열기">
+                                        <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="1뎁스 열기">
+                                    </button>
+                                </div>
+
+                                <div class="mobile-depth2-wrap">
+                                    <ul class="mobile-depth2-list">
+                                        <li class="mobile-depth2-item">
+                                            <div class="mobile-depth2-head">
+                                                <a href="./make-up.html" class="mobile-depth2-link">페이스</a>
+                                                <button type="button" class="mobile-depth2-arrow" aria-label="페이스 메뉴 열기">
+                                                    <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="2뎁스 열기">
+                                                </button>
+                                            </div>
+                                            <ul class="mobile-depth3-list">
+                                                <li><a href="./make-up.html">파운데이션</a></li>
+                                                <li><a href="./make-up.html">컨실러</a></li>
+                                                <li><a href="./make-up.html">파우더</a></li>
+                                                <li><a href="./make-up.html">블러셔</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="mobile-depth2-item">
+                                            <div class="mobile-depth2-head">
+                                                <a href="./make-up.html" class="mobile-depth2-link">아이</a>
+                                                <button type="button" class="mobile-depth2-arrow" aria-label="아이 메뉴 열기">
+                                                    <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="2뎁스 열기">
+                                                </button>
+                                            </div>
+                                            <ul class="mobile-depth3-list">
+                                                <li><a href="./make-up.html">마스카라</a></li>
+                                                <li><a href="./make-up.html">아이섀도우</a></li>
+                                                <li><a href="./make-up.html">아이라이너</a></li>
+                                                <li><a href="./make-up.html">브로우</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="mobile-depth2-item">
+                                            <div class="mobile-depth2-head">
+                                                <a href="./make-up.html" class="mobile-depth2-link">립</a>
+                                                <button type="button" class="mobile-depth2-arrow" aria-label="립 메뉴 열기">
+                                                    <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="2뎁스 열기">
+                                                </button>
+                                            </div>
+                                            <ul class="mobile-depth3-list">
+                                                <li><a href="./make-up.html">립스틱</a></li>
+                                                <li><a href="./make-up.html">립글로스</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="mobile-depth2-item">
+                                            <div class="mobile-depth2-head">
+                                                <a href="./make-up.html" class="mobile-depth2-link">툴 &amp; 액세서리</a>
+                                                <button type="button" class="mobile-depth2-arrow" aria-label="툴 메뉴 열기">
+                                                    <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="2뎁스 열기">
+                                                </button>
+                                            </div>
+                                            <ul class="mobile-depth3-list">
+                                                <li><a href="./make-up.html">브러쉬</a></li>
+                                                <li><a href="./make-up.html">액세서리</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- 피부진단 -->
+                            <li class="mobile-depth1-item no-sub">
+                                <div class="mobile-depth1-head">
+                                    <a href="./skin-clinic.html" class="mobile-depth1-link">피부진단</a>
+                                </div>
+                            </li>
+
+                            <!-- 이벤트 -->
+                            <li class="mobile-depth1-item no-sub">
+                                <div class="mobile-depth1-head">
+                                    <a href="./event.html" class="mobile-depth1-link">이벤트</a>
+                                </div>
+                            </li>
+
+                            <!-- 커뮤니티 -->
+                            <li class="mobile-depth1-item">
+                                <div class="mobile-depth1-head">
+                                    <a href="./community.html" class="mobile-depth1-link">커뮤니티</a>
+                                    <button type="button" class="mobile-depth1-arrow" aria-label="커뮤니티 메뉴 열기">
+                                        <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="1뎁스 열기">
+                                    </button>
+                                </div>
+
+                                <div class="mobile-depth2-wrap">
+                                    <ul class="mobile-depth2-list">
+                                        <li class="mobile-depth2-item">
+                                            <div class="mobile-depth2-head">
+                                                <a href="./community.html" class="mobile-depth2-link">고객센터</a>
+                                                <button type="button" class="mobile-depth2-arrow" aria-label="고객센터 메뉴 열기">
+                                                    <img src="./img/0-imgPublishing/icon/smart-arrow2.svg" alt="2뎁스 열기">
+                                                </button>
+                                            </div>
+                                            <ul class="mobile-depth3-list">
+                                                <li><a href="./community.html">FAQ</a></li>
+                                                <li><a href="./ivt-inquire.html">문의하기</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-member-menu">
+                        <a href="./login.html">로그인/회원가입</a>
+                        <a href="./mypage.html">마이페이지</a>
+                    </div>
+
+                    <div class="mobile-menu-logo">
+                        <img src="./img/0-imgPublishing/icon/F-logo.svg" alt="크리니크 로고">
+                    </div>
+                </div>
             </div>
         </div>
 
