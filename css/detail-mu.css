@@ -196,13 +196,12 @@ main{
     font-weight: var(--fw-bold);
 }
 .dt-content{
+    margin-top: var(--space-large);
+    line-height: 0;
     display: none;
 }
 .dt-content.active{
     display: block;
-}
-.dt-content{
-    margin-top: var(--space-large);
 }
 .dt-content:first-child{
     margin-top: 0;
