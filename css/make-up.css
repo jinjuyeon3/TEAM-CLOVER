@@ -90,7 +90,7 @@ main{
     display: flex;
     justify-content: center;
     gap: var(--space-normal);
-    margin-bottom: var(--space-small);
+    margin-bottom: var(--space-normal);
     cursor: pointer;
 }
 .color-option>div{
@@ -103,10 +103,10 @@ main{
 .color4{background-color: #D7A07C;}
 
 .make-desc>p:first-of-type{
-    margin-bottom: var(--space-normal);
+    margin-bottom: var(--space-x-small);
 }
 .make-desc>p:last-of-type{
-    margin-bottom: var(--space-small);
+    margin-bottom: var(--space-normal);
 }
 .make-price{
     display: flex;

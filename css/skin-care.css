@@ -92,7 +92,7 @@ main{
     display: flex;
     justify-content: center;
     gap: var(--space-small);
-    margin-bottom: var(--space-small);
+    margin-bottom: var(--space-normal);
     cursor: pointer;
 }
 .amount-option>span{
@@ -107,11 +107,11 @@ main{
     box-sizing: border-box;
     color: #000;
 }
-.skin-desc>p:first-of-type{
-    margin-bottom: var(--space-normal);
+.skin-desc>p:first-of-type {
+    margin-bottom: var(--space-x-small);
 }
-.skin-desc>p:last-of-type{
-    margin-bottom: var(--space-small);
+.skin-desc>p:last-of-type {
+    margin-bottom: var(--space-normal);
 }
 .skin-price{
     display: flex;

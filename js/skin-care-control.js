@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     productListSkin.forEach(item => {
         result += `
             <li>
-                <a href="./detail.html">
+                <a href="./detail-serum.html">
                     <figure>
                         <img src="./img/0-imgPublishing/skinCare/${item.image}">
                     </figure>
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <span>${item.sizes[0]}</span>
                         <span class="selected">${item.sizes[1]}</span>
                     </div>
-                <a href="./detail.html">
+                <a href="./detail-serum.html">
                     <div class="skin-desc">
                         <p class="fwb bd2">${item.name}</p>
                         <p class="bd2">${item.desc}</p>
