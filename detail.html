@@ -271,22 +271,52 @@
         <main>
             <div class="info-box">
                 <div class="common-frame">
-                    <div class="thumb">
-                        <figure>
-                            <img src="./img/0-imgPublishing/makeUp/EvenBetterRefreshHydratingAndRepairingMakeup.png" alt="이븐베터 리프레쉬 하이드레이팅 앤 리페어링 메이크업">
-                        </figure>
+                    <div class="thumb swiper pro-thumb-swiper">
+                        <ul class="thumb-list swiper-wrapper">
+                            <li class="swiper-slide">
+                                <figure>
+                                    <img src="./img/0-imgPublishing/skinCare/TurnaroundAcceleratedRenewalSerum.png" alt="턴어라운드 엑셀러레이티드 리뉴얼 세럼">
+                                </figure>
+                            </li>
+                            <li class="swiper-slide">
+                                <figure>
+                                    <img src="./img/0-imgPublishing/skinCare/TurnaroundAcceleratedRenewalSerum.png" alt="턴어라운드 엑셀러레이티드 리뉴얼 세럼">
+                                </figure>
+                            </li>
+                            <li class="swiper-slide">
+                                <figure>
+                                    <img src="./img/0-imgPublishing/skinCare/TurnaroundAcceleratedRenewalSerum.png" alt="턴어라운드 엑셀러레이티드 리뉴얼 세럼">
+                                </figure>
+                            </li>
+                        </ul>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <script>
+                            const swiper = new Swiper('.pro-thumb-swiper', {
+                                loop: true,
+                                navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                                 },
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                    clickable: true,
+                                },
+                            });
+                        </script>
                     </div>
                     <div class="pro-info">
                         <div class="cateInfo">
-                            <span>메이크업</span>
+                            <span>스킨케어</span>
                             <img src="./img/0-imgPublishing/icon/cate-arrow.svg" alt="카테고리 화살표">
-                            <span>페이스</span>
+                            <span>카테고리별</span>
                             <img src="./img/0-imgPublishing/icon/cate-arrow.svg" alt="카테고리 화살표">
-                            <span>파운데이션</span>
+                            <span>세럼</span>
                         </div>
                         <div class="infoTitle">
-                            <h5>파운데이션</h5>
-                            <h1>이븐베터 리프레쉬 하이드레이팅 앤 리페어링 메이크업</h1>
+                            <h5>세럼</h5>
+                            <h1>턴어라운드 엑셀러레이티드 리뉴얼 세럼</h1>
                         </div>
                         <div class="rv-group">
                             <div class="stars">
@@ -298,7 +328,7 @@
                             </div>
                             <span><a href="#">200개 리뷰보기</a></span>
                         </div>
-                        <p class="fwb">가볍게 밀착되어 하루 종일 무너짐 없이 촉촉한 광채 피부를 완성하는 무결점 풀 커버 파운데이션</p>
+                        <p class="fwb">피부에 에너지를 주고 피부결을 되살려주어 매끄럽고 탄력있는 광채피부를 빠르게 되찾아 주는 세럼</p>
                         <dl class="infoTable">
                             <dt>판매가</dt>
                             <dd>58,000원</dd>
@@ -311,7 +341,7 @@
                                 <span class="plus">+</span>
                             </dd>
                             <dt>옵션</dt>
-                            <dd></dd>
+                            <dd>30ml</dd>
                             <dt>총 구매금액</dt>
                             <dd class="lastP">58,000원</dd>
                         </dl>
@@ -327,6 +357,13 @@
                     </div>
                 </div>
             </div>
+            <!-- 광고 배너 영역 -->
+            <div class="ad-banner">
+                <div class="common-frame">
+                    <a href="#"><img src="./img/0-imgPublishing/banner/detail-ad.jpg" alt="광고 배너"></a>
+                </div>
+            </div>
+            <!-- 상품 상세 설명 영역 -->
             <div class="detail-box">
                 <div class="common-frame">
                     <ul class="dt-tab">
