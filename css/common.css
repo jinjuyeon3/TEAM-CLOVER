@@ -126,14 +126,33 @@ label.visually-hidden{
         width: auto;
         margin: 0 2rem;
     }
+    .mo{
+        display: none;
+    }
+    .tab{
+        display: block;
+    }
+    .pc{
+        display: none;
+    }
 }
 
 @media (max-width: 768px){
-        html{
+    html{
         font-size: var(--basic-font-mo);
     }
     .common-frame{
         width: auto;
         margin: 0 1rem;
     }
+    .mo{
+        display: block;
+    }
+    .tab{
+        display: none;
+    }
+    .pc{
+        display: none;
+    }
+    
 }

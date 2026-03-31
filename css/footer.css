@@ -107,3 +107,58 @@ input[id="u-agree"]:checked:after{
 .copy{
     text-align: center;
 }
+
+
+
+
+@media (max-width: 1440px){
+
+}
+
+
+
+@media (max-width: 768px){
+    .f-content1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .f-logo img {
+        height: 70px;
+    }
+    .f-nav {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: var(--space-large);
+    }
+    .co-info {
+        margin-bottom: var(--space-large);
+    }
+    .f-content2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub-co-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub-co-info>p {
+        text-align: center;
+    }
+    main .bottom-banner {
+        height: auto;
+    }
+    .news-letter input[id="u-email"] {
+        width: 320px;
+        height: 30px;
+    }
+    .news-letter button {
+        width: 60px;
+        height: 30px;
+        left: calc(320px - 50px);
+    }
+    input[id="u-agree"] {
+        width: 13.2px;
+        height: 13.2px;
+    }
+
+}

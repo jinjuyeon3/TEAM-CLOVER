@@ -321,8 +321,6 @@ input[id="search-keyword"]::placeholder{
 
     .tab-header-closed .menu-btn img,
     .tab-header-closed .btn-group img{
-        width: 36px;
-        height: 36px;
         display: block;
         object-fit: contain;
     }
@@ -342,7 +340,7 @@ input[id="search-keyword"]::placeholder{
     .tab-menu-wrap{
         width: 400px;
         height: 100vh;
-        background: #f8f8f8;
+        background: #fff;
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -386,7 +384,7 @@ input[id="search-keyword"]::placeholder{
         display: flex;
         flex-direction: column;
         min-height: 0;
-        background: #f8f8f8;
+        background: #fff;
     }
 
     .tab-depth1-list{
@@ -403,8 +401,8 @@ input[id="search-keyword"]::placeholder{
     }
 
     .tab-depth1-list li > a{
-        font-size: 1.125rem;
-        font-weight: 700;
+        font-size: var(--fs-bd2);
+        font-weight: var(--fw-bold);
         color: #000;
     }
 
@@ -448,7 +446,7 @@ input[id="search-keyword"]::placeholder{
         flex-shrink: 0;
         min-height: 0;
         overflow: hidden;
-        background: #f8f8f8;
+        background: #fff;
         opacity: 0;
         transform: translateX(24px);
         pointer-events: none;
@@ -494,40 +492,19 @@ input[id="search-keyword"]::placeholder{
         width: 100%;
     }
 
-    /* .accordion-title{
-        width: 100%;
-        min-height: 78px;
-        padding: 0 1.5rem;
-        border: 0;
-        background: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-align: left;
-        font-size: 1.125rem;
-        font-weight: 700;
-        cursor: pointer;
-    }
-
-    .accordion-icon{
-        font-size: 1.5rem;
-        line-height: 1;
-        transition: transform .3s ease;
-    } */
-
     .accordion-title{
         width: 100%;
         min-height: 78px;
-        padding: 0 3.5rem 0 1.5rem; /* 오른쪽 아이콘 자리 확보 */
+        padding: 0 3.5rem 0 1.5rem;
         border: 0;
         background: none;
         display: flex;
         align-items: center;
         text-align: left;
-        font-size: 1.125rem;
-        font-weight: 700;
+        font-size: var(--fs-bd2);
+        font-weight: var(--fw-bold);
         cursor: pointer;
-        position: relative; /* 기준점 */
+        position: relative;
     }
 
     .accordion-icon{
@@ -572,9 +549,7 @@ input[id="search-keyword"]::placeholder{
 
     .accordion-panel li a{
         display: block;
-        font-size: 1rem;
-        font-weight: 500;
-        color: #222;
+        font-size: var(--fs-bd2);
         word-break: keep-all;
     }
 
@@ -790,8 +765,6 @@ input[id="search-keyword"]::placeholder{
 
     .mobile-menu-btn img,
     .mobile-header .btn-group img{
-        width: 24px;
-        height: 24px;
         display: block;
         object-fit: contain;
     }
@@ -829,7 +802,7 @@ input[id="search-keyword"]::placeholder{
         opacity: 0;
         visibility: hidden;
         transition: transform .4s ease, opacity .35s ease, visibility .35s ease;
-        z-index: 10;
+        z-index: 30;
         display: flex;
         flex-direction: column;
     }
@@ -840,18 +813,17 @@ input[id="search-keyword"]::placeholder{
         visibility: visible;
     }
 
-    .mobile-menu-wrap {
+    .mobile-menu-wrap{
         position: absolute;
+        inset: 0;
         width: 100%;
-        left: 0;
-        top: 65px;
-        min-height: 100vh;
+        height: 100vh;
         background: #fff;
         display: flex;
         flex-direction: column;
     }
 
-    .mobile-menu-top {
+    .mobile-menu-top{
         height: 54px;
         background: var(--main-color);
         display: flex;
@@ -903,8 +875,8 @@ input[id="search-keyword"]::placeholder{
 
     .mobile-depth1-link{
         flex: 1;
-        font-size: 1.125rem;
-        font-weight: 700;
+        font-size: var(--fs-bd1);
+        font-weight: var(--fw-bold);
         color: #000;
         line-height: 1.4;
     }
@@ -965,10 +937,10 @@ input[id="search-keyword"]::placeholder{
 
     .mobile-depth2-link{
         flex: 1;
-        font-size: .95rem;
-        font-weight: 700;
+        font-size: 12px;
+        font-weight: var(--fw-bold);
         color: #000;
-        line-height: 1.5;
+        line-height: 1.4;
     }
 
     .mobile-depth2-arrow{
@@ -1016,10 +988,8 @@ input[id="search-keyword"]::placeholder{
 
     .mobile-depth3-list a{
         display: block;
-        font-size: .9rem;
-        font-weight: 500;
-        color: #4a4a4a;
-        line-height: 1.5;
+        font-size: 12px;
+        line-height: 1.4;
         word-break: keep-all;
     }
 
@@ -1056,9 +1026,187 @@ input[id="search-keyword"]::placeholder{
         display: block;
     }
 
-    main{
-        padding-top: 80px;
+    /* 모바일 검색 패널 */
+    .mobile-header-search{
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 21;
+        transition:
+            max-height .35s ease,
+            opacity .25s ease,
+            visibility .25s ease;
+        border-top: 0;
+        box-shadow: none;
     }
+
+    .mobile-header-search.on{
+        max-height: calc(100vh - 65px);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .mobile-search-body{
+        max-height: calc(100vh - 65px);
+        overflow-y: auto;
+        padding: 1.25rem 1rem 2rem;
+        background: #fff;
+    }
+
+    .mobile-search-box{
+        width: 100%;
+        border-bottom: 1px solid #000;
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        padding-bottom: .6rem;
+        margin-bottom: 2rem;
+    }
+
+    .mobile-search-submit{
+        border: 0;
+        background: none;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        cursor: pointer;
+    }
+
+    .mobile-search-submit img{
+        width: 24px;
+        height: 24px;
+        display: block;
+    }
+
+    .mobile-search-box input{
+        flex: 1;
+        border: 0;
+        outline: none;
+        background: transparent;
+        font-size: 14px;
+    }
+
+    .mobile-search-box input::placeholder{
+        color: rgba(0,0,0,.45);
+    }
+
+    .mobile-search-section{
+        margin-bottom: var(--space-x-large);
+    }
+
+    .mobile-search-section h3{
+        font-size: 18px;
+        font-weight: var(--fw-bold);
+        margin-bottom: 1.25rem;
+    }
+
+    .mobile-search-list{
+        gap: 0;
+    }
+
+    .recent-item-swiper{
+        overflow: hidden;
+    }
+
+    .recent-item-swiper .swiper-slide{
+        height: auto;
+    }
+
+    .recent-item-swiper .swiper-slide a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: .75rem;
+    }
+
+    .recent-item-swiper .swiper-slide img{
+        width: 80px;
+        height: 110px;
+        object-fit: contain;
+    }
+
+    .recent-item-swiper .swiper-slide span{
+        font-size: 13px;
+        line-height: 1.4;
+        word-break: keep-all;
+    }
+
+    .mobile-recent-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.25rem;
+    }
+
+    .mobile-recent-title h3{
+        margin-bottom: 0;
+    }
+
+    .mobile-recent-title button{
+        border: 0;
+        background: none;
+        padding: 0;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .mobile-recent-slider{
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .mobile-recent-slider::-webkit-scrollbar{
+        display: none;
+    }
+
+    .mobile-recent-list{
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+        padding-bottom: .25rem;
+    }
+
+    .mobile-recent-list li{
+        width: 96px;
+        flex-shrink: 0;
+    }
+
+    .mobile-recent-list li a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: .75rem;
+    }
+
+    .mobile-recent-list li img{
+        width: 80px;
+        height: 110px;
+        object-fit: contain;
+    }
+
+    .mobile-recent-list li span{
+        font-size: 13px;
+        line-height: 1.4;
+        word-break: keep-all;
+    }
+
+    /* main{
+        padding-top: 80px;
+    } */
 
     .aside-menu{
         right: 1rem;
