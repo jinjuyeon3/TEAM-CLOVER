@@ -88,53 +88,75 @@ main{
     width: 1021px;
     justify-self: center;
 }
+
+
+
+
+
+/* 1:1 상담 신청 (모달 팝업) */
+.btn-personal-apply{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    margin-bottom: var(--space-large);
+}
+.btn-personal-apply button{
+    width: 220px;
+    height: 60px;
+    border: 1px solid #000;
+    font-weight: var(--fw-bold);
+}
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 300000;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal.on{
+    opacity: 0.5;
+    pointer-events: auto;
+}
+.popup{
+    position: fixed; 
+    width: 1200px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    text-align: center;
+    padding: var(--space-large);
+    z-index: 300001;
+    overflow-y: auto;
+    box-shadow: 1px 1px 10px #aaa;
+    display: none;
+}
+.popup.on{
+    display: block;
+} 
 .form-wrap{
     padding-top: 20px;
-    width: 100%;
-    max-height: 60px;
-    overflow: hidden;
     transition: all .7s ease 0s;
     margin-bottom: var(--space-3x-large);
 }
 .form-wrap.clicked{
     max-height: 2000px;
 }
-.btn-down{
-    cursor: pointer;
-}
-.btn-up{
-    cursor: pointer;
-    display: none;
-}
-.title{
-    width: 100%;
-    height: 60px;
-    border: 1px solid #000;
-    padding: var(--space-2x-small) var(--space-x-small);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    margin-bottom: var(--space-normal);
-}
-.title>img{
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
 .form-box{
     background-color: #fff;
     border-radius: 1.5rem;
-    height: 1780px;
 }
 .form-box>h4{
     text-align: center;
     width: 975px;
     padding: var(--space-normal);
     box-sizing: border-box;
-    border-bottom: 1px solid #9F9F9F;
+    border-bottom: 1px solid #808080;
     margin: 0 auto;
 }
 .form-inner{
@@ -145,34 +167,29 @@ main{
     margin: var(--space-large) 0;
 }
 .form-content{
-    border-bottom: 1px solid #9F9F9F;
+    border-bottom: 1px solid #808080;
     padding-bottom: var(--space-large);
 }
 .form-group{
     display: flex;
     align-items: center;
     gap: var(--space-normal);
+    text-align: left;
     margin-bottom: var(--space-large);
 }
 .form-group:last-of-type{
     margin-bottom: 0;
 }
-.form-group label{
-    /* padding: var(--space-small); */
-    /* box-sizing: border-box; */
-    width: 102px;
-    font-size: var(--fs-bd1);
-    font-weight: var(--fw-med);
-}
 .btn-group{
     display: flex;
     gap: var(--space-normal)
 }
-.btn-group button{
+.btn-group button {
     padding: .35rem 1.4rem;
     box-sizing: border-box;
-    border: 1px solid #9F9F9F;
+    border: 1px solid #808080;
     border-radius: .25rem;
+    font-weight: var(--fw-med);
 }
 .btn-group button:hover{
     background-color: var(--main-color);
@@ -198,7 +215,7 @@ main{
     background-color: #fff;
 
     font-size: 14px;
-    color: #333;
+    color: #000;
 
     /* 기본 스타일 제거 */
     appearance: none;
@@ -214,23 +231,24 @@ main{
     width: 344px;
     padding: .35rem var(--space-small);
     font-size: 14px;
-    border: 1px solid #9F9F9F;
+    border: 1px solid #808080;
     border-radius: .25rem;
-    color: #9F9F9F;
+    color: #808080;
     outline: none;
     box-sizing: border-box;
 }
 .form-group.uinfo input{
     border-radius: .25rem;
-    border: 1px solid #9F9F9F;
+    border: 1px solid #808080;
     padding: .35rem var(--space-normal);
     box-sizing: border-box;
     width: 305px;
-    font-size: var(--fs-bd1);
-    font-weight: var(--fw-med);
+    font-size: var(--fs-bd2);
+    /* font-weight: var(--fw-med); */
 }
 .form-group label{
     font-weight: var(--fw-med);
+    min-width: 100px;
 }
 .form-group.add{
     display: flex;
@@ -242,12 +260,12 @@ main{
     height: 268px;
     resize: none;
     border-radius: .25rem; 
-    border: 1px solid #9F9F9F;
+    border: 1px solid #808080;
     padding-left: var(--space-normal);
     padding-top: var(--space-normal);
 }
 .form-group.add textarea::placeholder{
-    color: #9F9F9F;
+    color: #808080;
     font-size: var(--fs-bd1);
     font-weight: var(--fw-med);
 }
@@ -280,7 +298,7 @@ main{
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    border: 1px solid #9F9F9F;
+    border: 1px solid #808080;
     border-radius: .25rem;
     background:#fff;
     transition: all 0.2s;
@@ -301,7 +319,12 @@ main{
     border: solid #fff;
     border-width: 0 2px 2px 0;
 }
-.btn-apply{
+.popup-controler {
+    display: flex;
+    gap: var(--space-normal);
+    justify-content: center;
+}
+.popup-controler button{
     background-color: var(--main-color);
     color: #fff;
     width: 332px;
@@ -310,9 +333,13 @@ main{
     justify-content: center;
     align-items: center;
     border-radius: .25rem;
-    margin: 0 auto;
-    margin-top: var(--space-large);
+    margin-top: var(--space-x-large);
     font-size: var(--fs-h2);
+}
+.popup-controler button.btn-cancel{
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    color: #000;
 }
 .recomend-item{
     margin: 0 auto;

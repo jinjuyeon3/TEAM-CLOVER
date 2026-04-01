@@ -114,7 +114,24 @@ label.visually-hidden{
   opacity: 1;
   transform: translateY(0);
 }
-
+.fade-show{
+    filter: blur(50px);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.fade-show.active{
+    filter: blur(0);
+    opacity: 1;
+}
+input{
+    font-family: 'Pretendard', sans-serif;
+}
+textarea{
+    font-family: 'Pretendard', sans-serif;
+}
+.news-letter.mo{
+    display: none;
+}
 
 
 

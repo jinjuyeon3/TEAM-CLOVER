@@ -1,6 +1,5 @@
 main{
     padding-top: 180px;
-    margin-bottom: var(--space-foot);
 }
 .banner{
     height: 600px;
@@ -115,7 +114,6 @@ main{
 .selling-point{
     background-color: #F5F5F5;
     height: 888px;
-    margin-bottom: var(--space-foot);
 }
 .selling-point .common-frame{
     text-align: center;
