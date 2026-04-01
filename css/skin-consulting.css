@@ -341,10 +341,6 @@ main{
     border: 1px solid var(--main-color);
     color: #000;
 }
-.recomend-item{
-    margin: 0 auto;
-    width: 1660px;
-}
 .recomend-item h1{
     margin-bottom: var(--space-large);
     text-align: center;
@@ -358,12 +354,13 @@ main{
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 400px;
+    text-align: center;
 }
+
 .reco-list figure{
     background-color: var(--cb-color-0);
-    width: 400px;
-    height: 400px;
+    width: 345px;
+    height: 345px;
     margin-bottom: var(--space-normal);
 }
 .reco-list figure img{
@@ -388,7 +385,7 @@ main{
 .amount-option{
     display: flex;
     justify-content: center;
-    gap: var(--space-small);
+    gap: var(--space-x-small);
     margin-bottom: var(--space-normal);
     cursor: pointer;
 }
@@ -406,6 +403,11 @@ main{
 }
 .pro-desc>p:first-of-type{
     margin-bottom: var(--space-small);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .pro-desc>p:last-of-type{
     margin-bottom: var(--space-normal);

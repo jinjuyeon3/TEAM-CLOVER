@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    const makeList = document.querySelector(".skin-list");
+    const skinList = document.querySelector(".skin-list");
     let result = "";
 
     productListSkin.forEach(item => {
@@ -13,8 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="sale-badge fwb">${item.discount}%</div>
                 </a>
                     <div class="amount-option">
-                        <span>${item.sizes[0]}</span>
-                        <span class="selected">${item.sizes[1]}</span>
+                        <span class="selected">${item.sizes[0]}</span>
+                        <span>${item.sizes[1]}</span>
+                        <span>${item.sizes[2]}</span>
                     </div>
                 <a href="./detail-serum.html">
                     <div class="skin-desc">
@@ -29,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </li>
         `;
     });
-    makeList.innerHTML = result;
+    skinList.innerHTML = result;
 
     // 상품 개수를 데이터 개수에 맞게 입력하는 코드
     document.querySelector("#current-count").innerHTML = productListSkin.length

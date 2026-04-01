@@ -1,27 +1,23 @@
-function initHeader() {
+document.addEventListener("DOMContentLoaded", () => {
     /* =========================
        1. PC 헤더 검색
     ========================= */
-    const pcHeader = document.querySelector("header");
+    const pcSearchIn = document.querySelector("header .search-in");
+    const pcSearchClose = document.querySelector("header .search-close");
+    const pcSearchContainer = document.querySelector("header .search-container");
 
-    if (pcHeader) {
-        const pcSearchBtn = pcHeader.querySelector(".search-btn");
-        const pcSearchIn = pcHeader.querySelector(".search-in");
-        const pcSearchClose = pcHeader.querySelector(".search-close");
-        const pcSearchContainer = pcHeader.querySelector(".search-container");
+    if (pcSearchIn && pcSearchClose && pcSearchContainer) {
+        pcSearchIn.addEventListener("click", () => {
+            pcSearchContainer.classList.add("on");
+            pcSearchIn.style.display = "none";
+            pcSearchClose.style.display = "block";
+        });
 
-        if (pcSearchBtn && pcSearchIn && pcSearchClose && pcSearchContainer) {
+        pcSearchClose.addEventListener("click", () => {
+            pcSearchContainer.classList.remove("on");
+            pcSearchIn.style.display = "block";
             pcSearchClose.style.display = "none";
-
-            pcSearchBtn.addEventListener("click", (e) => {
-                e.preventDefault();
-
-                const isOpen = pcSearchContainer.classList.toggle("on");
-
-                pcSearchIn.style.display = isOpen ? "none" : "block";
-                pcSearchClose.style.display = isOpen ? "block" : "none";
-            });
-        }
+        });
     }
 
     /* =========================
@@ -36,7 +32,7 @@ function initHeader() {
         const tabDim = headerSmart.querySelector(".tab-header-dim");
 
         const openMenuBtn = headerSmart.querySelector(".menu-btn");
-        const openSearchBtn = headerSmart.querySelector(".tab-header-closed .search-btn");
+        const openSearchBtn = headerSmart.querySelector(".search-btn");
         const closeMenuBtn = headerSmart.querySelector(".tab-menu-close");
         const closeSearchBtn = headerSmart.querySelector(".tab-search-close");
 
@@ -166,7 +162,7 @@ function initHeader() {
     }
 
     /* =========================
-       3. 모바일 헤더
+    3. 모바일 헤더
     ========================= */
     const mobileHeader = document.querySelector(".header-mobile");
 
@@ -188,7 +184,7 @@ function initHeader() {
 
         function initMobileSearchSwiper() {
             const swiperEl = mobileHeader.querySelector(".recent-item-swiper");
-            if (!swiperEl || typeof Swiper === "undefined") return;
+            if (!swiperEl) return;
 
             if (mobileSearchSwiper) {
                 mobileSearchSwiper.destroy(true, true);
@@ -198,7 +194,7 @@ function initHeader() {
             mobileSearchSwiper = new Swiper(".recent-item-swiper", {
                 slidesPerView: 3,
                 spaceBetween: 14,
-                freeMode: true,
+                freeMode: true
             });
         }
 
@@ -248,7 +244,6 @@ function initHeader() {
         function openMobileSearch() {
             closeMobileMenu(false);
             searchWrap?.classList.add("on");
-            dim?.classList.add("on");
             setSearchButtonClose();
             document.body.style.overflow = "hidden";
 
@@ -262,7 +257,6 @@ function initHeader() {
             setSearchButtonDefault();
 
             if (restoreScroll) {
-                dim?.classList.remove("on");
                 document.body.style.overflow = "";
             }
         }
@@ -329,4 +323,4 @@ function initHeader() {
 
         setSearchButtonDefault();
     }
-}
+});

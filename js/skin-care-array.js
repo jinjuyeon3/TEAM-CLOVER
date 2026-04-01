@@ -6,7 +6,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml"],
+    sizes: ["50ml", "75ml", "125ml"],
     image: "DramaticallyDifferentMoisturizingLotionPlus.png"
   },
   {
@@ -16,7 +16,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml"],
+    sizes: ["50ml", "75ml", "125ml"],
     image: "MoistureSurge100HAutoReplenishingHydrator.png"
   },
   {
@@ -26,7 +26,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml"],
+    sizes: ["50ml", "75ml", "125ml"],
     image: "AntiBlemishSolutionsClarifyingTreatmentOilFree.png"
   },
   {
@@ -36,7 +36,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml"],
+    sizes: ["50ml", "75ml", "125ml"],
     image: "SmartRepairWrinkleCorrectingCream.png"
   },
   {
@@ -46,7 +46,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml"],
+    sizes: ["50ml", "75ml", "125ml"],
     image: "EvenBetterClinicalBrighteningEssenceLotion.png"
   },
   {
@@ -56,7 +56,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml"],
+    sizes: ["50ml", "75ml", "125ml"],
     image: "EvenBetterClinicalBrighteningMoisturizer.png"
   },
   {
@@ -66,7 +66,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml"],
+    sizes: ["50ml", "75ml", "125ml"],
     image: "MoistureSurgeActiveGlowSerum.png"
   },
   {
@@ -76,7 +76,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml"],
+    sizes: ["50ml", "75ml", "125ml"],
     image: "SmartRepairWrinkleCorrectingSerum.png"
   },
   {
@@ -86,7 +86,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml"],
+    sizes: ["50ml", "75ml", "125ml"],
     image: "AntiBlemishSolutionsClinicalClearingGel.png"
   }
 ];

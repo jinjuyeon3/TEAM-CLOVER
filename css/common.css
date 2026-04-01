@@ -132,6 +132,10 @@ textarea{
 .news-letter.mo{
     display: none;
 }
+.myInventory{
+    position: sticky;
+    top: 180px;
+}
 
 
 
