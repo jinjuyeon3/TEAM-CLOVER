@@ -37,6 +37,9 @@ main{
     margin: var(--space-3x-large) 0;
     color: var(--main-color);
 }
+.sub-img{
+    margin: var(--space-3x-large) 0;
+}
 .btn-group{
     display: flex;
     gap: var(--space-small);

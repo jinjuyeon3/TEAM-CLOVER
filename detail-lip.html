@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이섀도우 상세페이지</title>
+    <title>립스틱</title>
 
     <!-- 검색 엔진이 페이지 색인 허용시킴 -->
     <meta name="robots" content="index, follow">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/aside.css">
 
-    <link rel="stylesheet" href="./css/detail-lip.css">
+    <link rel="stylesheet" href="./css/detail.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -259,7 +259,8 @@
                                         <p class="bd2 fwb"><a href="./community.html">고객센터</a></p>
                                         <ul>
                                             <li><a href="./community.html">FAQ</a></li>
-                                            <li><a href="./ivt-inquire.html">문의하기</a></li>
+                                            <li><a href="./ivt-inquire.html" class="need-login">문의하기</a></li>
+                                            <div class="toast-message">로그인이 필요한 서비스입니다.</div>
                                         </ul>
                                     </div>
                                         <div class="mega-banner">
@@ -966,19 +967,19 @@
                                     </button>
 
                                     <ul class="custom-option-list">
-                                        <li data-value="멜론 팝" data-color="#8E5E61" class="active">
+                                        <li data-value="멜론 팝" data-color="#ee7462" class="active">
                                             <span class="color-chip" style="background:#ee7462;"></span>
                                             <span>멜론 팝</span>
                                         </li>
-                                        <li data-value="루비 팝" data-color="#E3A07A">
+                                        <li data-value="루비 팝" data-color="#cd18eb">
                                             <span class="color-chip" style="background:#cd18eb;"></span>
                                             <span>루비 팝</span>
                                         </li>
-                                        <li data-value="파피 팝" data-color="#815239">
+                                        <li data-value="파피 팝" data-color="#ec2328">
                                             <span class="color-chip" style="background:#ec2328;"></span>
                                             <span>파피 팝</span>
                                         </li>
-                                        <li data-value="블러싱 팝" data-color="#D69886">
+                                        <li data-value="블러싱 팝" data-color="#b6685f">
                                             <span class="color-chip" style="background:#b6685f;"></span>
                                             <span>블러싱 팝</span>
                                         </li>
@@ -1069,12 +1070,12 @@
                             </button>
 
                             <ul class="custom-option-list custom-option-list2">
-                                <li data-value="멜론 팝" data-color="#cd18eb" class="active">
-                                    <span class="color-chip" style="background:#cd18eb;"></span>
+                                <li data-value="멜론 팝" data-color="#ee7462" class="active">
+                                    <span class="color-chip" style="background:#ee7462;"></span>
                                     <span>멜론 팝</span>
                                 </li>
-                                <li data-value="루비 팝" data-color="#E3A07A">
-                                    <span class="color-chip" style="background:#E3A07A;"></span>
+                                <li data-value="루비 팝" data-color="#cd18eb">
+                                    <span class="color-chip" style="background:#cd18eb;"></span>
                                     <span>루비 팝</span>
                                 </li>
                                 <li data-value="파피 팝" data-color="#ec2328">
@@ -1237,6 +1238,106 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- 추천제품 영역 -->
+            <div class="common-frame">
+                <section class="recomend-item">
+                    <h1>추천 제품</h1>
+                    <ul class="reco-list">
+                        <li>
+                            <a href="./detail-scrub.html">
+                                <figure>
+                                    <img src="./img/0-imgPublishing/skinCare/DayScrubCreamRinseOffFormula.png">
+                                </figure>
+                                <div class="sale-badge fwb">36%</div>
+                            </a>
+                                <div class="amount-option">
+                                    <span class="selected">50ml</span>
+                                    <span>75ml</span>
+                                    <span>125ml</span>
+                                </div>
+                            <a href="scrub">
+                                <div class="pro-desc">
+                                    <p class="fwb bd2">7 데이 스크럽 크림 린스-오프 포뮬러</p>
+                                    <p class="bd2">각질을 부드럽게 제거하여 피부 결을 정돈하고 매끄럽게 가꾸어주는 크림 타입 스크럽</p>
+                                </div>
+                                <div class="pro-price">
+                                    <span class="original bd2">50,000원</span>
+                                    <span class="rp-sale fwb">18,000원</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail-cream.html">
+                                <figure>
+                                    <img src="./img/0-imgPublishing/skinCare/MoistureSurge100HAutoReplenishingHydrator.png">
+                                </figure>
+                                <div class="sale-badge fwb">36%</div>
+                            </a>
+                                <div class="amount-option">
+                                    <span class="selected">50ml</span>
+                                    <span>75ml</span>
+                                    <span>125ml</span>
+                                </div>
+                            <a href="./detail-cream.html">
+                                <div class="pro-desc">
+                                    <p class="fwb bd2">모이스춰 써지 100시간 오토-리플레니싱 하이드레이터</p>
+                                    <p class="bd2">속보습의 새로운 기준. 피부 속 10+층까지 마를틈 없는 피부 보습력</p>
+                                </div>
+                                <div class="pro-price">
+                                    <span class="original bd2">64,000원</span>
+                                    <span class="rp-sale fwb">40,960원</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail-toner.html">
+                                <figure>
+                                    <img src="./img/0-imgPublishing/skinCare/ClarifyingLotion2TwiceADayExfoliator.png">
+                                </figure>
+                                <div class="sale-badge fwb">36%</div>
+                            </a>
+                                <div class="amount-option">
+                                    <span class="selected">50ml</span>
+                                    <span>75ml</span>
+                                    <span>125ml</span>
+                                </div>
+                            <a href="./detail-toner.html">
+                                <div class="pro-desc">
+                                    <p class="fwb bd2">클래리파잉 로션 트와이스 어 데이 엑스폴리에이터 3</p>
+                                    <p class="bd2">민감하고 건조한 피부를 위한 각질 관리용 기능성 토너</p>
+                                </div>
+                                <div class="pro-price">
+                                    <span class="original bd2">43,000원</span>
+                                    <span class="rp-sale fwb">27,520원</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./detail-serum.html">
+                                <figure>
+                                    <img src="./img/0-imgPublishing/skinCare/TurnaroundAcceleratedRenewalSerum.png">
+                                </figure>
+                                <div class="sale-badge fwb">36%</div>
+                            </a>
+                                <div class="amount-option">
+                                    <span class="selected">50ml</span>
+                                    <span>75ml</span>
+                                    <span>125ml</span>
+                                </div>
+                            <a href="./detail-serum.html">
+                                <div class="pro-desc">
+                                    <p class="fwb bd2">턴어라운드 엑셀러레이티드 리뉴얼 세럼</p>
+                                    <p class="bd2">피부에 에너지를 주고 피부결을 되살려주어 매끄럽고 탄력있는 광채피부를 빠르게 되찾아 주는 세럼</p>
+                                </div>
+                                <div class="pro-price">
+                                    <span class="original bd2">58,000원</span>
+                                    <span class="rp-sale fwb">28,800원</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
             </div>
         </main>
 

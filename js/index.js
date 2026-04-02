@@ -40,4 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initSubCateSwiper();
     window.addEventListener("resize", initSubCateSwiper);
 
+
+    
+
 });
