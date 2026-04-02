@@ -397,6 +397,215 @@ main .hero-banner.swiper .swiper-pagination{
 
 
 
+/* PC 전체 */
+@media (min-width: 769px){
+
+    /* sub-category PC / TAB : swiper 제거된 상태 대응 */
+    .sub-cate-swiper{
+        overflow: visible;
+    }
+
+    .sub-cate-list{
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: var(--space-large);
+    }
+
+    .sub-cate-list .swiper-slide{
+        flex: 0 0 auto;
+        width: auto;
+    }
+}
+
+/* 1440 이하 PC */
+@media (max-width: 1440px){
+    .best-item figure {
+        max-width: 282px;
+        max-height: 282px;
+    }
+    .best-item-list>li:hover::after{
+        display: none;
+    }
+
+    .best-item-list>li:hover figure img{
+        transform: none;
+    }
+    .item-info {
+        width: auto;
+        white-space: wrap;
+    }
+
+}
+
+
+@media (max-width: 1000px){
+    .best-item figure {
+        max-width: 282px;
+        max-height: 282px;
+    }
+}
 
 
 
+/* 모바일 */
+@media (max-width: 768px){
+    main{
+        padding-top: 65px;
+    }
+
+    /* MOBILE : 가로 슬라이드 유지 */
+    .sub-cate-swiper{
+        overflow: hidden;
+    }
+
+    .sub-cate-list{
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 0;
+    }
+
+    .sub-cate-list .swiper-slide{
+        flex-shrink: 0;
+        width: auto;
+        margin-right: 12px;
+    }
+
+    .sub-cate-list .swiper-slide:last-child{
+        margin-right: 0;
+    }
+
+    .sub-cate-list figure {
+        width: 80px;
+        height: 80px;
+    }
+
+    .best-item-list>li {
+        padding: 0;
+    }
+
+    .best-item figure {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .best-item-list>li:hover::after{
+        display: none;
+    }
+
+    .best-item-list>li:hover figure img{
+        transform: none;
+    }
+
+    .item-info {
+        width: 200px;
+        white-space: wrap;
+    }
+
+    .item-info>p:first-of-type {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+    .item-info>p:nth-of-type(2) {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+
+    .brand-pilo .commom-frame>h1 {
+        font-size: 26px;
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .parallax {
+        height: 600px;
+        background-attachment:initial;
+    }
+
+    .visual-hero {
+        margin-top: -680px;
+    }
+
+    .card {
+        max-width: 428px;
+        margin: 0 1rem;
+        max-height: 300px;
+        padding: 1rem;
+    }
+
+    .benefits {
+        padding-top: var(--space-x-large);
+        padding-bottom: 20rem;
+    }
+
+    .benefit-list {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: var(--space-large) var(--space-normal);
+    }
+
+    .benefit-list li {
+        padding: var(--space-normal);
+    }
+    .benefit-list li span{
+        line-height: 140%;
+    }
+    
+}
+
+
+@media (max-width: 490px){
+    .best-item figure {
+        max-width: 180px;
+        max-height: 180px;
+    }
+    .item-info {
+        max-width: 180px;
+    }
+    
+}
+
+
+
+@media (max-width: 400px){
+    .best-item figure {
+        max-width: 160px;
+        max-height: 160px;
+    }
+    .item-info {
+        max-width: 160px;
+    }
+    .card {
+        max-width: 428px;
+        margin: 0 1rem;
+        max-height: 300px;
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 360px){
+    .best-item figure {
+        max-width: 140px;
+        max-height: 160px;
+    }
+    .item-info {
+        max-width: 140px;
+    }
+}
+
+
+@media (max-width: 320px){
+    .best-item figure {
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .item-info {
+        max-width: 120px;
+    }
+}

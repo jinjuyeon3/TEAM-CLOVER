@@ -91,7 +91,7 @@ main{
 .amount-option{
     display: flex;
     justify-content: center;
-    gap: var(--space-small);
+    gap: var(--space-x-small);
     margin-bottom: var(--space-normal);
     cursor: pointer;
 }

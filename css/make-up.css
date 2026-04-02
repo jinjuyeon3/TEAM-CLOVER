@@ -89,7 +89,7 @@ main{
 .color-option{
     display: flex;
     justify-content: center;
-    gap: var(--space-normal);
+    gap: var(--space-small);
     margin-bottom: var(--space-normal);
     cursor: pointer;
 }

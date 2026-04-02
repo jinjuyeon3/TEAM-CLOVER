@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     productListMake.forEach(item => {
         result += `
             <li>
-                <a href="./detail-face.html">
+                <a href="${item.detail}">
                     <figure>
                         <img src="./img/0-imgPublishing/makeUp/${item.image}">
                     </figure>
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="color3"></div>
                         <div class="color4"></div>
                     </div>
-                <a href="./detail-face.html">
+                <a href="${item.detail}">
                     <div class="make-desc">
                         <p class="fwb bd2">${item.name}</p>
                         <p class="bd2">${item.desc}</p>

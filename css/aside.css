@@ -15,7 +15,7 @@
     gap: var(--space-small);
 }
 .aside-menu-list img{
-    height: 44px;
+    height: 2.5rem;
     border-radius: 50%;
 }
 .chat-panel{
