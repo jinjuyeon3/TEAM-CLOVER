@@ -196,36 +196,23 @@ span.sale{
     padding: var(--space-small);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 200;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
     transition: opacity .3s ease, transform .3s ease;
-    transform: translateY(12px);
 }
 
-/* info-box 지나고 나면 화면 오른쪽 하단 고정 + 나타남 */
+/* info-box 지나고 나면 화면 오른쪽 하단 고정 */
 .pro-minibox.is-floating{
     position: fixed;
-    right: 150px;   /* 원하는 값으로 조절 */
+    right: 150px;
     bottom: 40px;
-    width: 300px;
     margin-left: 0;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateY(0);
+    width: 300px;
 }
 
-/* footer 근처에서 멈춤 */
+/* 푸터에 겹치는 게 싫으면 멈추는 상태 */
 .pro-minibox.is-stop{
     position: absolute;
-    right: 80px;   /* is-floating과 맞춰주기 */
+    right: 0;
     bottom: 0;
-    width: 300px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateY(0);
 }
 .minibox-title{
     display: flex;

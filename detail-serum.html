@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>페이스 상세페이지</title>
+    <title>세럼 상세페이지</title>
+    
+    <!-- 검색 엔진이 페이지 색인 허용시킴 -->
+    <meta name="robots" content="index, follow">
+    <link rel="icon" size="32x32" type="image/png" href="./img/0-imgPublishing/favicon.png">
+    
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/system.css">
@@ -25,6 +30,7 @@
     <script src="./js/heart.js"></script>
 
     <script src="./js/detail.js"></script>
+    <script src="./js/detail-option.js"></script>
 </head>
 <body>
 
@@ -942,13 +948,46 @@
                             <dd class="fwb"><span class="sale">15%</span>49,300원</dd>
                             <dt>옵션</dt>
                             <dd>
-                                <select class="pro-option-g">
-                                    <option value="옵션">옵션</option>
-                                    <option value="50ml">50ml</option>
-                                    <option value="75ml">75ml</option>
-                                    <option value="125ml">125ml</option>
-                                    <option value="200ml">200ml</option>
-                                </select>
+                                <div class="custom-option-wrap">
+                                    <select class="pro-option-g" hidden>
+                                        <option value="옵션">옵션</option>
+                                        <option value="50ml">50ml</option>
+                                        <option value="75ml">75ml</option>
+                                        <option value="125ml">125ml</option>
+                                        <option value="200ml">200ml</option>
+                                    </select>
+
+                                    <button type="button" class="custom-option-btn">
+                                        <span class="option-left" style="gap:0;">
+                                            <span class="color-chip" style="display:none; background:transparent;"></span>
+                                            <span class="selected-value">옵션</span>
+                                        </span>
+                                        <span class="option-arrow"></span>
+                                    </button>
+
+                                    <ul class="custom-option-list">
+                                        <li data-value="옵션" data-color="transparent">
+                                            <span class="color-chip" style="display:none; background:transparent;"></span>
+                                            <span>옵션</span>
+                                        </li>
+                                        <li data-value="50ml" data-color="transparent">
+                                            <span class="color-chip" style="display:none; background:transparent;"></span>
+                                            <span>50ml</span>
+                                        </li>
+                                        <li data-value="75ml" data-color="transparent">
+                                            <span class="color-chip" style="display:none; background:transparent;"></span>
+                                            <span>75ml</span>
+                                        </li>
+                                        <li data-value="125ml" data-color="transparent">
+                                            <span class="color-chip" style="display:none; background:transparent;"></span>
+                                            <span>125ml</span>
+                                        </li>
+                                        <li data-value="200ml" data-color="transparent">
+                                            <span class="color-chip" style="display:none; background:transparent;"></span>
+                                            <span>200ml</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </dd>
                             <dt>수량</dt>
                             <dd class="span-g">
@@ -1015,13 +1054,46 @@
                             <dt>총 구매금액</dt>
                             <dd class="fwb h-light"><span class="sale">15%</span>49,300원</dd>
                         </dl>
-                        <select class="pro-option-g2">
-                            <option value="옵션">옵션</option>
-                            <option value="50ml">50ml</option>
-                            <option value="75ml">75ml</option>
-                            <option value="125ml">125ml</option>
-                            <option value="200ml">200ml</option>
-                        </select>
+                        <div class="custom-option-wrap custom-option-wrap2">
+                            <select class="pro-option-g2" hidden>
+                                <option value="옵션">옵션</option>
+                                <option value="50ml">50ml</option>
+                                <option value="75ml">75ml</option>
+                                <option value="125ml">125ml</option>
+                                <option value="200ml">200ml</option>
+                            </select>
+
+                            <button type="button" class="custom-option-btn custom-option-btn2">
+                                <span class="option-left" style="gap:0;">
+                                    <span class="color-chip" style="display:none; background:transparent;"></span>
+                                    <span class="selected-value">옵션</span>
+                                </span>
+                                <span class="option-arrow"></span>
+                            </button>
+
+                            <ul class="custom-option-list custom-option-list2">
+                                <li data-value="옵션" data-color="transparent" class="active">
+                                    <span class="color-chip" style="display:none;"></span>
+                                    <span>옵션</span>
+                                </li>
+                                <li data-value="50ml" data-color="transparent">
+                                    <span class="color-chip" style="display:none;"></span>
+                                    <span>50ml</span>
+                                </li>
+                                <li data-value="75ml" data-color="transparent">
+                                    <span class="color-chip" style="display:none;"></span>
+                                    <span>75ml</span>
+                                </li>
+                                <li data-value="125ml" data-color="transparent">
+                                    <span class="color-chip" style="display:none;"></span>
+                                    <span>125ml</span>
+                                </li>
+                                <li data-value="200ml" data-color="transparent">
+                                    <span class="color-chip" style="display:none;"></span>
+                                    <span>200ml</span>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="btn-g2">
                             <span><a href="#">장바구니</a></span>
                             <span><a href="#">구매하기</a></span>
@@ -1029,7 +1101,7 @@
                     </div>
                     <div class="dt-contents">
                         <div class="dt-content active">
-                            <img src="./img/0-imgPublishing/detail/skin-detail.jpg" alt="이븐베터 리프레쉬 하이드레이팅 앤 리페어링 메이크업 상세페이지">
+                            <img src="./img/0-imgPublishing/detail/serum-detail.jpg" alt="이븐베터 리프레쉬 하이드레이팅 앤 리페어링 메이크업 상세페이지">
                         </div>
                         <div class="dt-content">
                             <div class="rv-head">

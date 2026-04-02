@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>배송지 관리</title>
+
+    <!-- 검색 엔진이 페이지 색인 허용시킴 -->
+    <meta name="robots" content="index, follow">
+    <link rel="icon" size="32x32" type="image/png" href="./img/0-imgPublishing/favicon.png">
+    
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/system.css">
@@ -960,7 +965,7 @@
                                 배송지명 <span class="required">*</span>
                                 </label>
                                 <div class="field">
-                                <input type="text" id="addressName" placeholder="집">
+                                <input type="text" id="addressName" placeholder="집" required>
                                 </div>
                             </div>
                             <!-- 받는분 -->
@@ -969,7 +974,7 @@
                                 받는분 <span class="required">*</span>
                                 </label>
                                 <div class="field">
-                                <input type="text" id="receiver" placeholder="성함">
+                                <input type="text" id="receiver" placeholder="성함" required>
                                 </div>
                             </div>
                             <!-- 연락처1 -->

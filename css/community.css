@@ -1,6 +1,5 @@
 main{
     padding-top: 180px;
-    margin-bottom: var(--space-foot);
 }
 .faq-search{
     margin-top: var(--space-3x-large);
@@ -87,6 +86,7 @@ input[id="faq-search-keyword"]::placeholder{
     transition: all .3s ease 0s;
 }
 .faq-foot .common-frame{
+    width: 100%;
     height: 400px;
     background-color: #eee;
     text-align: center;
@@ -107,7 +107,14 @@ input[id="faq-search-keyword"]::placeholder{
     margin: 0 auto;
     text-align: left;
 }
-
+.faq-foot .common-frame dl dd:last-of-type{
+    font-size: var(--fs-det);
+}
+.faq-foot .common-frame dl dt:first-child{
+    display: flex;
+    align-items: center;
+    gap: var(--space-x-small);
+}
 
 .faq-foot a .btn-per-que{
     background-color: var(--main-color);

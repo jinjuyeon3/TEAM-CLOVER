@@ -7,7 +7,8 @@ let productListMake = [
     originalPrice: 58000,
     discount: 36,
     // colors: ["#F1D2BD", "#EECBB4","#E9BC9D","#D7A07C"],
-    image: "EvenBetterRefreshHydratingAndRepairingMakeup.png"
+    image: "EvenBetterRefreshHydratingAndRepairingMakeup.png",
+    detail:"./detail-face.html"
   },
   {
     id: 1,
@@ -17,7 +18,8 @@ let productListMake = [
     originalPrice: 58000,
     discount: 36,
     // colors: ["#F1D2BD", "#EECBB4","#E9BC9D","#D7A07C"],
-    image: "EvenBetterMakeup.png"
+    image: "EvenBetterMakeup.png",
+    detail:"./detail-face.html"
   },
   {
     id: 2,
@@ -27,7 +29,8 @@ let productListMake = [
     originalPrice: 58000,
     discount: 36,
     // colors: ["#F1D2BD", "#EECBB4","#E9BC9D","#D7A07C"],
-    image: "EvenBetterClinicalVitaminMakeup.png"
+    image: "EvenBetterClinicalVitaminMakeup.png",
+    detail:"./detail-face.html"
   },
   {
     id: 3,
@@ -37,7 +40,8 @@ let productListMake = [
     originalPrice: 58000,
     discount: 36,
     // colors: ["#F1D2BD", "#EECBB4","#E9BC9D","#D7A07C"],
-    image: "WaterVeilPowder.png"
+    image: "WaterVeilPowder.png",
+    detail:"./detail-face.html"
   },
   {
     id: 4,
@@ -47,17 +51,19 @@ let productListMake = [
     originalPrice: 58000,
     discount: 36,
     // colors: ["#F1D2BD", "#EECBB4","#E9BC9D","#D7A07C"],
-    image: "CheekPop.png"
+    image: "CheekPop.png",
+    detail:"./detail-face.html"
   },
   {
     id: 5,
-    name: "래쉬 빌딩 프라이머",
-    desc: "속눈썹에 볼륨과 길이를 더하고 마스카라의 지속력을 높여주는 속눈썹 베이스",
+    name: "하이 임팩트 섀도우 플레이 섀도우 플러스 디파이너",
+    desc: "크림 & 파우더가 하나에 쏙 2 in 1 스틱 섀도우 쉽고 가볍게 완성하는 아이 메이크업",
     price: 37120,
     originalPrice: 58000,
     discount: 36,
     // colors: ["#F1D2BD", "#EECBB4","#E9BC9D","#D7A07C"],
-    image: "LashBuildingPrimer.png"
+    image: "HighImpactShadowPlayShadowDefiner.png",
+    detail:"./detail-eyeshadow.html"
   },
   {
     id: 6,
@@ -67,7 +73,8 @@ let productListMake = [
     originalPrice: 58000,
     discount: 36,
     // colors: ["#F1D2BD", "#EECBB4","#E9BC9D","#D7A07C"],
-    image: "LashPowerMascara.png"
+    image: "LashPowerMascara.png",
+    detail:"./detail-eyeshadow.html"
   },
   {
     id: 7,
@@ -77,17 +84,19 @@ let productListMake = [
     originalPrice: 58000,
     discount: 36,
     // colors: ["#F1D2BD", "#EECBB4","#E9BC9D","#D7A07C"],
-    image: "QuicklinerForEyesIntense.png"
+    image: "QuicklinerForEyesIntense.png",
+    detail:"./detail-eyeshadow.html"
   },
   {
     id: 8,
-    name: "크림 쉐이처 포 아이즈",
-    desc: "크리미하고 부드러운 텍스춰와 은은하게 반짝이는 펄감이 특징인 우수한 지속력의 펜슬 아이라이너",
+    name: "크리니크 팝 롱 웨어 립스틱",
+    desc: "선명한 발색과 부드러운 발림성을 동시에 잡아 오래 지속되는 컬러를 선사하는 롱웨어 립스틱",
     price: 37120,
     originalPrice: 58000,
     discount: 36,
     // colors: ["#F1D2BD", "#EECBB4","#E9BC9D","#D7A07C"],
-    image: "CreamShaperForEyes.png"
+    image: "popLongWearLipstick.png",
+    detail:"./detail-lip.html"
   },
   
 ];

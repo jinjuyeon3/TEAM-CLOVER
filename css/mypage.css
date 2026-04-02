@@ -138,11 +138,11 @@ main{
     justify-content: center;
     align-items: center;
 }
-.pro-option{
+.pro-option {
     display: flex;
     justify-content: center;
     gap: var(--space-small);
-    margin-bottom: var(--space-small);
+    margin-bottom: var(--space-normal);
     cursor: pointer;
 }
 .pro-option>span{
@@ -165,11 +165,14 @@ main{
 .color2{background-color: #EECBB4;}
 .color3{background-color: #E9BC9D;}
 .color4{background-color: #D7A07C;}
-.pro-desc>p:first-of-type{
-    margin-bottom: var(--space-normal);
+.pro-desc{
+    text-align: center;
 }
-.pro-desc>p:last-of-type{
-    margin-bottom: var(--space-small);
+.pro-desc>p:first-of-type {
+    margin-bottom: var(--space-x-small);
+}
+.pro-desc>p:last-of-type {
+    margin-bottom: var(--space-normal);
 }
 .pro-price{
     display: flex;
