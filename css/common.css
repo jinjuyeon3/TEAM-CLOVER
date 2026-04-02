@@ -114,3 +114,66 @@ label.visually-hidden{
   opacity: 1;
   transform: translateY(0);
 }
+.fade-show{
+    filter: blur(50px);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.fade-show.active{
+    filter: blur(0);
+    opacity: 1;
+}
+input{
+    font-family: 'Pretendard', sans-serif;
+}
+textarea{
+    font-family: 'Pretendard', sans-serif;
+}
+.news-letter.mo{
+    display: none;
+}
+.myInventory{
+    position: sticky;
+    top: 180px;
+}
+
+
+
+@media (max-width: 1440px){
+    html{
+        font-size: var(--basic-font-tab);
+    }
+    .common-frame{
+        width: auto;
+        margin: 0 2rem;
+    }
+    .mo{
+        display: none;
+    }
+    .tab{
+        display: block;
+    }
+    .pc{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: var(--basic-font-mo);
+    }
+    .common-frame{
+        width: auto;
+        margin: 0 1rem;
+    }
+    .mo{
+        display: block;
+    }
+    .tab{
+        display: none;
+    }
+    .pc{
+        display: none;
+    }
+    
+}

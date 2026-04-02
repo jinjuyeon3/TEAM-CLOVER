@@ -72,6 +72,7 @@ main{
     display: flex;
     gap: 7rem;
     align-items: center;
+    margin-bottom: var(--space-3x-large);
 }
 .cartList{
     flex: 7;
@@ -155,4 +156,88 @@ main{
     width: 100%;
     text-align: center;
     margin-top: var(--space-normal);
+}
+.recomend-item h1{
+    margin-bottom: var(--space-large);
+    text-align: center;
+}
+.reco-list {
+    display: flex;
+    gap: var(--space-normal);
+}
+.reco-list>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.reco-list figure{
+    background-color: var(--cb-color-0);
+    width: 345px;
+    height: 345px;
+    margin-bottom: var(--space-normal);
+}
+.reco-list figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.sale-badge{
+    position: absolute;
+    left: 17px;
+    top: 17px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    color: #fff;
+    font-size: var(--fs-h2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amount-option{
+    display: flex;
+    justify-content: center;
+    gap: var(--space-x-small);
+    margin-bottom: var(--space-normal);
+    cursor: pointer;
+}
+.amount-option>span{
+    border: 1px solid #BABABA;
+    padding: var(--space-x-small) var(--space-normal);
+    box-sizing: border-box;
+    color: #BABABA;
+}
+.amount-option>span.selected{
+    border: 1px solid #000;
+    padding: var(--space-x-small) var(--space-normal);
+    box-sizing: border-box;
+    color: #000;
+}
+.pro-desc>p:first-of-type{
+    margin-bottom: var(--space-small);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pro-desc>p:last-of-type{
+    margin-bottom: var(--space-normal);
+}
+.pro-price{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--space-small);
+}
+.pro-price .sale{
+    font-size: var(--fs-h4);
+}
+.pro-price .original{
+    color: #BABABA;
+    text-decoration: line-through;
 }
