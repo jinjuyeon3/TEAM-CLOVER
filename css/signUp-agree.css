@@ -91,6 +91,16 @@ main{
 .checkbox-group input{
     display: none;
 }
+
+.checkbox-group label{
+    position: relative;
+    padding-left: var(--space-large);
+    cursor: pointer;
+    display: inline-block;
+    font-size: var(--fs-bd1);
+    font-weight: var(--fw-med);
+}
+
 .checkbox-group label::before{
     content: "";
     position: absolute;
@@ -101,15 +111,31 @@ main{
     height: 20px;
     border: 1px solid #9F9F9F;
     border-radius: .25rem;
-    background:#fff;
+    background: #fff;
     transition: all 0.2s;
 }
+/* 일반 구조용 */
 .checkbox-group input:checked + label::before{
     background: var(--main-color);
     border-color: var(--main-color);
 }
-/* 체크 아이콘 */
 .checkbox-group input:checked + label::after{
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-60%) rotate(45deg);
+    width: 6px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+}
+/* terms5처럼 label이 안쪽 div에 들어간 구조용 */
+.checkbox-group > div:has(input:checked) label::before{
+    background: var(--main-color);
+    border-color: var(--main-color);
+}
+.checkbox-group > div:has(input:checked) label::after{
     content: "";
     position: absolute;
     left: 6px;

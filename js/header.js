@@ -323,4 +323,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
         setSearchButtonDefault();
     }
+
+
+
+
+    ////// 토스트 기능
+    const loginLink = document.querySelector(".need-login");
+    const toast = document.querySelector(".toast-message");
+
+    let toastTimer;
+
+    loginLink.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        toast.classList.add("show");
+
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+            toast.classList.remove("show");
+        }, 1500);
+    });
+
+
 });

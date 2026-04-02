@@ -242,7 +242,8 @@
                                         <p class="bd2 fwb"><a href="./community.html">고객센터</a></p>
                                         <ul>
                                             <li><a href="./community.html">FAQ</a></li>
-                                            <li><a href="./ivt-inquire.html">문의하기</a></li>
+                                            <li><a href="./ivt-inquire.html" class="need-login">문의하기</a></li>
+                                            <div class="toast-message">로그인이 필요한 서비스입니다.</div>
                                         </ul>
                                     </div>
                                         <div class="mega-banner">
@@ -1013,13 +1014,14 @@
                                 <div class="form-row">
                                     <label>이메일</label>
                                     <div class="field email-group">
-                                        <input type="text" placeholder="jin*****">
+                                        <input type="text" placeholder="이메일">
                                         <span>@</span>
-                                        <input type="text" placeholder="naver.com">
+                                        <input type="text" placeholder="직접입력">
                                         <select>
-                                            <option>네이버</option>
-                                            <option>다음</option>
-                                            <option>구글</option>
+                                            <option value="직접입력">직접입력</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="daum.com">daum.com</option>
+                                            <option value="gmail.com">gmail.com</option>
                                         </select>
                                         <button type="button">변경하기</button>
                                     </div>

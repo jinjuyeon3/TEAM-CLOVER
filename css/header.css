@@ -40,6 +40,26 @@ header .sub-menu{
 .lnb .search-btn{
     cursor: pointer;
 }
+.toast-message{
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    padding: 14px 24px;
+    background: #111;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 999px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+.toast-message.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
 .gnb-menu{
     display: flex;
     gap: var(--space-x-large);
@@ -392,9 +412,10 @@ input[id="search-keyword"]::placeholder{
         padding-top: .25rem;
     }
 
-    .tab-depth1-list li{
-        min-height: 78px;
-        padding: 0 1.5rem;
+    .tab-depth1-list li {
+        height: 52px;
+        box-sizing: border-box;
+        padding: .75rem .9rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -492,11 +513,12 @@ input[id="search-keyword"]::placeholder{
         width: 100%;
     }
 
-    .accordion-title{
-        width: 100%;
-        min-height: 78px;
+    .accordion-title {
+        width: 400px;
+        min-height: 52px;
         padding: 0 3.5rem 0 1.5rem;
         border: 0;
+        box-sizing: border-box;
         background: none;
         display: flex;
         align-items: center;
@@ -505,11 +527,11 @@ input[id="search-keyword"]::placeholder{
         font-weight: var(--fw-bold);
         cursor: pointer;
         position: relative;
+        margin-bottom: var(--space-normal);
     }
-
     .accordion-icon{
         position: absolute;
-        right: 6.5rem;
+        right: 1rem;
         top: 50%;
         transform: translateY(-50%);
         font-size: 1.5rem;
@@ -857,12 +879,15 @@ input[id="search-keyword"]::placeholder{
 
     /* 1depth */
     .mobile-depth1-list{
-        padding-top: .25rem;
+        padding: 0 var(--space-normal);
     }
 
     .mobile-depth1-item{
-        border-bottom: 1px solid var(--main-color);
+        /* border-bottom: 1px solid var(--main-color); */
     }
+     .mobile-depth1-item:last-of-type{
+        /* border-bottom: none; */
+     }
 
     .mobile-depth1-head{
         min-height: 54px;
@@ -871,6 +896,7 @@ input[id="search-keyword"]::placeholder{
         align-items: center;
         justify-content: space-between;
         gap: 1rem;
+        border-bottom: 1px solid var(--main-color);
     }
 
     .mobile-depth1-link{
