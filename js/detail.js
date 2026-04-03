@@ -126,4 +126,18 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", handleMiniBox);
     handleMiniBox();
 
+
+    /* =========================
+    하트 버튼 클릭
+    ========================= */
+    const heartBtn = document.querySelector(".btn-heart");
+
+    if (heartBtn) {
+        heartBtn.addEventListener("click", () => {
+            heartBtn.classList.toggle("clicked");
+        });
+    }
+
+    
+
 });
