@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ========================= */
     const infoBox = document.querySelector(".info-box");
     const proMinibox = document.querySelector(".pro-minibox");
-    const footer = document.querySelector("footer");
+    const footer = document.querySelector(".recomend-item");
 
     if (!infoBox || !proMinibox || !footer) return;
 

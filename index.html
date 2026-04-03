@@ -240,7 +240,8 @@
                                         <p class="bd2 fwb"><a href="./community.html">고객센터</a></p>
                                         <ul>
                                             <li><a href="./community.html">FAQ</a></li>
-                                            <li><a href="./ivt-inquire.html">문의하기</a></li>
+                                            <li><a href="./ivt-inquire.html" class="need-login">문의하기</a></li>
+                                            <div class="toast-message">로그인이 필요한 서비스입니다.</div>
                                         </ul>
                                     </div>
                                         <div class="mega-banner">
@@ -920,6 +921,11 @@
             <script>
                 const heroSwiper = new Swiper('.hero-banner', {
                     loop: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        },
+                    speed: 1000,
                     pagination: {
                         el: '.hero-banner .swiper-pagination',
                         clickable: true,
@@ -1258,7 +1264,7 @@
                             <li><a href="#">개인정보처리방침</a></li>
                         </ul>
                     </div>
-                    <form action="#" class="news-letter">
+                    <form action="#" class="news-letter pc">
                         <label for="u-email" class="visually-hidden">이메일 입력</label>
                         <input type="text" placeholder="Email address" id="u-email" class="det">
                         <button>send</button>
@@ -1282,6 +1288,16 @@
                         <dt>호스팅서비스 사업자</dt>
                         <dd>(주)엘지유플러스</dd>
                     </dl>
+                    <form action="#" class="news-letter mo">
+                        <label for="u-email" class="visually-hidden">이메일 입력</label>
+                        <input type="text" placeholder="Email address" id="u-email" class="det">
+                        <button>send</button>
+                        <div class="u-agree-box">
+                            <label for="u-agree" class="visually-hidden">동의여부체크</label>
+                            <input type="checkbox" id="u-agree">
+                            <p class="det">뉴스레터 및 마케팅 정보를 이메일로 받아보는 것에 동의합니다.</p>
+                        </div>
+                    </form>
                     <div class="sub-co-info">
                         <h1>1644-3847</h1>
                         <p class="det fwm">Allergy tested.<br>

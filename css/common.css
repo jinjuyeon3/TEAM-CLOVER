@@ -129,12 +129,12 @@ input{
 textarea{
     font-family: 'Pretendard', sans-serif;
 }
-.news-letter.mo{
-    display: none;
-}
 .myInventory{
     position: sticky;
     top: 180px;
+}
+.news-letter.mo{
+    display: none;
 }
 
 

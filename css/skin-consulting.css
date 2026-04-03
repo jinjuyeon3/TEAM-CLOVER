@@ -418,7 +418,7 @@ main{
     align-items: flex-start;
     gap: var(--space-small);
 }
-.pro-price .sale{
+.pro-price .rp-sale{
     font-size: var(--fs-h4);
 }
 .pro-price .original{

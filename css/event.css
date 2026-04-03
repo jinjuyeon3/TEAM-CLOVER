@@ -66,12 +66,12 @@ main{
     padding: var(--space-small) var(--space-normal);
     border-radius: 0 .5rem .5rem 0;
 }
-.all-cupon{
+.all-cupon {
     color: #fff;
     display: inline-flex;
     gap: 1.8rem;
     background-color: var(--main-color);
-    padding: var(--space-small) var(--space-2x-large);
+    padding: var(--space-small) var(--space-large);
     font-weight: var(--fw-bold);
     font-size: var(--fs-h4);
     border-radius: .5rem;
@@ -102,9 +102,10 @@ main{
     display: flex;
     gap: var(--space-normal);
 }
-.set-list li{
+.set-list li {
     flex: 1;
     padding: var(--space-small);
+    border: 1px solid var(--main-color);
 }
 .set-list li a{
     display: flex;

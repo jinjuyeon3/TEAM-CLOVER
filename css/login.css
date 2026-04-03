@@ -101,7 +101,7 @@ button.active{
 form>div:first-of-type{
     margin-bottom: var(--space-small);
 }
-.login-box>form>button{
+.login-box>form button{
     margin-top: var(--space-x-large);
     background-color: var(--main-color);
     color: #fff;
@@ -110,6 +110,7 @@ form>div:first-of-type{
     box-sizing: border-box;
     font-size: var(--fs-h2);
 }
+
 .login-option{
     margin-top: var(--space-normal);
     margin-bottom: var(--space-x-large);
@@ -138,4 +139,8 @@ form>div:first-of-type{
     align-items: flex-start;
     gap: var(--space-x-small);
     margin-top: var(--space-normal);
+}
+.sub-img{
+    margin-top: var(--space-x-large);
+    margin-bottom: var(--space-large);
 }
