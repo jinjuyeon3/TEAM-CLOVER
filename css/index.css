@@ -532,7 +532,7 @@ main .hero-banner.swiper .swiper-pagination{
     }
 
     .card {
-        max-width: 428px;
+        width: auto;
         margin: 0 1rem;
         max-height: 300px;
         padding: 1rem;
@@ -540,7 +540,7 @@ main .hero-banner.swiper .swiper-pagination{
 
     .benefits {
         padding-top: var(--space-x-large);
-        padding-bottom: 20rem;
+        padding-bottom: var(--space-3x-large);
     }
 
     .benefit-list {
@@ -581,7 +581,7 @@ main .hero-banner.swiper .swiper-pagination{
         max-width: 160px;
     }
     .card {
-        max-width: 428px;
+        width: auto;
         margin: 0 1rem;
         max-height: 300px;
         padding: 1rem;
