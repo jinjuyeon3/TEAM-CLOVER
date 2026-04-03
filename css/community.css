@@ -43,6 +43,12 @@ input[id="faq-search-keyword"]::placeholder{
     border: 1px solid #9F9F9F;
     cursor: pointer;
 }
+.btn-filter.clicked{
+    color: var(--main-color);
+    font-weight: var(--fw-med);
+    border: 1px solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
 .faq-list>li{
     display: flex;
     flex-direction: column;
