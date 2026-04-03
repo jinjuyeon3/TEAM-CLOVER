@@ -123,11 +123,12 @@ span.sale{
     padding: .75rem;
     cursor: pointer;
 }
-.span-g{
+.span-g {
     display: flex;
     cursor: pointer;
     justify-content: flex-end;
     align-items: center;
+    line-height: 0;
 }
 .span-g span{
     font-size: var(--fs-bd1);
@@ -176,6 +177,8 @@ span.sale{
     color: #fff;
     box-sizing: border-box;
 }
+
+
 .ad-banner{
     height: 197px;
     margin-top: var(--space-3x-large);
@@ -186,6 +189,15 @@ span.sale{
     object-fit: cover;
 }
 
+.btn-heart{
+    cursor: pointer;
+}
+.btn-heart.clicked svg{
+    fill: red;
+}
+.btn-heart.clicked svg path{
+    stroke: red;
+}
 
 .pro-minibox{
     position: relative;
