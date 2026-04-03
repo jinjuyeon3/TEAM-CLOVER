@@ -188,9 +188,15 @@ main{
 }
 .skin-desc>p:first-of-type {
     margin-bottom: var(--space-x-small);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .skin-desc>p:last-of-type {
     margin-bottom: var(--space-normal);
+        
 }
 .skin-price{
     display: flex;

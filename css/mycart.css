@@ -7,9 +7,10 @@ main{
     gap: var(--space-normal);
     margin-bottom: var(--space-3x-large);
 }
-.uProfile-content1{
+.uProfile-content1 {
     flex: 5;
-    height: 200px;
+    height: 230px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     gap: var(--space-large);
@@ -114,10 +115,9 @@ main{
     gap: 0;
     text-align: center;
 }
-.span-g span{
+.span-g span {
     height: 24px;
     width: 24px;
-    border: 1px solid #000;
     cursor: pointer;
 }
 .span-g .number{
@@ -184,6 +184,32 @@ main{
     height: 100%;
     object-fit: contain;
 }
+
+.reco-list .color-option {
+    display: flex;
+    gap: var(--space-x-small);
+    margin-bottom: var(--space-normal);
+    cursor: pointer;
+}
+.reco-list .color-option span{
+    width: 36px;
+    height: 36px;
+}
+.reco-list .color-option span:nth-last-of-type(1){
+    background-color: #ff45aa;
+}
+.reco-list .color-option span:nth-last-of-type(2){
+    background-color: #ee7462;
+}
+.reco-list .color-option span:nth-last-of-type(3){
+    background-color: #cd18eb;
+}
+.reco-list .color-option span:nth-last-of-type(4){
+    background-color: #ec2328;
+}
+.reco-list .color-option span:nth-last-of-type(5){
+    background-color: #b6685f;
+}
 .sale-badge{
     position: absolute;
     left: 17px;
@@ -227,6 +253,11 @@ main{
 }
 .pro-desc>p:last-of-type{
     margin-bottom: var(--space-normal);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .pro-price{
     display: flex;
