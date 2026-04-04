@@ -2,8 +2,9 @@ main{
     padding-top: 280px;
     margin-bottom: var(--space-foot);
 }
-.ivt-wrap{
+.ivt-wrap {
     display: flex;
+    align-items: flex-start;
 }
 .inventory-box{
     flex: 3;
@@ -82,16 +83,18 @@ main{
     gap: var(--space-small);
     font-weight: var(--fw-med);
 }
-.uProfile-content3 h1{
-    margin-bottom: var(--space-large);
-}
+
 .form-row{
     display: flex;
 }
 
 /* 취소/반품/교환 내역 */
-.uProfile-content3 h1 {
+.uProfile-content3{
+    width: 100%;
+}
+.uProfile-content3 h1{
     margin-bottom: var(--space-large);
+    margin-top: var(--space-3x-large);
 }
 /* 조회 박스 */
 .ivt-filter{
@@ -108,6 +111,7 @@ main{
 .filter-period > span {
     color: #111;
     font-weight: var(--fw-bold);
+    white-space: nowrap;
 }
 .period-group{
     display: flex;
@@ -207,5 +211,102 @@ main{
 .status.cancel{
     color: var(--main-color);
 }
+.uProfile-content3-mo{
+    display: none;
+}
 
 
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+    main {
+        padding-top: var(--space-3x-large);
+    }
+    #start-year, #end-year {
+        min-width: 90px;
+    }
+    #start-month, #end-month, #start-day, #end-day {
+        min-width: 70px;
+    }
+    
+}
+
+@media (max-width: 1000px){
+    .list-head, .list-body li {
+        grid-template-columns: 115fr 339fr 84fr 104fr 83fr;
+    }
+    .filter-date {
+        flex-direction: column;
+        gap: var(--space-x-small);
+    }
+}
+
+
+@media (max-width: 768px){
+    .inventory-box {
+        display: none;
+    }
+    .uProfile-box {
+        width: 100%;
+    }
+    .uProfile-content1 {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .uProfile-content3{
+        display: none;
+    }
+    .uProfile-content3-mo{
+        display: block;
+    }
+    .uProfile-content3-mo>h1{
+        margin-top: var(--space-x-large);
+        margin-bottom: var(--space-large);
+    }
+    .ivt-list-mo>li{
+        padding: var(--space-small) 0;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-normal);
+        border-bottom: 1px solid #000;
+    }
+    .li-date{
+        display: flex;
+        justify-content: space-between;
+    }
+    .li-pro{
+        display: flex;
+        justify-content: space-between;
+    }
+    .li-status{
+        display: flex;
+        gap: var(--space-normal);
+    }
+    .li-status>span:nth-of-type(2){
+        color: var(--main-color);
+    }
+    .li-status .point{
+        color: #EF5C18;
+    }
+}
+
+
+@media (max-width: 500px){
+    .uProfile-content2 .icon-group {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: var(--space-normal);
+    }
+    .uProfile-content2 .icon-group li:last-child{
+        grid-column: span 2;
+    }
+    .li-pro {
+        flex-direction: column;
+        gap: var(--space-small);
+    }
+    
+}

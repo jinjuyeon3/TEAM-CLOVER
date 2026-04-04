@@ -7,6 +7,9 @@ main{
 .logo{
     padding: var(--space-2x-large);
 }
+.logo img{
+    height: 5rem;
+}
 .uProfile{
     text-align: center;
     margin-bottom: 5.3rem;
@@ -92,4 +95,26 @@ main{
     padding: var(--space-x-small) var(--space-x-large);
     border-radius: .25rem;
     display: inline-block;
+}
+
+
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+    .popup {
+        width: 270px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .popup {
+        width: 226px;
+    }
+    .pwForm {
+        width: auto;
+    }
 }

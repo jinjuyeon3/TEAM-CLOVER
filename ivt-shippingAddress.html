@@ -957,96 +957,98 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="uProfile-content3">
-                        <h1>배송지 등록</h1>
-                        <form class="address-form">
-                            <!-- 배송지명 -->
-                            <div class="form-row">
-                                <label for="addressName">
-                                배송지명 <span class="required">*</span>
-                                </label>
-                                <div class="field">
-                                <input type="text" id="addressName" placeholder="집" required>
-                                </div>
-                            </div>
-                            <!-- 받는분 -->
-                            <div class="form-row">
-                                <label for="receiver">
-                                받는분 <span class="required">*</span>
-                                </label>
-                                <div class="field">
-                                <input type="text" id="receiver" placeholder="성함" required>
-                                </div>
-                            </div>
-                            <!-- 연락처1 -->
-                            <div class="form-row">
-                                <label>
-                                연락처1 <span class="required">*</span>
-                                </label>
-                                <div class="field">
-                                    <div class="phone-group">
-                                        <select title="국번 선택">
-                                            <option>010</option>
-                                            <option>02</option>
-                                            <option>031</option>
-                                        </select>
-                                        <span>-</span>
-                                        <input type="text" title="중간번호">
-                                        <span>-</span>
-                                        <input type="text" title="끝번호">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 연락처2 -->
-                            <div class="form-row">
-                                <label>
-                                연락처2 <span class="required">*</span>
-                                </label>
-                                <div class="field">
-                                    <div class="phone-group">
-                                        <select title="국번 선택">
-                                            <option>선택</option>
-                                            <option>010</option>
-                                            <option>02</option>
-                                            <option>031</option>
-                                        </select>
-                                        <span>-</span>
-                                        <input type="text">
-                                        <span>-</span>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 주소 -->
-                            <div class="form-row">
-                                <label>
-                                주소 <span class="required">*</span>
-                                </label>
-                                <div class="field">
-                                    <div class="address-top">
-                                        <input type="text" placeholder="주소를 입력하세요">
-                                        <button type="button">우편번호 검색</button>
-                                    </div>
-                                    <input type="text" placeholder="기본 주소">
-                                    <input type="text" placeholder="상세 주소">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
                 </section>
             </div>
-            <div class="ivt-foot">
-                <div class="common-frame">
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="terms1">
-                        <label for="terms1">위 개인정보 수집 이용을 확인하고 배송지를 등록합니다.</label>
-                    </div>
-                    <div class="btn-group fwb bd2">
-                        <button class="btn-cancel">취소</button>
-                        <button class="btn-confirm">확인</button>
+            <section class="common-frame">
+                <div class="uProfile-content3">
+                    <h1>배송지 등록</h1>
+                    <form class="address-form">
+                        <!-- 배송지명 -->
+                        <div class="form-row">
+                            <label for="addressName">
+                            배송지명 <span class="required">*</span>
+                            </label>
+                            <div class="field">
+                            <input type="text" id="addressName" placeholder="집" required>
+                            </div>
+                        </div>
+                        <!-- 받는분 -->
+                        <div class="form-row">
+                            <label for="receiver">
+                            받는분 <span class="required">*</span>
+                            </label>
+                            <div class="field">
+                            <input type="text" id="receiver" placeholder="성함" required>
+                            </div>
+                        </div>
+                        <!-- 연락처1 -->
+                        <div class="form-row">
+                            <label>
+                            연락처1 <span class="required">*</span>
+                            </label>
+                            <div class="field">
+                                <div class="phone-group">
+                                    <select title="국번 선택">
+                                        <option>010</option>
+                                        <option>02</option>
+                                        <option>031</option>
+                                    </select>
+                                    <span>-</span>
+                                    <input type="text" title="중간번호">
+                                    <span>-</span>
+                                    <input type="text" title="끝번호">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 연락처2 -->
+                        <div class="form-row">
+                            <label>
+                            연락처2 <span class="required">*</span>
+                            </label>
+                            <div class="field">
+                                <div class="phone-group">
+                                    <select title="국번 선택">
+                                        <option>선택</option>
+                                        <option>010</option>
+                                        <option>02</option>
+                                        <option>031</option>
+                                    </select>
+                                    <span>-</span>
+                                    <input type="text">
+                                    <span>-</span>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 주소 -->
+                        <div class="form-row">
+                            <label>
+                            주소 <span class="required">*</span>
+                            </label>
+                            <div class="field">
+                                <div class="address-top">
+                                    <input type="text" placeholder="주소를 입력하세요">
+                                    <button type="button">우편번호 검색</button>
+                                </div>
+                                <input type="text" placeholder="기본 주소">
+                                <input type="text" placeholder="상세 주소">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="ivt-foot">
+                    <div class="common-frame">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terms1">
+                            <label for="terms1">위 개인정보 수집 이용을 확인하고 배송지를 등록합니다.</label>
+                        </div>
+                        <div class="btn-group fwb bd2">
+                            <button class="btn-cancel">취소</button>
+                            <button class="btn-confirm">확인</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
 
         <!-- 푸터 영역 -->
@@ -1064,7 +1066,7 @@
                             <li><a href="#">개인정보처리방침</a></li>
                         </ul>
                     </div>
-                    <form action="#" class="news-letter">
+                    <form action="#" class="news-letter pc">
                         <label for="u-email" class="visually-hidden">이메일 입력</label>
                         <input type="text" placeholder="Email address" id="u-email" class="det">
                         <button>send</button>
@@ -1088,6 +1090,16 @@
                         <dt>호스팅서비스 사업자</dt>
                         <dd>(주)엘지유플러스</dd>
                     </dl>
+                    <form action="#" class="news-letter mo">
+                        <label for="u-email" class="visually-hidden">이메일 입력</label>
+                        <input type="text" placeholder="Email address" id="u-email" class="det">
+                        <button>send</button>
+                        <div class="u-agree-box">
+                            <label for="u-agree" class="visually-hidden">동의여부체크</label>
+                            <input type="checkbox" id="u-agree">
+                            <p class="det">뉴스레터 및 마케팅 정보를 이메일로 받아보는 것에 동의합니다.</p>
+                        </div>
+                    </form>
                     <div class="sub-co-info">
                         <h1>1644-3847</h1>
                         <p class="det fwm">Allergy tested.<br>
