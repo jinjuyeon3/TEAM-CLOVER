@@ -7,6 +7,9 @@ main{
 .login-logo{
     padding: var(--space-2x-large);
 }
+.login-logo img{
+    height: 5rem;
+}
 .login-wrap{
     width: 710px;
     margin: 0 auto;
@@ -143,4 +146,60 @@ form>div:first-of-type{
 .sub-img{
     margin-top: var(--space-x-large);
     margin-bottom: var(--space-large);
+}
+
+
+
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+
+}
+
+
+@media (max-width: 768px){
+    .login-wrap {
+        width: auto;
+    }
+    .input-group input {
+        width: 100%;
+    }
+    .tab-menu button {
+        padding: var(--space-normal) 0;
+        font-size: var(--fs-h3);
+    }
+    .loginForm.active {
+        height: auto;
+        padding: var(--space-large) var(--space-normal);
+    }
+    .gestForm.active {
+        height: auto;
+        padding: var(--space-large) var(--space-normal);
+    }
+    .gestNotice {
+        gap: var(--space-small);
+    }
+    .login-box>form button {
+        width: 100%;
+        padding: 1rem 1.5rem;
+    }
+    .login-option {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-small);
+    }
+    
+    .su-foot ul li a {
+        padding: 0 var(--space-small);
+    }
+    
+}
+
+
+@media (max-width: 380px){
+    
+
 }

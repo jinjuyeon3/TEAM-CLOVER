@@ -7,8 +7,8 @@ main{
 .signUp-logo{
     padding: var(--space-2x-large);
 }
-.signUp-logo{
-    padding: var(--space-2x-large);
+.signUp-logo img{
+    height: 5rem;
 }
 .signUp-box{
     width: 642px;
@@ -29,9 +29,9 @@ main{
     align-items: center;
     gap: var(--space-small);
 }
-.su-process>li img{
-    width: 55px;
-    height: 55px;
+.su-process>li img {
+    width: 2.75rem;
+    height: 2.75rem;
 }
 .signUp-box h1{
     margin: var(--space-3x-large) 0;
@@ -55,4 +55,33 @@ main{
 .btn-login{
     background-color: var(--main-color);
     color: #fff;
+}
+
+
+
+
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+
+}
+
+
+@media (max-width: 768px){
+    .signUp-box {
+        width: auto;
+        padding: var(--space-small)
+    }
+    
+}
+
+
+@media (max-width: 380px){
+    .btn-group button {
+        padding: var(--space-small) var(--space-large);
+    }
+
 }

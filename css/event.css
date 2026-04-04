@@ -133,3 +133,49 @@ main{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+    main{
+        padding-top: 90px;
+    }
+    .banner{
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 768px){
+    main{
+        padding-top: 65px;
+    }
+    .banner{
+        height: 100%;
+        margin-bottom: var(--space-3x-large);
+    }
+    .cupon-box {
+        width: 230px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cupon-box li a {
+        justify-content: center;
+    }
+    .cupon-content {
+        width: 100%;
+    }
+    .set-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .set-list li{
+        max-width: 300px;
+    }
+}
+
+
+}

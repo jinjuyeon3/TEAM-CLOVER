@@ -25,6 +25,7 @@ main{
     justify-content: center;
     cursor: pointer;
     margin-bottom: var(--space-x-large);
+    white-space: nowrap;
 }
 .skin-tabs>span{
     width: 200px;
@@ -53,9 +54,11 @@ main{
     padding: var(--space-x-small) var(--space-small);
 }
 .skin-list{
+    width: auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: var(--space-x-large) var(--space-3x-large);
+    justify-content: center;
 }
 .skin-list>li{
     display: flex;
@@ -63,10 +66,14 @@ main{
     align-items: center;
     position: relative;
 }
+.skin-list>li>a:nth-of-type(2){
+    padding: 0 .5rem;
+}
 .skin-list figure{
     background-color: var(--cb-color-0);
-    width: 400px;
-    height: 400px;
+    aspect-ratio: 1/1;
+    /* width: 400px;
+    height: 400px; */
     margin-bottom: var(--space-normal);
     position: relative;
     overflow: hidden;
@@ -90,8 +97,8 @@ main{
 
 /* 아이콘 버튼 */
 .hover-icons button {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -155,12 +162,12 @@ main{
 
 .sale-badge{
     position: absolute;
-    left: 17px;
-    top: 17px;
+    left: 1rem;
+    top: 1rem;
     background-color: var(--main-color);
     border-radius: 50%;
-    width: 84px;
-    height: 84px;
+    width: 4.2rem;
+    height: 4.2rem;
     color: #fff;
     font-size: var(--fs-h2);
     display: flex;
@@ -217,15 +224,34 @@ main{
 
 
 
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
 @media (max-width: 1440px){
     main{
         padding-top: 90px;
     }
-    .banner{
-        width: 100%;    
-        height: 600px;
-        margin-bottom: var(--space-3x-large);
+    .skin-list {
+        gap: var(--space-normal) var(--space-large);
     }
+    .hover-icons {
+        opacity: 1;
+    }
+    .skin-list {
+        grid-template-columns: repeat(3,auto);
+    }
+    .skin-list figure::after {
+        display: none;
+    }
+    .skin-list figure:hover::after {
+        background: none;
+    }
+    .hover-icons button {
+        width: 16.8px;
+        height: 16.8px;
+    }
+    
 }
 
 
@@ -236,14 +262,17 @@ main{
     }
     .banner{
         width: 100%;    
-        height: 1000px;
+        height: 100%;
         margin-bottom: var(--space-3x-large);
     }
     .skin-list {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1,auto);
+        gap: var(--space-large);
     }
-    .sale-badge{
-        left: 3rem;
-        top: 1rem;
+    .hover-icons button {
+        width: 16.8px;
+        height: 16.8px;
     }
+    
+    
 }

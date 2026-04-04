@@ -92,6 +92,7 @@ main{
 /* 취소/반품/교환 내역 */
 .uProfile-content3 h1 {
     margin-bottom: var(--space-large);
+    margin-top: var(--space-3x-large);
 }
 /* 조회 박스 */
 .ivt-filter{
@@ -108,6 +109,7 @@ main{
 .filter-period > span {
     color: #111;
     font-weight: var(--fw-bold);
+    white-space: nowrap;
 }
 .period-group{
     display: flex;
@@ -238,4 +240,140 @@ main{
 .column5 button{
     padding: var(--space-small);
     border: 1px solid #000;
+}
+.uProfile-content3-mo{
+    display: none;
+}
+
+
+
+
+
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+    main {
+        padding-top: var(--space-3x-large);
+    }
+    #start-year, #end-year {
+        min-width: 90px;
+    }
+    #start-month, #end-month, #start-day, #end-day {
+        min-width: 70px;
+    }
+    
+}
+
+@media (max-width: 1000px){
+    .list-head, .list-body li {
+        grid-template-columns: 105fr 263fr 84fr 104fr 143fr;
+    }
+    .filter-date {
+        flex-direction: column;
+        gap: var(--space-x-small);
+    }
+}
+
+
+@media (max-width: 768px){
+    .inventory-box {
+        display: none;
+    }
+    .uProfile-box {
+        width: 100%;
+    }
+    .uProfile-content1 {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .uProfile-content3{
+        display: none;
+    }
+    .uProfile-content3-mo{
+        display: block;
+    }
+    .uProfile-content3-mo>h1{
+        margin-top: var(--space-x-large);
+        margin-bottom: var(--space-large);
+    }
+    .ivt-list-mo>li{
+        display: flex;
+        flex-direction: column;
+        padding: var(--space-small) 0;
+        border-bottom: 1px solid #808080;
+    }
+    .ivt-list-mo>li:last-child{
+        border-bottom: none;
+    }
+    .ivt-list-mo>li>span{
+        display: inline-block;
+        width: 100%;
+        border-bottom: 2px solid var(--main-color);
+        background-color: var(--cb-color-0);
+    }
+    .li-pro {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        align-items: center;
+    }
+    .para1{
+        display: flex;
+        gap:var(--space-small);
+        margin-bottom: var(--space-large);
+    }
+    .para1 span:nth-of-type(1){
+        font-weight: var(--fw-bold);
+        font-size: var(--fs-h4);
+        color: var(--main-color);
+    }
+    .para2{
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-small);
+    }
+    .li-bnt span{
+        display: inline-block;
+        border: 1px solid #000;
+        padding: var(--space-small);
+        cursor: pointer;
+        text-align: center;
+    }
+    .li-bnt>div{
+        display: flex;
+        gap: var(--space-small);
+    }
+    .li-bnt1{
+        margin-bottom: var(--space-small);
+    }
+    .li-bnt2 span{
+        flex: 1;
+    }
+}
+
+
+
+@media (max-width: 500px){
+   .uProfile-content2 .icon-group {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: var(--space-normal);
+    }
+    .uProfile-content2 .icon-group li:last-child{
+        grid-column: span 2;
+    }
+    .li-pro {
+        gap: var(--space-small);
+    }
+    .li-pro img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .para1 {
+        flex-direction: column;
+    }
+    .para2 {
+        margin-bottom: var(--space-large);
+    }
+    
 }

@@ -2,8 +2,9 @@ main{
     padding-top: 280px;
     margin-bottom: var(--space-foot);
 }
-.ivt-wrap{
+.ivt-wrap {
     display: flex;
+    align-items: flex-start;
 }
 .inventory-box{
     flex: 3;
@@ -195,6 +196,7 @@ main{
 /* 우편번호 검색 버튼 */
 .address-top button{
     width: 231px;
+    text-align: center;
     border: 1px solid var(--main-color);
     color: var(--main-color);
     font-weight: var(--fw-bold);
@@ -255,7 +257,7 @@ main{
     gap: var(--space-small);
     justify-content: center;
 }
-.btn-group button{
+.ivt-foot .btn-group button{
     margin-top: var(--space-normal);
     padding: var(--space-small) var(--space-2x-large);
     box-sizing: border-box;
@@ -265,4 +267,85 @@ main{
 .btn-confirm{
     background-color: var(--main-color);
     color: #fff;
+}
+
+
+
+
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+    main {
+        padding-top: var(--space-3x-large);
+    }
+}
+
+@media (max-width: 1200px){
+    .phone-group select {
+        width: 100%;
+    }
+    .phone-group input {
+        width: 100%;
+    }
+    .address-top input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    
+    .uProfile-box {
+        width: 100%;
+    }
+    .uProfile-content1 {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .phone-group {
+        gap: var(--space-small);
+    }
+    .address-form .form-row {
+        flex-direction: column;
+    }
+    .address-form .form-row > label {
+        width: 100%;
+        background-color: #fff;
+        border-right: none;
+        padding: var(--space-small) 0;
+        padding-top: 1.5rem;
+    }
+    .address-form .field {
+        padding: var(--space-x-small) 0;
+    }
+    
+    .address-top button {
+        flex: 1;
+        width: 100%;
+        padding: 0;
+    }
+
+    
+}
+
+
+@media (max-width: 500px){
+    .uProfile-content2 .icon-group {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: var(--space-normal);
+    }
+    .uProfile-content2 .icon-group li:last-child{
+        grid-column: span 2;
+    }
+    .address-top input {
+        max-width: 150px;
+    }
+    .ivt-foot .btn-group button {
+        padding: var(--space-small) var(--space-large);
+    }
+
 }

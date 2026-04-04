@@ -7,6 +7,9 @@ main{
 .signUp-logo{
     padding: var(--space-2x-large);
 }
+.signUp-logo img{
+    height: 5rem;
+}
 .signUp-box{
     width: 642px;
     margin: 0 auto;
@@ -26,9 +29,9 @@ main{
     align-items: center;
     gap: var(--space-small);
 }
-.su-process>li img{
-    width: 55px;
-    height: 55px;
+.su-process>li img {
+    width: 2.75rem;
+    height: 2.75rem;
 }
 .su-content{
     margin-bottom: var(--space-x-large);
@@ -174,4 +177,59 @@ main{
 }
 
 
+
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+
+}
+
+
+@media (max-width: 768px){
+    .signUp-box {
+        width: auto;
+        padding: var(--space-small)
+    }
+    .radio-group span {
+        padding-left: 1.5rem;
+    }
+    .su-foot ul li a {
+        padding: 0 var(--space-small);
+    }
+    .input-row {
+        justify-content: space-between;
+    }
+    .email-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .email-row>span {
+        width: auto;
+    }
+    .form-list button {
+        padding: .75rem var(--space-normal);
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 380px){
+    .input-row>input[id="userId"] {
+        max-width: 150px;
+    }
+    .email-row>input[id="emailId"]{
+        max-width: 100px;
+    }
+    .input-row>input[id="address1"] {
+        max-width: 150px;
+    }
+    .btn-group button {
+        padding: 0;
+    }
+
+}
 

@@ -23,6 +23,7 @@ main{
     justify-content: center;
     cursor: pointer;
     margin-bottom: var(--space-x-large);
+    white-space: nowrap;
 }
 .make-tabs>span{
     width: 200px;
@@ -51,9 +52,11 @@ main{
     padding: var(--space-x-small) var(--space-small);
 }
 .make-list{
+    width: auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: var(--space-x-large) var(--space-3x-large);
+    justify-content: center;
 }
 .make-list>li{
     display: flex;
@@ -61,10 +64,14 @@ main{
     align-items: center;
     position: relative;
 }
+.make-list>li>a:nth-of-type(2){
+    padding: 0 .5rem;
+}
 .make-list figure{
     background-color: var(--cb-color-0);
-    width: 400px;
-    height: 400px;
+    aspect-ratio: 1/1;
+    /* width: 400px;
+    height: 400px; */
     margin-bottom: var(--space-normal);
     position: relative;
     overflow: hidden;
@@ -88,8 +95,8 @@ main{
 
 /* 아이콘 버튼 */
 .hover-icons button {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -152,12 +159,12 @@ main{
 
 .sale-badge{
     position: absolute;
-    left: 17px;
-    top: 17px;
+    left: 1rem;
+    top: 1rem;
     background-color: var(--main-color);
     border-radius: 50%;
-    width: 84px;
-    height: 84px;
+    width: 4.2rem;
+    height: 4.2rem;
     color: #fff;
     font-size: var(--fs-h2);
     display: flex;
@@ -198,4 +205,65 @@ main{
 .make-price .original{
     color: #BABABA;
     text-decoration: line-through;
+}
+
+
+
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+    main{
+        padding-top: 90px;
+    }
+    .skin-list {
+        gap: var(--space-normal) var(--space-large);
+    }
+    .hover-icons {
+        opacity: 1;
+    }
+    .make-list {
+        grid-template-columns: repeat(3,auto);
+    }
+    .make-list figure::after {
+        display: none;
+    }
+    .make-list figure:hover::after {
+        background: none;
+    }
+    .hover-icons button {
+        width: 21.6px;
+        height: 21.6px;
+    }
+    .color-option>div{
+        width: 21.6px;
+        height: 21.6px;
+    }
+}
+
+
+
+@media (max-width: 768px){
+    main{
+        padding-top: 65px;
+    }
+    .banner{
+        width: 100%;    
+        height: 100%;
+        margin-bottom: var(--space-3x-large);
+    }
+    .make-list {
+        grid-template-columns: repeat(1,auto);
+        gap: var(--space-large);
+    }
+    .hover-icons button {
+        width: 16.8px;
+        height: 16.8px;
+    }
+    .color-option>div{
+        width: 16.8px;
+        height: 16.8px;
+    }
 }

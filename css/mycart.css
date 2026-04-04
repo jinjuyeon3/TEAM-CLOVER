@@ -72,7 +72,7 @@ main{
 .mycart-box{
     display: flex;
     gap: 7rem;
-    align-items: center;
+    align-items: flex-end;
     margin-bottom: var(--space-3x-large);
 }
 .cartList{
@@ -162,7 +162,8 @@ main{
     text-align: center;
 }
 .reco-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap: var(--space-normal);
 }
 .reco-list>li{
@@ -175,8 +176,8 @@ main{
 
 .reco-list figure{
     background-color: var(--cb-color-0);
-    width: 345px;
-    height: 345px;
+    width: 100%;
+    aspect-ratio: 1/1;
     margin-bottom: var(--space-normal);
 }
 .reco-list figure img{
@@ -212,12 +213,12 @@ main{
 }
 .sale-badge{
     position: absolute;
-    left: 17px;
-    top: 17px;
+    left: 1rem;
+    top: 1rem;
     background-color: var(--main-color);
     border-radius: 50%;
-    width: 84px;
-    height: 84px;
+    width: 4.2rem;
+    height: 4.2rem;
     color: #fff;
     font-size: var(--fs-h2);
     display: flex;
@@ -271,4 +272,81 @@ main{
 .pro-price .original{
     color: #BABABA;
     text-decoration: line-through;
+}
+
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+    main {
+        padding-top: var(--space-3x-large);
+    }
+    .uProfile-wrap {
+        flex-direction: column;
+    }
+    .mycart-box {
+        gap: 2rem;
+    }
+    .cartList {
+        flex: 6;
+    }
+    .invoice {
+        flex: 5;
+    }
+}
+
+
+@media (max-width: 768px){
+    .uProfile-content1 {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .mycart-box {
+        flex-direction: column;
+        gap: var(--space-2x-large);
+        align-items: stretch;
+    }
+    .reco-list {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .reco-list>li{
+        min-width: 0;
+    }
+    .amount-option>span.selected {
+        padding: var(--space-x-small) var(--space-small);
+    }
+    .amount-option>span {
+        padding: var(--space-x-small) var(--space-small);
+    }
+    
+}
+
+
+
+@media (max-width: 500px){
+   .uProfile-content2 .icon-group {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: var(--space-normal);
+    }
+    .uProfile-content2 .icon-group li:last-child{
+        grid-column: span 2;
+    }
+    
+    
+}
+
+
+@media (max-width: 300px){
+    .pro-price {
+        flex-direction: column;
+    }
+    .sale-badge {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: var(--fs-bd2);
+    }
 }
