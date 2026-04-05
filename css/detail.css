@@ -631,7 +631,8 @@ span.sale{
     text-align: center;
 }
 .reco-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap: var(--space-normal);
 }
 .reco-list>li{
@@ -641,11 +642,10 @@ span.sale{
     position: relative;
     text-align: center;
 }
-
-.reco-list figure{
+.reco-list figure {
     background-color: var(--cb-color-0);
-    width: 345px;
-    height: 345px;
+    width: 100%;
+    aspect-ratio: 1/1;
     margin-bottom: var(--space-normal);
 }
 .reco-list figure img{
@@ -655,12 +655,12 @@ span.sale{
 }
 .sale-badge{
     position: absolute;
-    left: 17px;
-    top: 17px;
+    left: 1rem;
+    top: 1rem;
     background-color: var(--main-color);
     border-radius: 50%;
-    width: 84px;
-    height: 84px;
+    width: 4.2rem;
+    height: 4.2rem;
     color: #fff;
     font-size: var(--fs-h2);
     display: flex;
@@ -709,4 +709,49 @@ span.sale{
 .pro-price .original{
     color: #BABABA;
     text-decoration: line-through;
+}
+
+
+
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width:1440px){
+    .pro-minibox{
+        display: none;
+    }
+    .dt-tab {
+        top: 90px;
+    }
+}
+
+
+@media (max-width:768px){
+    .reco-list {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .reco-list>li{
+        min-width: 0;
+    }
+    .amount-option>span.selected {
+        padding: var(--space-x-small) var(--space-small);
+    }
+    .amount-option>span {
+        padding: var(--space-x-small) var(--space-small);
+    }
+    .dt-tab {
+        top: 65px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .sale-badge {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: var(--fs-bd2);
+    }
+    
 }
