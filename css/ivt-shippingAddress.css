@@ -296,7 +296,9 @@ main{
 }
 
 @media (max-width: 768px){
-    
+    .inventory-box {
+        display: none;
+    }
     .uProfile-box {
         width: 100%;
     }

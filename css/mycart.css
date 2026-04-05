@@ -335,7 +335,11 @@ main{
     .uProfile-content2 .icon-group li:last-child{
         grid-column: span 2;
     }
-    
+    .sale-badge {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: var(--fs-bd2);
+    }
     
 }
 
@@ -344,9 +348,5 @@ main{
     .pro-price {
         flex-direction: column;
     }
-    .sale-badge {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: var(--fs-bd2);
-    }
+    
 }

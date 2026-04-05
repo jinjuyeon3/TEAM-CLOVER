@@ -907,33 +907,46 @@
                 </div>
             </div>
             <div class="cate-box">
-                <div class="common-frame">
-                    <ul class="faq-cate-list">
-                        <li class="btn-filter clicked" data-filter="all">
+                <div class="common-frame swiper cate-box-swiper">
+                    <ul class="faq-cate-list swiper-wrapper">
+                        <li class="swiper-slide btn-filter clicked" data-filter="all">
                             <img src="./img/0-imgPublishing/icon/faq-icon1.svg" alt="FAQ전체보기">
                             <span>전체</span>
                         </li>
-                        <li class="btn-filter" data-filter="product">
+                        <li class="swiper-slide btn-filter" data-filter="product">
                             <img src="./img/0-imgPublishing/icon/faq-icon2.svg" alt="제품">
                             <span>제품</span>
                         </li>
-                        <li class="btn-filter" data-filter="delivery">
+                        <li class="swiper-slide btn-filter" data-filter="delivery">
                             <img src="./img/0-imgPublishing/icon/faq-icon3.svg" alt="배송">
                             <span>배송</span>
                         </li>
-                        <li class="btn-filter" data-filter="order">
+                        <li class="swiper-slide btn-filter" data-filter="order">
                             <img src="./img/0-imgPublishing/icon/faq-icon4.svg" alt="주문/결제/취소">
                             <span>주문/결제/취소</span>
                         </li>
-                        <li class="btn-filter" data-filter="refund">
+                        <li class="swiper-slide btn-filter" data-filter="refund">
                             <img src="./img/0-imgPublishing/icon/faq-icon5.svg" alt="교환/반품/환불">
                             <span>교환/반품/환불</span>
                         </li>
-                        <li class="btn-filter" data-filter="etc">
+                        <li class="swiper-slide btn-filter" data-filter="etc">
                             <img src="./img/0-imgPublishing/icon/faq-icon6.svg" alt="기타">
                             <span>기타</span>
                         </li>
                     </ul>
+                    <script>
+                        const cateBoxSwiper = new Swiper('.cate-box-swiper', {
+                            slidesPerView: "auto",
+                            spaceBetween: 14,
+                            breakpoints: {
+                                768: {
+                                    // 768 화면너비보다 클 때
+                                    slidesPerView: 6,
+                                    spaceBetween: 0,
+                                },
+                            },
+                        });
+                    </script>
                     <ul class="faq-list">
                         <li data-category="delivery">
                             <div class="que">

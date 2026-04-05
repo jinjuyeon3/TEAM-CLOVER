@@ -358,14 +358,14 @@ select:focus{
     font-weight: var(--fw-med);
 }
 /* 바깥 원 */
-.radio-box span::before{
+.radio-box span::before {
     content: "";
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 22px;
-    height: 22px;
+    width: 1.1rem;
+    height: 1.1rem;
     border: 1px solid #000;
     border-radius: 50%;
 }
@@ -373,9 +373,9 @@ select:focus{
 .radio-box input:checked + span::after{
     content: "";
     position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 12px;
+    width: 1rem;
+    height: 1rem;
+    left: .6rem;
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -555,4 +555,168 @@ select:focus{
     background-color: var(--main-color);
     color: #fff;
     border: 1px solid var(--main-color);
+}
+
+.inquiry-cont.phone-row>div{
+        display: flex;
+        align-items: center;
+        gap:var(--space-normal);
+}
+
+.inquiry-cont.email-row>div{
+        display: flex;
+        align-items: center;
+        gap:var(--space-normal);
+}
+
+
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+    main {
+        padding-top: var(--space-3x-large);
+    }
+}
+
+
+@media (max-width: 1000px){
+    .inquiry-cont.email-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-small);
+    }
+    .inquiry-cont.phone-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-small);
+    }
+    
+}
+
+
+@media (max-width: 768px){
+    .inventory-box {
+        display: none;
+    }
+    .uProfile-box {
+        width: 100%;
+    }
+    .uProfile-content1 {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .inquiry-row {
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+    .inquiry-title {
+        background-color: #fff;
+        border-right: none;
+    }
+    .inquiry-cont.radio-g{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .email-row input[type="text"] {
+        flex: 1;
+        max-width: 120px;
+    }
+    .inquiry-cont select {
+        flex: 1;
+        max-width: 120px;
+    }
+    .phone-row input[type="text"] {
+        max-width: 120px;
+    }
+    .inquiry-cont.email-row>div:last-child {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .inquiry-cont.phone-row>div:last-child {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .check-inline {
+        margin-left: 0;
+    }
+    .btn-change {
+        padding: var(--space-x-small) var(--space-normal);
+    }
+        
+}
+
+
+@media (max-width: 500px){
+    .uProfile-content2 .icon-group {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: var(--space-normal);
+    }
+    .uProfile-content2 .icon-group li:last-child{
+        grid-column: span 2;
+    }
+    .email-row input[type="text"]:last-of-type{
+        display: none;
+    }
+    .phone-row input[type="text"]:last-of-type{
+        display: none;
+    }
+    .phone-row>div>span{
+        display: none;
+    }
+    .email-row input[type="text"] {
+        max-width: 100px;
+    }
+    .inquiry-cont select {
+        max-width: 100px;
+    }
+    .phone-row input[type="text"] {
+        max-width: 100px;
+    }
+    .inquiry-history .list-body li .column1 .btn-group{
+        top: 80%;
+    }
+}
+
+
+@media (max-width: 380px){
+    .inquiry-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-order-search {
+        width: 100%;
+        text-align: center;
+    }
+    .order-input {
+        width: 100%;
+    }
+    .column1>img {
+        max-width: 100px;
+    }
+    .list-body>li{
+        max-height: 115px;
+    }
+    
+}
+
+
+@media (max-width: 300px){
+    .file-row {
+        align-items: center;
+        flex-direction: column;
+    }
+    .inquiry-cont.email-row>div {
+        gap: var(--space-small);
+    }
+    .phone-row input[type="text"] {
+        width: auto;
+    }
+    .form-btn-group button {
+        width: 100%;
+    }
 }

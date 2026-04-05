@@ -4,6 +4,7 @@ main{
 }
 .ivt-wrap{
     display: flex;
+    margin-bottom: var(--space-3x-large);
 }
 .inventory-box{
     flex: 3;
@@ -105,8 +106,9 @@ main{
     border-top: 5px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
 }
-.info-form .form-row{
-    display: flex;
+.info-form .form-row {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
     gap: 1.5rem;
     border-bottom: 1px solid var(--main-color);
 }
@@ -114,7 +116,7 @@ main{
     border-bottom: none;
 }
 .info-form label{
-    width: 220px;
+    width: auto;
     background: var(--cb-color-0);
     padding: 1.5rem;
     display: flex;
@@ -319,4 +321,119 @@ select:focus{
 .btn-edit{
     background-color: var(--main-color);
     color: #fff;
+}
+
+
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+    main {
+        padding-top: var(--space-3x-large);
+    }
+}
+
+
+@media (max-width: 1200px){
+    .field.email-group>div{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+    .email-group>div>input {
+        max-width: 130px;
+    }
+    .email-group select {
+        max-width: 130px;
+    }
+    .info-form button {
+        padding: var(--space-small) var(--space-small);
+    }
+    .address-top input {
+        width: 100%;
+    }
+    .address-top button {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px){
+    .inventory-box {
+        display: none;
+    }
+    .uProfile-box {
+        width: 100%;
+    }
+    .uProfile-content1 {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .info-form .form-row {
+        grid-template-columns: repeat(1,auto);
+        gap: 0;
+    }
+    .info-form label {
+        background: #fff;
+        padding: 1rem;
+        border-right: none;
+    }
+    .field.inline {
+        padding: 1rem;
+    }
+    .info-form .field {
+        padding: 1rem;
+    }
+    .field.email-group{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .field.email-group button{
+        width: 100%;
+        text-align: center;
+    }
+    .email-group input {
+        width: 100%;
+    }
+    .email-group>div>input {
+        flex: 1;
+        width: 100%;
+    }
+    .email-group select {
+        flex: 1;
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width: 500px){
+    .uProfile-content2 .icon-group {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: var(--space-normal);
+    }
+    .uProfile-content2 .icon-group li:last-child{
+        grid-column: span 2;
+    }
+   
+}
+
+
+@media (max-width: 380px){
+    .email-group input[placeholder="직접입력"]{
+        display: none;
+    }
+    .btn-group button {
+        padding: var(--space-small) var(--space-x-large);
+    }
+}
+
+
+@media (max-width: 300px){
+    
 }

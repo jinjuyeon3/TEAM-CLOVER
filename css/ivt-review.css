@@ -82,8 +82,9 @@ main{
     gap: var(--space-small);
     font-weight: var(--fw-med);
 }
-.uProfile-content3>h1{
+.uProfile-content3>h1 {
     margin-bottom: var(--space-large);
+    margin-top: var(--space-3x-large);
 }
 .list-head{
     display: flex;
@@ -128,12 +129,12 @@ main{
     color: #808080;
 }
 .rv-period-form {
-    height: 77px;
+    height: auto;
     background-color: #FBFBFB;
     border: 1px solid #808080;
     display: flex;
     align-items: center;
-    padding-left: 1.75rem;
+    padding: 1.75rem;
     margin-bottom: var(--space-large);
 }
 .period-group{
@@ -179,3 +180,119 @@ main{
     padding: var(--space-small);
     text-align: center;
 }
+.p-g1{
+    display: flex;
+    gap: var(--space-normal);
+}
+.p-g2 {
+    display: flex;
+    gap: var(--space-normal);
+}
+
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+    main {
+        padding-top: var(--space-3x-large);
+    }
+    .list-head>li {
+        padding: 1rem 0.5rem;
+    }
+    .rv-period-form {
+        height: auto;
+        padding: 1rem;
+    }
+    .period-group {
+        align-items: flex-start;
+    }
+    .p-g1{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .period-buttons button {
+        padding: var(--space-x-small);
+    }
+    .rv-period-form {
+        padding-left: 1rem;
+    }
+    .period-group{
+        align-items: flex-start;
+    }
+}
+
+
+
+
+@media (max-width: 768px){
+    .inventory-box {
+        display: none;
+    }
+    .uProfile-box {
+        width: 100%;
+    }
+    .uProfile-content1 {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    
+}
+
+
+
+
+@media (max-width: 500px){
+    .uProfile-content2 .icon-group {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: var(--space-normal);
+    }
+    .uProfile-content2 .icon-group li:last-child{
+        grid-column: span 2;
+    }
+    .list-head {
+        gap:  var(--space-x-small);
+    }
+    .period-group{
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    .period-buttons{
+        width: 100%;
+    }
+    .period-buttons button{
+        height: auto;
+    }
+    .p-g2 {
+        flex-direction: column;
+    }
+    .date-range{
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .date-range input{
+        width: 0;
+        min-width: 0;
+        flex: 1;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .date-separator{
+        flex: 0 0 auto;
+    }
+    .btn-search{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
