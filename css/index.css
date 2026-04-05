@@ -77,8 +77,9 @@ main .hero-banner.swiper .swiper-pagination{
     object-fit: contain;
     transition: all .5s ease 0s;
 }
-.brand-pilo{
-    margin: var(--space-3x-large);
+.brand-pilo {
+    margin: var(--space-3x-large) 0;
+    padding: 0 1rem;
 }
 .brand-pilo .commom-frame{
     text-align: center;

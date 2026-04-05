@@ -139,8 +139,8 @@ main{
 .popup.on{
     display: block;
 } 
-.form-wrap{
-    padding-top: 20px;
+.form-wrap {
+    padding-top: 1rem;
     transition: all .7s ease 0s;
     margin-bottom: var(--space-3x-large);
 }
@@ -230,7 +230,7 @@ main{
     position: relative;
     width: 344px;
     padding: .35rem var(--space-small);
-    font-size: 14px;
+     font-size: var(--fs-bd1);
     border: 1px solid #808080;
     border-radius: .25rem;
     color: #808080;
@@ -346,7 +346,8 @@ main{
     text-align: center;
 }
 .reco-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap: var(--space-normal);
 }
 .reco-list>li{
@@ -359,8 +360,8 @@ main{
 
 .reco-list figure{
     background-color: var(--cb-color-0);
-    width: 345px;
-    height: 345px;
+    width: 100%;
+    aspect-ratio: 1/1;
     margin-bottom: var(--space-normal);
 }
 .reco-list figure img{
@@ -370,12 +371,12 @@ main{
 }
 .sale-badge{
     position: absolute;
-    left: 17px;
-    top: 17px;
+    left: 1rem;
+    top: 1rem;
     background-color: var(--main-color);
     border-radius: 50%;
-    width: 84px;
-    height: 84px;
+    width: 4.2rem;
+    height: 4.2rem;
     color: #fff;
     font-size: var(--fs-h2);
     display: flex;
@@ -411,6 +412,11 @@ main{
 }
 .pro-desc>p:last-of-type{
     margin-bottom: var(--space-normal);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .pro-price{
     display: flex;
@@ -424,4 +430,136 @@ main{
 .pro-price .original{
     color: #BABABA;
     text-decoration: line-through;
+}
+
+
+
+
+
+/* ---------------- */
+/* 반응형 대응 코드 */
+@media (max-width: 1440px){
+    main{
+        padding-top: 90px;
+    }
+    .service-for ul li {
+        width: 100%;
+        height: auto;
+        padding-bottom: var(--space-normal);
+    }
+    .consulting-contents ul li{
+        padding-bottom: var(--space-normal);
+    }
+    .consulting-contents ul li figure {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+    .service-process ul li {
+        height: auto;
+        padding-bottom: var(--space-normal);
+    }
+    .service-process ul li figure {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+    .service-benefit ul li {
+        width: 100%;
+        height: auto;
+    }
+    .service-why ul {
+        width: auto;
+        gap: var(--space-3x-large);
+    }
+    .popup {
+        width: 100vw;
+        height: 100vh;
+    }
+    .form-box>h4 {
+        width: auto;
+    }
+    .form-inner {
+        width: auto;
+        padding: 2rem;
+    }
+    .form-group.add textarea {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 768px){
+    main{
+        padding-top: 65px;
+    }
+    .banner{
+        width: 100%;    
+        height: 100%;
+        margin-bottom: var(--space-3x-large);
+    }
+    .reco-list {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .reco-list>li{
+        min-width: 0;
+    }
+    .amount-option>span.selected {
+        padding: var(--space-x-small) var(--space-small);
+    }
+    .amount-option>span {
+        padding: var(--space-x-small) var(--space-small);
+    }
+    .consulting-contents ul {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .service-why ul {
+        grid-template-columns: repeat(3,auto);
+        gap: var(--space-normal);
+    }
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .btn-group button {
+        padding: 0.35rem .5rem;
+        text-align: center;
+    }
+    .form-group input[type="date"] {
+        width: 100%;
+       
+    }
+    .form-group.uinfo input {
+        width: 100%;
+    }
+    .popup-controler button {
+        width: 100%;
+        height: auto;
+        padding: .5rem;
+    }
+    .btn-personal-apply button {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 500px){
+    .sale-badge {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: var(--fs-bd2);
+    }
+    
+}
+
+
+@media (max-width: 300px){
+    .pro-price {
+        flex-direction: column;
+    }
+    
 }
