@@ -346,3 +346,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+    const headeryjj = document.querySelector("header")
+
+    let lastScrollTop = 0
+    window.addEventListener("scroll",()=>{
+        // 스크롤바가 움직일 때 실행되는 소스코드
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop
+        // 호환성을 우해서 만들어 놓은 소스코드
+
+        if(scrollTop < lastScrollTop){
+            console.log("마우스 휠 위로 올림")
+            headeryjj.classList.remove("up")
+        }else{
+            console.log("마우스 휠 아래로 내림")
+            headeryjj.classList.add("up")
+        }
+
+        lastScrollTop = scrollTop
+    })
+
+})

@@ -220,6 +220,10 @@ span.sale{
     top: 225px;
     
 }
+.pro-minibox.hide{
+    opacity: 0;
+    pointer-events: none;
+}
 
 /* info-box 지나고 나면 화면 오른쪽 하단 고정 */
 .pro-minibox.is-floating{
@@ -291,12 +295,12 @@ span.sale{
 .detail-box .common-frame {
     width: 1440px;
 }
-.dt-tab{
+.dt-tab {
     display: flex;
     justify-content: space-between;
     text-align: center;
     position: sticky;
-    top: 180px; 
+    top: 83px;
     background: #fff;
     z-index: 100;
 }
@@ -310,10 +314,10 @@ span.sale{
 .dt-content{
     margin-top: var(--space-large);
     line-height: 0;
-    display: none;
+    /* display: none; */
 }
 .dt-content.active{
-    display: block;
+    /* display: block; */
 }
 .dt-content:first-child{
     margin-top: 0;
@@ -426,7 +430,7 @@ span.sale{
 }
 .rv-list .star-box {
     display: flex;
-    gap: var(--space-small);
+    gap: var(--space-3x-large);
     align-items: center;
 }
 .rv-list .star-box>span{
@@ -794,6 +798,8 @@ span.sale{
         top: calc(100vh - 351px);
         grid-row: 1/2;
     }
+    
+
 }
 
 
@@ -853,6 +859,16 @@ span.sale{
         top: calc(100vh - 310px);
         grid-row: 1/2;
     }
+
+    .rv-co-g li {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        gap: var(--space-large);
+    }
+    /* .rv-co-g li .line {
+        display: none;
+    } */
 }
 
 

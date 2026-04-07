@@ -3,29 +3,29 @@ document.addEventListener("DOMContentLoaded", () => {
     /* =========================
        탭 메뉴
     ========================= */
-    const tabs = document.querySelectorAll(".dt-tab li");
-    const contents = document.querySelectorAll(".dt-contents .dt-content");
-    const tabMenu = document.querySelector(".dt-tab");
+    // const tabs = document.querySelectorAll(".dt-tab li");
+    // const contents = document.querySelectorAll(".dt-contents .dt-content");
+    // const tabMenu = document.querySelector(".dt-tab");
 
-    if (tabs.length && contents.length && tabMenu) {
-        tabs.forEach((tab, index) => {
-            tab.addEventListener("click", () => {
-                tabs.forEach((item) => item.classList.remove("active"));
-                contents.forEach((content) => content.classList.remove("active"));
+    // if (tabs.length && contents.length && tabMenu) {
+    //     tabs.forEach((tab, index) => {
+    //         tab.addEventListener("click", () => {
+    //             tabs.forEach((item) => item.classList.remove("active"));
+    //             contents.forEach((content) => content.classList.remove("active"));
 
-                tab.classList.add("active");
-                contents[index].classList.add("active");
+    //             tab.classList.add("active");
+    //             contents[index].classList.add("active");
 
-                const headerOffset = 180;
-                const tabTop = tabMenu.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+    //             const headerOffset = 180;
+    //             const tabTop = tabMenu.getBoundingClientRect().top + window.pageYOffset - headerOffset;
 
-                window.scrollTo({
-                    top: tabTop,
-                    behavior: "smooth"
-                });
-            });
-        });
-    }
+    //             window.scrollTo({
+    //                 top: tabTop,
+    //                 behavior: "smooth"
+    //             });
+    //         });
+    //     });
+    // }
 
 
     /* =========================
@@ -140,4 +140,68 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
 
+});
+
+
+
+// 상세설명 탭 영역을 벗어나면 옵션박스가 사라는 코드 
+document.addEventListener("DOMContentLoaded", () => {
+    const minibox = document.querySelector(".pro-minibox");
+    const sections = document.querySelectorAll(".dt-content");
+    const tabItems = document.querySelectorAll(".dt-tab li");
+    const tabLinks = document.querySelectorAll(".dt-tab a");
+
+    if (!minibox || sections.length === 0) return;
+
+    function updateMiniboxAndTab() {
+        const scrollPoint = window.scrollY + 150; 
+        // 숫자는 현재 헤더 높이에 맞춰 조금 여유 준 값
+
+        let currentId = "";
+
+        sections.forEach((section) => {
+            if (scrollPoint >= section.offsetTop) {
+                currentId = section.id;
+            }
+        });
+
+        // 상품설명(dt1)일 때만 보이기
+        if (currentId === "dt1") {
+            minibox.classList.remove("hide");
+        } else {
+            minibox.classList.add("hide");
+        }
+
+        // 탭 active 표시
+        tabItems.forEach((item) => item.classList.remove("active"));
+
+        tabLinks.forEach((link) => {
+            const href = link.getAttribute("href");
+            if (href === `#${currentId}`) {
+                link.parentElement.classList.add("active");
+            }
+        });
+    }
+
+    // 탭 클릭 시 부드럽게 이동
+    tabLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            const targetId = link.getAttribute("href");
+            const target = document.querySelector(targetId);
+
+            if (!target) return;
+
+            window.scrollTo({
+                top: target.offsetTop - 100,
+                behavior: "smooth"
+            });
+        });
+    });
+
+    window.addEventListener("scroll", updateMiniboxAndTab);
+    window.addEventListener("load", updateMiniboxAndTab);
+
+    updateMiniboxAndTab();
 });

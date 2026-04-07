@@ -5,6 +5,10 @@ header{
     top: 0;
     width: 100%;
     z-index: 100000;
+    transition: all 0.6s ease 0s;
+}
+header.up{
+    transform:translateY(-100px);
 }
 header .sub-menu{
     height: 100px;
