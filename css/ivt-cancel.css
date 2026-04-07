@@ -251,9 +251,11 @@ main{
     }
     .inventory-box {
         margin-bottom: var(--space-normal);
+        width: 100%;
     }
     .myInventory ul {
         flex-direction: initial;
+        gap: 0;
     }
     .myInventory h1 {
         text-align: center;
@@ -266,10 +268,15 @@ main{
     .swiper.myInventory-swiper{
         top: 0;
     }
-
-
-
-
+    .myInventory-swiper .swiper-slide {
+        width: auto;
+    }
+    .myInventory ul li.selected {
+        color: var(--main-color);
+        font-weight: var(--fw-bold);
+        background-color: var(--cb-color-0);
+        border-color: var(--main-color);
+    }
     .uProfile-box {
         width: 100%;
     }
