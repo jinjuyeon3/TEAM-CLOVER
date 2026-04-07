@@ -3,29 +3,29 @@ document.addEventListener("DOMContentLoaded", () => {
     /* =========================
        탭 메뉴
     ========================= */
-    const tabs = document.querySelectorAll(".dt-tab li");
-    const contents = document.querySelectorAll(".dt-contents .dt-content");
-    const tabMenu = document.querySelector(".dt-tab");
+    // const tabs = document.querySelectorAll(".dt-tab li");
+    // const contents = document.querySelectorAll(".dt-contents .dt-content");
+    // const tabMenu = document.querySelector(".dt-tab");
 
-    if (tabs.length && contents.length && tabMenu) {
-        tabs.forEach((tab, index) => {
-            tab.addEventListener("click", () => {
-                tabs.forEach((item) => item.classList.remove("active"));
-                contents.forEach((content) => content.classList.remove("active"));
+    // if (tabs.length && contents.length && tabMenu) {
+    //     tabs.forEach((tab, index) => {
+    //         tab.addEventListener("click", () => {
+    //             tabs.forEach((item) => item.classList.remove("active"));
+    //             contents.forEach((content) => content.classList.remove("active"));
 
-                tab.classList.add("active");
-                contents[index].classList.add("active");
+    //             tab.classList.add("active");
+    //             contents[index].classList.add("active");
 
-                const headerOffset = 180;
-                const tabTop = tabMenu.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+    //             const headerOffset = 180;
+    //             const tabTop = tabMenu.getBoundingClientRect().top + window.pageYOffset - headerOffset;
 
-                window.scrollTo({
-                    top: tabTop,
-                    behavior: "smooth"
-                });
-            });
-        });
-    }
+    //             window.scrollTo({
+    //                 top: tabTop,
+    //                 behavior: "smooth"
+    //             });
+    //         });
+    //     });
+    // }
 
 
     /* =========================

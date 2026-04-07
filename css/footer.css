@@ -116,6 +116,23 @@ input[id="u-agree"]:checked:after{
 }
 
 
+@media (max-width: 1100px){
+    .f-content1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--space-normal);
+    }
+    .news-letter input[id="u-email"] {
+        width: 550px;
+    }
+    .news-letter button {
+        right: 0;
+        left: initial;
+    }
+}
+
 
 @media (max-width: 768px){
     .f-content1 {
