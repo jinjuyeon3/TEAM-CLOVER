@@ -598,8 +598,36 @@ select:focus{
 
 
 @media (max-width: 768px){
+    .ivt-wrap {
+        flex-direction: column;
+    }
     .inventory-box {
-        display: none;
+        margin-bottom: var(--space-large);
+        width: 100%;
+    }
+    .myInventory ul {
+        flex-direction: initial;
+        gap: 0;
+    }
+    .myInventory h1 {
+        text-align: center;
+    }
+    .myInventory ul li{
+        border: 1px solid #000;
+        border-radius: 1rem;
+        padding: 5px 10px;
+    }
+    .swiper.myInventory-swiper{
+        top: 0;
+    }
+    .myInventory-swiper .swiper-slide {
+        width: auto;
+    }
+    .myInventory ul li.selected {
+        color: var(--main-color);
+        font-weight: var(--fw-bold);
+        background-color: var(--cb-color-0);
+        border-color: var(--main-color);
     }
     .uProfile-box {
         width: 100%;

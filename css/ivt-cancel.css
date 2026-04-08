@@ -250,7 +250,7 @@ main{
         flex-direction: column;
     }
     .inventory-box {
-        margin-bottom: var(--space-normal);
+        margin-bottom: var(--space-large);
         width: 100%;
     }
     .myInventory ul {

@@ -190,3 +190,17 @@
 .chat-btn-send img{
     height: 1rem;
 }
+
+
+
+
+
+@media (max-width: 400px){
+    .chat-panel {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: calc(100vh - 65px);
+    }
+}
