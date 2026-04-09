@@ -782,6 +782,7 @@ span.sale{
         /* height: 100%; */
         overflow: auto;
         grid-row: 2/3;
+        margin-bottom: 30rem;
     }
     .pro-minibox {
         position: relative;
@@ -866,9 +867,9 @@ span.sale{
         align-items: center;
         gap: var(--space-large);
     }
-    /* .rv-co-g li .line {
-        display: none;
-    } */
+    .btn-que li a {
+        padding: var(--space-x-small);
+    }
 }
 
 

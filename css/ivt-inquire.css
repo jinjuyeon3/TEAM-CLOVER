@@ -448,7 +448,7 @@ select:focus{
 }
 /* 이메일 */
 .email-row input[type="text"]{
-    width: 150px;
+    /* width: 150px; */
 }
 .inquiry-cont select{
     font-size: var(--fs-bd2);
@@ -527,7 +527,7 @@ select:focus{
     width: 140px;
 }
 .phone-row input[type="text"]{
-    width: 140px;
+    /* width: 140px; */
     text-align: center;
 }
 /* 하단 버튼 */
@@ -584,12 +584,12 @@ select:focus{
 
 @media (max-width: 1000px){
     .inquiry-cont.email-row {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: flex-start;
         gap: var(--space-small);
     }
     .inquiry-cont.phone-row {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: flex-start;
         gap: var(--space-small);
     }
@@ -598,8 +598,36 @@ select:focus{
 
 
 @media (max-width: 768px){
+    .ivt-wrap {
+        flex-direction: column;
+    }
     .inventory-box {
-        display: none;
+        margin-bottom: var(--space-large);
+        width: 100%;
+    }
+    .myInventory ul {
+        flex-direction: initial;
+        gap: 0;
+    }
+    .myInventory h1 {
+        text-align: center;
+    }
+    .myInventory ul li{
+        border: 1px solid #000;
+        border-radius: 1rem;
+        padding: 5px 10px;
+    }
+    .swiper.myInventory-swiper{
+        top: 0;
+    }
+    .myInventory-swiper .swiper-slide {
+        width: auto;
+    }
+    .myInventory ul li.selected {
+        color: var(--main-color);
+        font-weight: var(--fw-bold);
+        background-color: var(--cb-color-0);
+        border-color: var(--main-color);
     }
     .uProfile-box {
         width: 100%;
@@ -623,14 +651,14 @@ select:focus{
     }
     .email-row input[type="text"] {
         flex: 1;
-        max-width: 120px;
+        /* max-width: 120px; */
     }
     .inquiry-cont select {
         flex: 1;
-        max-width: 120px;
+        /* max-width: 120px; */
     }
     .phone-row input[type="text"] {
-        max-width: 120px;
+        /* max-width: 120px; */
     }
     .inquiry-cont.email-row>div:last-child {
         flex-direction: column;
@@ -659,7 +687,7 @@ select:focus{
     .uProfile-content2 .icon-group li:last-child{
         grid-column: span 2;
     }
-    .email-row input[type="text"]:last-of-type{
+    /* .email-row input[type="text"]:last-of-type{
         display: none;
     }
     .phone-row input[type="text"]:last-of-type{
@@ -667,15 +695,15 @@ select:focus{
     }
     .phone-row>div>span{
         display: none;
-    }
+    } */
     .email-row input[type="text"] {
-        max-width: 100px;
+        /* max-width: 100px; */
     }
     .inquiry-cont select {
-        max-width: 100px;
+        /* max-width: 100px; */
     }
     .phone-row input[type="text"] {
-        max-width: 100px;
+        /* max-width: 100px; */
     }
     .inquiry-history .list-body li .column1 .btn-group{
         top: 80%;
