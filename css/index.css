@@ -245,19 +245,24 @@ main .hero-banner.swiper .swiper-pagination{
 .benefits .common-frame h1+p{
     margin-bottom: var(--space-x-large);
 }
-.benefit-list{
-    height: 320px;
-    display: flex;
+.benefit-list {
+    height: auto;
+    display: grid;
     gap: var(--space-normal);
     font-weight: var(--fw-bold);
+    grid-template-columns: repeat(4,1fr);
 }
-.benefit-list li{
+.benefit-list li {
     flex: 1;
     background-color: var(--cb-color-0);
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3rem 0;
+}
+.benefit-list li  img {
+    height: 7rem;
 }
 .benefit-list li span:first-of-type{
     margin-bottom: var(--space-normal);
@@ -435,6 +440,9 @@ main .hero-banner.swiper .swiper-pagination{
         width: auto;
         white-space: wrap;
     }
+    .card {
+        width: auto;
+    }
 
 }
 
@@ -443,6 +451,9 @@ main .hero-banner.swiper .swiper-pagination{
     .best-item figure {
         max-width: 282px;
         max-height: 282px;
+    }
+    .benefit-list {
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
@@ -533,16 +544,15 @@ main .hero-banner.swiper .swiper-pagination{
     }
 
     .card {
-        width: auto;
         margin: 0 1rem;
         max-height: 300px;
         padding: 1rem;
     }
 
-    .benefits {
-        padding-top: var(--space-x-large);
-        padding-bottom: var(--space-3x-large);
-    }
+.benefits {
+    padding-top: var(--space-x-large);
+    /* padding-bottom: var(--space-3x-large); */
+}
 
     .benefit-list {
         display: grid;
