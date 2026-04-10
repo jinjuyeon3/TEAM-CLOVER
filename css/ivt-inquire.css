@@ -692,6 +692,17 @@ select:focus{
         flex-direction: column;
         align-items: stretch;
     }
+    .inquiry-cont.order-row {
+        flex-direction: column;
+    }
+    .inquiry-cont.order-row input{
+        width: 100%;
+    }
+    .btn-order-search {
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
 

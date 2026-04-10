@@ -211,16 +211,15 @@ main{
 .reco-list .color-option span:nth-last-of-type(5){
     background-color: #b6685f;
 }
-.sale-badge{
+.sale-badge {
     position: absolute;
     left: 1rem;
     top: 1rem;
     background-color: var(--main-color);
     border-radius: 50%;
-    width: 4.2rem;
-    height: 4.2rem;
+    width: 3.2rem;
+    height: 3.2rem;
     color: #fff;
-    font-size: var(--fs-h2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,6 +337,8 @@ main{
     .sale-badge {
         width: 2.5rem;
         height: 2.5rem;
+        left: .5rem;
+        top: .5rem;
         font-size: var(--fs-bd2);
     }
     
