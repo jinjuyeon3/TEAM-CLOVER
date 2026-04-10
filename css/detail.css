@@ -860,17 +860,29 @@ span.sale{
         top: calc(100vh - 310px);
         grid-row: 1/2;
     }
-    .rv-co-g {
-        width: 100%;
-    }  
-    .rv-co-g li {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        align-items: center;
-        gap: var(--space-large);
-    }
+    
     .btn-que li a {
         padding: var(--space-x-small);
+    }
+    .option-g{
+        font-size: 12px;
+    }
+    .rv-co-g {
+        width: 100%;
+        gap: var(--space-large);
+    }
+    .rv-co-g li {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3,1fr);
+        gap: var(--space-normal);
+    }
+    .rv-co-g li .label {
+        grid-column: 1/4;
+        padding: var(--space-normal) var(--space-normal);
+    }
+    .rv-f>span {
+        font-size: 12px;
     }
 }
 
