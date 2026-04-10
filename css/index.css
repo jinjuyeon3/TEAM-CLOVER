@@ -249,7 +249,7 @@ main .hero-banner.swiper .swiper-pagination{
     height: auto;
     display: grid;
     gap: var(--space-normal);
-    font-weight: var(--fw-bold);
+    
     grid-template-columns: repeat(4,1fr);
 }
 .benefit-list li {
@@ -265,7 +265,11 @@ main .hero-banner.swiper .swiper-pagination{
     height: 7rem;
 }
 .benefit-list li span:first-of-type{
+    font-weight: var(--fw-bold);
     margin-bottom: var(--space-normal);
+}
+.benefit-list li span:last-of-type{
+    font-weight: var(--fw-med);
 }
 .bottom-banner{
     height: 600px;
@@ -442,8 +446,11 @@ main .hero-banner.swiper .swiper-pagination{
     }
     .card {
         width: auto;
+        margin: 0 1rem;
     }
-
+    .title h1 {
+        font-size: 2rem;
+    }
 }
 
 
@@ -531,7 +538,7 @@ main .hero-banner.swiper .swiper-pagination{
     }
 
     .title h1 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .parallax {
