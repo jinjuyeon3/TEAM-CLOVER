@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="amount-option">
                     <span class="selected">${item.sizes[0]}</span>
                     <span>${item.sizes[1]}</span>
-                    <span>${item.sizes[2]}</span>
                 </div>
 
                 <a href="${item.detail}">

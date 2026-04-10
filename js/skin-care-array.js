@@ -6,7 +6,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml", "125ml"],
+    sizes: ["50ml", "75ml"],
     image: "DramaticallyDifferentMoisturizingLotionPlus.png",
     detail: "./detail-toner.html"
   },
@@ -17,7 +17,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml", "125ml"],
+    sizes: ["50ml", "75ml"],
     image: "MoistureSurge100HAutoReplenishingHydrator.png",
     detail: "./detail-cream.html"
   },
@@ -28,7 +28,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml", "125ml"],
+    sizes: ["50ml", "75ml"],
     image: "DayScrubCreamRinseOffFormula.png",
     detail: "./detail-scrub.html"
   },
@@ -39,7 +39,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml", "125ml"],
+    sizes: ["50ml", "75ml"],
     image: "SmartRepairWrinkleCorrectingCream.png",
     detail: "./detail-cream.html"
   },
@@ -50,7 +50,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml", "125ml"],
+    sizes: ["50ml", "75ml"],
     image: "EvenBetterClinicalBrighteningEssenceLotion.png",
     detail: "./detail-toner.html"
   },
@@ -61,7 +61,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml", "125ml"],
+    sizes: ["50ml", "75ml"],
     image: "EvenBetterClinicalBrighteningMoisturizer.png",
     detail: "./detail-cream.html"
   },
@@ -72,7 +72,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml", "125ml"],
+    sizes: ["50ml", "75ml"],
     image: "TurnaroundAcceleratedRenewalSerum.png",
     detail: "./detail-serum.html"
   },
@@ -83,7 +83,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml", "125ml"],
+    sizes: ["50ml", "75ml"],
     image: "SmartRepairWrinkleCorrectingSerum.png",
     detail: "./detail-serum.html"
   },
@@ -94,7 +94,7 @@ let productListSkin = [
     price: 37120,
     originalPrice: 58000,
     discount: 36,
-    sizes: ["50ml", "75ml", "125ml"],
+    sizes: ["50ml", "75ml"],
     image: "AllAboutClean2-in-1Cleansing+ExfoliatingJelly.png",
     detail: "./detail-cleansing.html"
   }

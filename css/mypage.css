@@ -164,9 +164,9 @@ main{
     box-sizing: border-box;
     color: #000;
 }
-.pro-option>div{
-    width: 24px;
-    height: 24px;
+.pro-option>div {
+    width: 1.2rem;
+    height: 1.2rem;
 }
 .color1{background-color: #F1D2BD;}
 .color2{background-color: #EECBB4;}
@@ -177,9 +177,19 @@ main{
 }
 .pro-desc>p:first-of-type {
     margin-bottom: var(--space-x-small);
+     display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .pro-desc>p:last-of-type {
     margin-bottom: var(--space-normal);
+     display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .pro-price{
     display: flex;

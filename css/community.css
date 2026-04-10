@@ -12,7 +12,8 @@ main{
     gap: .6rem;
     justify-self: center;
 }
-.faq-search-box img{
+.faq-search-box img {
+    height: 2rem;
     max-width: 100%;
 }
 input[id="faq-search-keyword"]::placeholder{
@@ -26,15 +27,17 @@ input[id="faq-search-keyword"]::placeholder{
     width: 919px;
     margin: 0 auto;
 }
-.swiper-wrapper{
-    border-bottom: 1px solid #000;
+.cate-box .swiper-slide img{
+    height: 3.2rem;
 }
+/* .swiper-wrapper{
+    border-bottom: 1px solid #000;
+} */
 .faq-cate-list{
     display: flex;
     justify-content: center;
     padding-bottom: var(--space-x-large);
     margin-bottom: var(--space-x-large);;
-    /* border-bottom: 1px solid #000; */
 }
 .faq-cate-list li{
     width: 150px;
