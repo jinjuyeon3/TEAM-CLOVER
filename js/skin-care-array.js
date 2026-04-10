@@ -8,7 +8,7 @@ let productListSkin = [
     discount: 36,
     sizes: ["50ml", "75ml"],
     image: "DramaticallyDifferentMoisturizingLotionPlus.png",
-    detail: "./detail-toner.html"
+    detail: "./detail-lotion.html"
   },
   {
     id: 1,
