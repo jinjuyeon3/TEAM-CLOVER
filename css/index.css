@@ -137,9 +137,12 @@ main .hero-banner.swiper .swiper-pagination{
     font-size: var(--fs-bd1);
     display: flex;
 }
-.best-item-list>li>a{
+.best-item-list>li>a {
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .best-item-list>li{
     padding: var(--space-normal);
@@ -156,14 +159,14 @@ main .hero-banner.swiper .swiper-pagination{
     box-sizing: border-box;
 }
 .best-item-list>li:hover::after{
-    width: 440px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     border: 1px solid var(--main-color);
 }
 .best-item figure{
     background-color: var(--cb-color-0);
-    width: 400x; 
-    height: 400px;
+    width: 100%; 
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -394,15 +397,7 @@ main .hero-banner.swiper .swiper-pagination{
     border-bottom: none;
     color: #111;
 }
-/* .title h1::after{
-    content: "";
-    display: block;
-    width: 220px;
-    height: 3px;
-    margin-top: 14px;
-    border-radius: 999px;
-    background: rgba(0,0,0,0.85);
-} */
+
 
 
 
@@ -429,10 +424,7 @@ main .hero-banner.swiper .swiper-pagination{
 
 /* 1440 이하 PC */
 @media (max-width: 1440px){
-    .best-item figure {
-        max-width: 282px;
-        max-height: 282px;
-    }
+    
     .best-item-list>li:hover::after{
         display: none;
     }
@@ -502,11 +494,6 @@ main .hero-banner.swiper .swiper-pagination{
         padding: 0;
     }
 
-    .best-item figure {
-        max-width: 200px;
-        max-height: 200px;
-    }
-
     .best-item-list>li:hover::after{
         display: none;
     }
@@ -516,7 +503,6 @@ main .hero-banner.swiper .swiper-pagination{
     }
 
     .item-info {
-        width: 200px;
         white-space: wrap;
     }
 
@@ -556,10 +542,9 @@ main .hero-banner.swiper .swiper-pagination{
         padding: 1rem;
     }
 
-.benefits {
-    padding-top: var(--space-x-large);
-    /* padding-bottom: var(--space-3x-large); */
-}
+    .benefits {
+        padding-top: var(--space-x-large);
+    }
 
     .benefit-list {
         display: grid;
@@ -577,27 +562,7 @@ main .hero-banner.swiper .swiper-pagination{
 }
 
 
-@media (max-width: 490px){
-    .best-item figure {
-        max-width: 180px;
-        max-height: 180px;
-    }
-    .item-info {
-        max-width: 180px;
-    }
-    
-}
-
-
-
 @media (max-width: 400px){
-    .best-item figure {
-        max-width: 160px;
-        max-height: 160px;
-    }
-    .item-info {
-        max-width: 160px;
-    }
     .card {
         width: auto;
         margin: 0 1rem;
@@ -606,24 +571,3 @@ main .hero-banner.swiper .swiper-pagination{
     }
 }
 
-
-@media (max-width: 360px){
-    .best-item figure {
-        max-width: 140px;
-        max-height: 160px;
-    }
-    .item-info {
-        max-width: 140px;
-    }
-}
-
-
-@media (max-width: 320px){
-    .best-item figure {
-        max-width: 120px;
-        max-height: 120px;
-    }
-    .item-info {
-        max-width: 120px;
-    }
-}
