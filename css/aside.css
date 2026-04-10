@@ -219,7 +219,7 @@
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 450px){
     .chat-panel {
         right: 0;
         bottom: 0;

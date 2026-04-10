@@ -86,8 +86,8 @@ main{
 /* 아이콘 영역 */
 .hover-icons {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 1rem;
+    right: 1rem;
     display: flex;
     gap: var(--space-small);
     opacity: 0;
@@ -97,8 +97,8 @@ main{
 
 /* 아이콘 버튼 */
 .hover-icons button {
-    width: 24px;
-    height: 24px;
+    width: 1.2rem;
+    height: 1.2rem;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -160,16 +160,15 @@ main{
     transform: translateX(-50%) translateY(0);
 }
 
-.sale-badge{
+.sale-badge {
     position: absolute;
     left: 1rem;
     top: 1rem;
     background-color: var(--main-color);
     border-radius: 50%;
-    width: 4.2rem;
-    height: 4.2rem;
+    width: 3.2rem;
+    height: 3.2rem;
     color: #fff;
-    font-size: var(--fs-h2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,14 +231,12 @@ main{
     main{
         padding-top: 90px;
     }
-    .skin-list {
-        gap: var(--space-normal) var(--space-large);
-    }
     .hover-icons {
         opacity: 1;
     }
     .skin-list {
         grid-template-columns: repeat(3,auto);
+        gap: var(--space-x-large) var(--space-x-large);
     }
     .skin-list figure::after {
         display: none;
@@ -266,13 +263,30 @@ main{
         margin-bottom: var(--space-3x-large);
     }
     .skin-list {
-        grid-template-columns: repeat(1,auto);
-        gap: var(--space-large);
-    }
-    .hover-icons button {
-        width: 16.8px;
-        height: 16.8px;
+        grid-template-columns: repeat(2,auto);
     }
     
     
+}
+
+
+
+@media (max-width: 500px){
+    .skin-list {
+        gap: var(--space-x-large) var(--space-large);
+    }
+}
+
+
+@media (max-width: 400px){
+    .skin-list {
+        gap: var(--space-x-large) var(--space-normal);
+    }
+    .sale-badge {
+        width: 2.5rem;
+        height: 2.5rem;
+        left: .5rem;
+        top: .5rem;
+        font-size: var(--fs-bd2);
+    }
 }

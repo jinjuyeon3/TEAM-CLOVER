@@ -84,8 +84,8 @@ main{
 /* 아이콘 영역 */
 .hover-icons {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 1rem;
+    right: 1rem;
     display: flex;
     gap: var(--space-small);
     opacity: 0;
@@ -95,8 +95,8 @@ main{
 
 /* 아이콘 버튼 */
 .hover-icons button {
-    width: 24px;
-    height: 24px;
+    width: 1.2rem;
+    height: 1.2rem;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -157,16 +157,15 @@ main{
     transform: translateX(-50%) translateY(0);
 }
 
-.sale-badge{
+.sale-badge {
     position: absolute;
     left: 1rem;
     top: 1rem;
     background-color: var(--main-color);
     border-radius: 50%;
-    width: 4.2rem;
-    height: 4.2rem;
+    width: 3.2rem;
+    height: 3.2rem;
     color: #fff;
-    font-size: var(--fs-h2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,9 +177,9 @@ main{
     margin-bottom: var(--space-normal);
     cursor: pointer;
 }
-.color-option>div{
-    width: 24px;
-    height: 24px;
+.color-option>div {
+    width: 1.2rem;
+    height: 1.2rem;
 }
 .color1{background-color: #F1D2BD;}
 .color2{background-color: #EECBB4;}
@@ -218,14 +217,12 @@ main{
     main{
         padding-top: 90px;
     }
-    .skin-list {
-        gap: var(--space-normal) var(--space-large);
-    }
     .hover-icons {
         opacity: 1;
     }
     .make-list {
         grid-template-columns: repeat(3,auto);
+        gap: var(--space-x-large) var(--space-x-large);
     }
     .make-list figure::after {
         display: none;
@@ -233,14 +230,8 @@ main{
     .make-list figure:hover::after {
         background: none;
     }
-    .hover-icons button {
-        width: 21.6px;
-        height: 21.6px;
-    }
-    .color-option>div{
-        width: 21.6px;
-        height: 21.6px;
-    }
+   
+    
 }
 
 
@@ -255,15 +246,28 @@ main{
         margin-bottom: var(--space-3x-large);
     }
     .make-list {
-        grid-template-columns: repeat(1,auto);
-        gap: var(--space-large);
+        grid-template-columns: repeat(2,auto);
     }
-    .hover-icons button {
-        width: 16.8px;
-        height: 16.8px;
+   
+}
+
+
+@media (max-width: 500px){
+    .make-list {
+        gap: var(--space-x-large) var(--space-large);
     }
-    .color-option>div{
-        width: 16.8px;
-        height: 16.8px;
+}
+
+
+@media (max-width: 400px){
+    .make-list {
+        gap: var(--space-x-large) var(--space-normal);
+    }
+    .sale-badge {
+        width: 2.5rem;
+        height: 2.5rem;
+        left: .5rem;
+        top: .5rem;
+        font-size: var(--fs-bd2);
     }
 }
