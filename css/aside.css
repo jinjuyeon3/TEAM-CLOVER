@@ -215,17 +215,18 @@
 
 
 @media (max-width: 768px){
-    
-}
-
-
-@media (max-width: 400px){
     .chat-panel {
         right: 0;
         bottom: 0;
         width: 100vw;
         height: calc(100vh - 65px);
     }
-    
+    .bubble {
+        width: auto;
+    }
+}
+
+
+@media (max-width: 400px){
     
 }

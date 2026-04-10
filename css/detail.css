@@ -860,7 +860,9 @@ span.sale{
         top: calc(100vh - 310px);
         grid-row: 1/2;
     }
-
+    .rv-co-g {
+        width: 100%;
+    }  
     .rv-co-g li {
         display: grid;
         grid-template-columns: repeat(4,1fr);

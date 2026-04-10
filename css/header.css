@@ -791,6 +791,7 @@ input[id="search-keyword"]::placeholder{
 
     .mobile-menu-btn img,
     .mobile-header .btn-group img{
+        height: 1.2rem;
         display: block;
         object-fit: contain;
     }

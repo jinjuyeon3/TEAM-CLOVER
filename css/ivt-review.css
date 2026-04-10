@@ -320,6 +320,12 @@ main{
         width: 100%;
         height: auto;
     }
+    .date-range {
+        gap: var(--space-x-small);
+    }
+    .date-range input {
+        padding: var(--space-x-small);
+    }
 }
 
 
