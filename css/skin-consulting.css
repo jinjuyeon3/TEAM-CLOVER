@@ -473,8 +473,15 @@ main{
         gap: var(--space-3x-large);
     }
     .popup {
-        width: 100vw;
-        height: 100vh;
+        width: auto;
+        /* height: 100vh; */
+        left: 2rem;
+        top: 2rem;
+        right: 2rem;
+        transform: initial;
+        /* margin: 2rem; */
+        bottom: 2rem;
+        height: initial;
     }
     .form-box>h4 {
         width: auto;
@@ -501,6 +508,7 @@ main{
     }
     .reco-list {
         grid-template-columns: repeat(2,1fr);
+        gap: 4rem 1rem;
     }
     .reco-list>li{
         min-width: 0;
@@ -544,6 +552,15 @@ main{
         height: auto;
         padding: 1rem;
     }
+
+    .popup {
+        left: 1rem;
+        top: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+
 }
 
 

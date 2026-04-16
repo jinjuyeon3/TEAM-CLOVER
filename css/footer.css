@@ -35,22 +35,23 @@ footer .common-frame{
     flex-direction: column;
     gap: var(--space-small);
 }
-.news-letter input[id="u-email"]{
+.news-letter input[id="u-email"] {
     background-color: #fff;
     color: #606060;
     width: 440px;
     height: 40px;
     border-radius: .5rem;
-    padding-left: var(--space-small);
+    padding-left: var(--space-normal);
+    box-sizing: border-box;
 }
-.news-letter button{
+.news-letter button {
     background-color: var(--cb-color-400);
     width: 80px;
     height: 40px;
     text-align: center;
     border-radius: .5rem;
     position: absolute;
-    left: calc(440px - 69px);
+    right: 0;
     top: 0;
 }
 .u-agree-box{
@@ -177,7 +178,7 @@ input[id="u-agree"]:checked:after{
     .news-letter button {
         width: 60px;
         height: 30px;
-        left: calc(320px - 50px);
+        /* left: calc(320px - 50px); */
     }
     input[id="u-agree"] {
         width: 13.2px;
@@ -200,7 +201,7 @@ input[id="u-agree"]:checked:after{
         margin-bottom: 0;
     }
     .news-letter.mo button {
-        left: calc(100% - 50px);
+        /* left: calc(100% - 50px); */
     }
     
 

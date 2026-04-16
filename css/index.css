@@ -572,7 +572,9 @@ main .hero-banner.swiper .swiper-pagination{
     .benefit-list li span{
         line-height: 140%;
     }
-    
+    .hero-banner {
+        height: auto;
+    }
 }
 
 
