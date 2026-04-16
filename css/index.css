@@ -424,7 +424,21 @@ main .hero-banner.swiper .swiper-pagination{
 
 /* 1440 이하 PC */
 @media (max-width: 1440px){
-    
+    .sub-cate-list li:hover figure svg{
+        transform: none;
+    }
+    .sub-cate-list li:hover figure svg path{
+        fill: initial;
+    }
+    .sub-cate-list li:hover a{
+        color: #9C9C9C;
+    }
+    .sub-cate-list li:hover figure{
+        background-color: #fff;
+    }
+    .sub-cate-list li:hover figure img{
+        transform: none;
+    }
     .best-item-list>li:hover::after{
         display: none;
     }
