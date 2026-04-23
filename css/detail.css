@@ -747,11 +747,22 @@ span.sale{
 }
 
 
-
+.btn-fold{
+    display: none;
+}
 
 /* ---------------- */
 /* 반응형 대응 코드 */
 @media (max-width:1440px){
+    
+    .btn-fold {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .2rem;
+        height: 30px;
+        cursor: pointer;
+    }
     .pro-minibox{
         /* display: none; */
     }
@@ -784,22 +795,29 @@ span.sale{
         grid-row: 2/3;
         margin-bottom: 30rem;
     }
-    .pro-minibox {
-        position: relative;
-        /* margin-left: auto; */
-        background-color: #fff;
-        width: auto;
-        /* max-height: 600px; */
-        padding: var(--space-small) var(--space-x-large);
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 200;
-        transition: opacity .3s ease, transform .3s ease;
-        position: sticky;
-        left: 0;
-        top: calc(100vh - 351px);
-        grid-row: 1/2;
-    }
-    
+.pro-minibox {
+    position: relative;
+    /* margin-left: auto; */
+    background-color: #fff;
+    width: auto;
+    /* max-height: 600px; */
+    padding: var(--space-small) var(--space-x-large);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 200;
+    transition: all .5s ease 0s;
+    position: sticky;
+    left: 0;
+    top: calc(100vh - 58px);
+    grid-row: 1/2;
+    max-height: 40px;
+    overflow: hidden;
+    border-radius: 2rem 2rem 0 0;
+}
+        
+.pro-minibox.on{
+    top: calc(100vh - 388px);
+    max-height: 500px;
+}
 
 }
 
@@ -856,11 +874,8 @@ span.sale{
     .rv-list .star-box {
         gap: 6rem;
     }
-    .pro-minibox {
-        top: calc(100vh - 310px);
-        grid-row: 1/2;
-    }
-    
+  
+        
     .btn-que li a {
         padding: var(--space-x-small);
     }
@@ -883,6 +898,19 @@ span.sale{
     }
     .rv-f>span {
         font-size: 12px;
+    }
+    .reco-list {
+        gap: 4rem var(--space-normal);
+    }
+
+    .pro-minibox {
+        top: calc(100vh - 54px);
+        grid-row: 1/2;
+    }
+
+    .pro-minibox.on {
+        top: calc(100vh - 346px);
+        max-height: 500px;
     }
 }
 

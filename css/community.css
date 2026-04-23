@@ -58,13 +58,13 @@ input[id="faq-search-keyword"]::placeholder{
     border-bottom: 3px solid var(--main-color);
     box-sizing: border-box;
 }
-.faq-list>li{
+.faq-list>li {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid #000;
-    border-radius: 1.5rem;
-    padding: 0 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
     margin-bottom: var(--space-normal);
     max-height: 90px;
     overflow: hidden;
@@ -77,6 +77,7 @@ input[id="faq-search-keyword"]::placeholder{
     display: flex;
     gap: var(--space-normal);
     padding: var(--space-normal) 1.5rem;
+    justify-content: space-between;
 }
 .f-title{
     width: 769px;
@@ -209,7 +210,11 @@ input[id="faq-search-keyword"]::placeholder{
         height: 300px;
     }
         
-}
+    .faq-foot .common-frame dl {
+        width: auto;
+    }
+
+}   
 
 
 @media (max-width: 500px){

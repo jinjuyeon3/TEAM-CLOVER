@@ -116,9 +116,10 @@ main{
 .addDesc+h3{
     color: var(--main-color);
 }
-.selling-point{
+.selling-point {
     background-color: #F5F5F5;
-    height: 888px;
+    /* height: 888px; */
+    padding-bottom: 6rem;
 }
 .selling-point .common-frame{
     text-align: center;

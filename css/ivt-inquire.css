@@ -309,9 +309,10 @@ select:focus{
     grid-template-columns: 1fr 5fr;
     border-bottom: 1px solid var(--main-color);
     min-height: 60px;
+    padding:1rem 0;
 }
 .inquiry-title{
-    padding: var(--space-normal);
+    /* padding: var(--space-normal); */
     background-color: var(--cb-color-0);
     border-right: 1px solid var(--main-color);
     font-weight: var(--fw-bold);
@@ -320,7 +321,7 @@ select:focus{
     align-items: center;
 }
 .inquiry-cont{
-    padding: var(--space-small) var(--space-normal);
+    padding: var(--space-small) 0;
     display: flex;
     align-items: center;
     gap: var(--space-normal);
@@ -642,6 +643,7 @@ select:focus{
     .inquiry-row {
         display: grid;
         grid-template-columns: repeat(1,auto);
+        padding-bottom: 1rem;
     }
     .inquiry-title {
         background-color: #fff;

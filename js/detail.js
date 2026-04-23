@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =========================
-       미니 구매 박스 (핵심)
+       미니 구매 박스
     ========================= */
     // const infoBox = document.querySelector(".info-box");
     // const proMinibox = document.querySelector(".pro-minibox");
@@ -138,7 +138,23 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    
+
+    /* =========================
+       미니 구매 박스 접었다 폈다하는 기능
+    ========================= */
+    const btnFold = document.querySelector(".btn-fold")
+    const proMinibox = document.querySelector(".pro-minibox")
+    if(btnFold){
+        btnFold.addEventListener("click",()=>{
+            proMinibox.classList.toggle("on")
+        })
+    }
+
+
+
+
+
+
 
 });
 
